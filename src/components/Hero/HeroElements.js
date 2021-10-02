@@ -1,0 +1,151 @@
+import styled from 'styled-components';
+
+export const HeroContainer = styled.div`
+    position: relative;
+    width: 100%;
+    background-color: black;
+    
+    overflow: hidden;
+    @media screen and (max-width:1990px) {
+        height:850px;
+    }
+    @media screen and (max-width:1366px) {
+        height:700px;
+    }
+    @media screen and (max-width:1026px) {
+        height:850px;
+    }
+    @media screen and (max-width:560px){
+        height: 700px;
+    }
+`;
+
+export const HeroImage = styled.img`
+    position:absolute;
+    width: 35%;
+    left: 60%;
+    top: 5%;
+    content:url("/assets/images/Wavy_Lst-14_Single-04 [Converted]-1.png");
+
+    @media screen and (max-width:1990px) {
+        width: 35%;
+        left: 60%;
+        top: 5%;
+    }
+    @media screen and (max-width:1366px) {
+        width: 45%;
+        left: 55%;
+        top: 10%;
+    }
+    @media screen and (max-width:1026px) {
+        width: 45%;
+        left: 55%;
+        top: 15%;
+    }
+    @media screen and (max-width:769px) {
+        width: 85%;
+        left: 50%;
+        top: 5%;
+    }
+    @media screen and (max-width:560px) {
+        height: 70%;
+        width:auto;
+        left: 25%;
+        top: 10%;
+    }
+`;
+
+export const HeroHeadingIn = styled.div`
+    color: #70D9B8;
+    font-size: 5vw;
+    
+    @media screen and (max-width:769px) {
+        font-size: 6vw;
+    }
+    @media screen and (max-width:560px) {
+        font-size: 9vw;
+        padding-top:80px;
+    }
+`;
+
+export const HeroHeading = styled.div`
+    position:absolute;
+    
+    font-weight: bold;
+    color:#fff;
+    left: 15%;
+    width: 60%;
+    top: 30%;
+    font-size: 5rem;
+
+    z-index:5;
+
+    @media screen and (max-width:1990px) {
+        left: 15%;
+        width: 60%;
+        top: 25%;
+        font-size: 4vw;
+    }
+    @media screen and (max-width:1366px) {
+        left: 10%;
+        width: 55%;
+        top: 25%;
+        // font-size: 6rem;
+    }
+    @media screen and (max-width:1026px) {
+        left: 10%;
+        top: 25%;
+        // font-size: 6rem;
+        width: 50%;
+    }
+    @media screen and (max-width:769px) {
+        left: 10%;
+        top: 30%;
+        font-size: 5vw;
+        width: 60%;
+    }
+    @media screen and (max-width:561px) {
+        left: 10%;
+        top: 12%;
+        font-size: 7vw;
+        width: 60%;
+    }
+`;
+
+export const HeroRectangle = styled.div`
+    position:absolute;
+    
+    font-weight: bold;
+    color:#fff;
+    
+    background-color: #70D9B8;
+    z-index:2;
+    @media screen and (max-width:1990px) {
+        left: 0%;
+        top: 70%;
+        width: 60%;
+        height: 10%;
+    }
+    @media screen and (max-width:1366px) {
+        left: 0%;
+        top: 65%;
+        width: 60%;
+        height: 10%;
+    }
+    @media screen and (max-width:1026px) {
+        left: 0%;
+        top: 65%;
+        width: 60%;
+        height: 10%;
+    }
+    @media screen and (max-width:769px) {
+        left: 0%;
+        top: 65%;
+        width: 60%;
+        height: 15%;
+    }
+    @media screen and (max-width:560px) {
+        height:10%;
+        top: 70%;
+    }
+`;
