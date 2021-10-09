@@ -8,6 +8,7 @@ import {
 import useSound from 'use-sound';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Loading } from '../Loading/LoadingComponent';
 
 const responsive = {
   desktop: {
@@ -35,7 +36,7 @@ const SoundButton = () => {
     return <button onClick={play}>Sound</button>;
   };
 
-const Clients = () => {
+const Clients = (props) => {
 
     // function Demo() {
     //     const soundUrl = '/assets/sounds/mixkit-dog-barking-twice-1.wav';
@@ -59,8 +60,28 @@ const Clients = () => {
       );
     const CustomRightArrow = ({ onClick }) => {
         return <i className="custom-right-arrow" onClick={() => onClick()} />;
-      };
-    return (
+    };
+
+    const clients = props.clients.map((client)=>{
+      // console.log(client);
+        return(<div><img height='253px' width='253px' src={client.image}/></div>);
+        
+    });
+    
+
+    if(props.clientsLoading)
+    {
+      return(
+        <Loading />
+      );
+    }
+    else if(props.clientsErrMess)
+    {
+      return(<h4>{props.clientsErrMess}</h4>);
+    }
+    else
+    {
+      return (
         <ClientsContainer>
             <ClientsHeading>Clients</ClientsHeading>
             <ClientsBgImage src='assets/images/clients_pattern_2_crop.png'/>
@@ -83,13 +104,16 @@ const Clients = () => {
                     dotListClass="custom-dot-list-style"
                     itemClass="carousel-item-padding-40-px"
                     >
-                    <div><img height='253px' width='253px' src='assets/images/testimonial-img.jfif'></img></div>
+                    {/* <div><img height='253px' width='253px' src='assets/images/testimonial-img.jfif'></img></div>
                     <div><img src='assets/images/magic-carpet-cast.jpg'></img></div>
-                    <div><img src='assets/images/Be-My-Neighbor.jpg'></img></div>
+                    <div><img src='assets/images/Be-My-Neighbor.jpg'></img></div> */}
+                    {clients}
                 </Carousel>
             </ClientsCarouselContainer>
         </ClientsContainer>
     )
+    }
+    
 }
 
 export default Clients

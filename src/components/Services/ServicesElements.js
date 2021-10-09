@@ -133,13 +133,13 @@ export const BookInquireLink = styled(Link)`
     &:before{
         content: "";
         position: absolute;
-        width: 0;
+        width: 70%;
         height: 2px;
-        bottom: 0;
-        left: 0;
+        bottom: -2px;
+        left: 15%;
         background-color: #000;
-        visibility: hidden;
-        transition: all 0.3s ease-in-out;
+        // visibility: hidden;
+        transition: all 0.2s ease-in-out;
     }
     &:hover{
         color:#000 !important;
@@ -147,6 +147,8 @@ export const BookInquireLink = styled(Link)`
     &:hover:before{
         visibility: visible;
         width: 100%;
+        left:0;
+
     }
 `;
 

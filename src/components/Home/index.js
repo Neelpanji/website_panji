@@ -5,7 +5,28 @@ import Services from '../Services';
 import Clients from '../Clients';
 import Conversation from '../Conversation';
 
-const Home = () => {
+const Home = (props) => {
+
+    console.log(props);
+
+    const ServicesComponent = () => {
+        return(
+            <Services services={props.servicesProps.services}
+            servicesLoading={props.servicesProps.isLoading}
+            servicesErrMess={props.servicesProps.errMess}
+            />
+        );
+    }
+
+    const ClientsComponent = () => {
+        return(
+            <Clients clients={props.clientsProps.clients}
+            clientsLoading={props.clientsProps.isLoading}
+            clientsErrMess={props.clientsProps.errMess}
+            />
+        );
+    }
+
     return (
         <div>
             <section id="hero">
@@ -18,12 +39,14 @@ const Home = () => {
             </section>
             <section id="services">
             <Element name="services" className="element">
-                <Services />
+                {/* <Services /> */}
+                <ServicesComponent />
             </Element>
             </section>
             <services id="clients">
             <Element name="clients" className="element">
-                <Clients />
+                <ClientsComponent />
+                {/* <Clients /> */}
             </Element>
             </services>
         </div>

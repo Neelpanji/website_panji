@@ -5,7 +5,8 @@ import {Row, Container, Col} from 'reactstrap';
 
 const PageCover = React.forwardRef((props, ref) => {
     return (
-      <div className="demoPage" ref={ref} data-density="hard">
+      // <div className="demoPage" ref={ref} data-density="hard">
+      <div className="demoPage" ref={ref}>
         <BookCoverPageContainer>
           
         <BookCoverPageImg />
@@ -19,20 +20,23 @@ const PageCover = React.forwardRef((props, ref) => {
   });
 
 const Page = React.forwardRef((props, ref) => {
+  // console.log(props.service);
+
+  const features = props.service.features.map((feature) => {
+    return(<li>{feature}</li>);
+  });
     return (
-        <div className="demoPage" ref={ref} data-density="hard">
+        <div className="demoPage" ref={ref} >
             <BookPageContainer>
             <BookPageLogoContainer>
-              <BookPageLogo src="assets/images/services/podcast-01.png"/>
+              <BookPageLogo src={props.service.image}/>
             </BookPageLogoContainer>
             <BookPageContentContainer>
               <BookPageHeader>
-                Podcast Services
+                {props.service.name}
               </BookPageHeader>
               <BookPageFeatures>
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
+                {features}  
               </BookPageFeatures>
               <BookInquireContainer>
                 <BookInquireLink to="/enquiry#top">Inquire</BookInquireLink>
@@ -46,7 +50,17 @@ const Page = React.forwardRef((props, ref) => {
     );
 });
 
-const Book = () => {
+const Book = (props) => {
+
+  // console.log(props);
+
+  const page = props.services.map((service)=>{
+    // console.log(service);
+    return(<Page service = {service}/>);
+      // return(<div><img height='253px' width='253px' src={service.name}/></div>);
+      
+  });
+
     return (
         <BookContainer>
         <HTMLFlipBook 
@@ -67,12 +81,13 @@ const Book = () => {
           // ref={(el) => (this.flipBook = el)}
         >
             <PageCover></PageCover>
-            <Page number="1">Page text</Page>
+            {page}
+            {/* <Page number="1">Page text</Page>
             <Page number="2">Page text</Page>
             <Page number="3">Page text</Page>
             <Page number="4">Page text</Page>
             <Page number="5">Page text</Page>
-            <Page number="6">Page text</Page>
+            <Page number="6">Page text</Page> */}
         </HTMLFlipBook>
         </BookContainer>
     )

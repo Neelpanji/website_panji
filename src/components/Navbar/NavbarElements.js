@@ -97,33 +97,33 @@ export const StyledBurger = styled.button`
     // top: 0;
     // left: 0;
     flex-direction: column;
-    justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
+    justify-content: space-between;
+    width: 2.121rem;
+    height: 1.5rem;
     background: transparent;
     border: none;
     cursor: pointer;
     z-index:20;
     
-    padding: 0px;
-    margin-top:1.5rem;
+    padding: 0;
+    margin-top:2rem;
     &:focus {
       outline: none;
     }
       
     div {
-        width: 2rem;
-        height: 0.25rem;
+        width: 100%;
+        height: 0.1rem;
         background: #777;
-        border-radius: 10px;
-        transition: all 0.3s linear;
+        border-radius: 5px;
+        transition: all 0.2s linear;
         position: relative;
-        transform-origin: 2rem;
+        transform-origin: 2.121rem;
         z-index:20;
         
 
         :first-child {
-          transform: ${({ open }) => open ? 'rotate(-42deg)' : 'rotate(0)'};
+          transform: ${({ open }) => open ? 'rotate(-41deg)' : 'rotate(0)'};
         }
     
         :nth-child(2) {
@@ -132,7 +132,7 @@ export const StyledBurger = styled.button`
         }
     
         :nth-child(3) {
-          transform: ${({ open }) => open ? 'rotate(42deg)' : 'rotate(0)'};
+          transform: ${({ open }) => open ? 'rotate(41deg)' : 'rotate(0)'};
         }
     }
 

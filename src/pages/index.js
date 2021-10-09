@@ -65,15 +65,23 @@ class Main extends Component{
 
 
     render(){
-        // console.log(this.state.open);
+        // console.log(this.props.clients);
+
+        const HomeComponent = () => {
+            return(
+                <Home servicesProps={this.props.services}
+                    clientsProps= {this.props.clients}
+                />
+            );
+        }
+
         return (
             <div >
                 <Sidebar open={this.state.open} toggle={this.setOpen}/>
                 <Navbar open={this.state.open} toggle={this.setOpen}/>
                 
                 <Switch>
-                    <Route exact path="/">
-                        <Home />
+                    <Route exact path="/" component={HomeComponent}>
                     </Route>
                     <Route path="/about">
                         <About />

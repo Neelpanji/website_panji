@@ -14,7 +14,7 @@ const scrollWithOffset = (el) => {
 const Burger = ({ open, toggle }) => {
     // console.log(open);   
     return (
-      <div className="nav-burger-button" style={{width: "1.9rem" }}>
+      <div className="nav-burger-button" style={{width: "2.121rem" }}>
       <StyledBurger open={open} onClick={() => toggle(open)}>
         <div />
         <div />
@@ -53,15 +53,15 @@ const Navbar = ({ open, toggle}) => {
                     <NavbarContainer>
                         <NavLogo  to={process.env.PUBLIC_URL+"/#hero"}  onClick={() => closeSidebar(open)} scroll={el => scrollWithOffset(el)}>
                         {/* <img src={baseUrl+'assets/images/logo.png'} className='nav-logo' alt="ABC Power" /> */}
-                        <div>NP</div>
+                        <div>Neel Panji</div>
                         </NavLogo>
-                        <SocialMedia>
+                        {/* <SocialMedia>
                             <a href="#"><SocialMediaIcon src="/assets/images/logos/instagram.png"/></a>
                             <a href="#"><SocialMediaIcon src="/assets/images/logos/linkedin-3-48.png"/></a>
                             <a href="#"><SocialMediaIcon src="/assets/images/logos/facebook-3-48.png"/></a>
                             <a href="#"><SocialMediaIcon src="/assets/images/logos/messenger (1).png"/></a>
                             <a href="#"><SocialMediaIcon src="/assets/images/logos/email (1).png"/></a>
-                        </SocialMedia>
+                        </SocialMedia> */}
                         <NavMenu>
                             <NavItem>
                                 <NavLink to="/about#top"

@@ -65,3 +65,21 @@ export const SidebarLink = styled(NavHashLink)`
     
 
 `;
+
+export const SocialMedia = styled.div`
+  width:60%;
+  margin: auto;
+  padding-top:40px;
+  display:none;
+  align-items: center;
+  justify-content:space-around; 
+  height:100%;
+  @media screen and (max-width: 560px){
+    display:flex;
+  }
+`;
+
+export const SocialMediaIcon = styled.img`
+width: 25px;
+height: 25px;
+`;

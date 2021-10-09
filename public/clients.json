@@ -2,21 +2,21 @@
     {
         "id":0,
         "name":"Podcast Services",
-        "image":"assets/images/services/podcast-01.png"
+        "image":"assets/images/testimonial-img.jfif"
     },
     {
         "id":1,
         "name":"Podcast Services",
-        "image":"assets/images/services/podcast-01.png"
+        "image":"assets/images/magic-carpet-cast.jpg"
     },
     {
         "id":2,
         "name":"Podcast Services",
-        "image":"assets/images/services/podcast-01.png"
+        "image":"assets/images/Be-My-Neighbor.jpg"
     },
     {
         "id":3,
         "name":"Podcast Services",
-        "image":"assets/images/services/podcast-01.png"
+        "image":"assets/images/magic-carpet-cast.jpg"
     }
 ]

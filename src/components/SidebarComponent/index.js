@@ -3,7 +3,9 @@ import {
     SidebarContainer,
     SidebarLink,
     SidebarMenu,
-    SidebarWrapper
+    SidebarWrapper,
+    SocialMedia,
+    SocialMediaIcon
 } from './SidebarElements';
 import { useState, useEffect } from "react";
 
@@ -68,6 +70,14 @@ const Sidebar = ({open,toggle}) => {
                     onClick={toggle}
                     >Contact</SidebarLink>
                 </SidebarMenu>
+
+                <SocialMedia>
+                    <a href="#"><SocialMediaIcon src="/assets/images/logos/instagram.png"/></a>
+                    <a href="#"><SocialMediaIcon src="/assets/images/logos/linkedin-3-48.png"/></a>
+                    <a href="#"><SocialMediaIcon src="/assets/images/logos/facebook-3-48.png"/></a>
+                    <a href="#"><SocialMediaIcon src="/assets/images/logos/messenger (1).png"/></a>
+                    <a href="#"><SocialMediaIcon src="/assets/images/logos/email (1).png"/></a>
+                </SocialMedia>
             </SidebarWrapper>
         </SidebarContainer>
     )
