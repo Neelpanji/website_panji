@@ -11,10 +11,11 @@ export const BookContainer = styled.div`
     text-align:center;
     display:flex;
     justify-content:center;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     padding-right:10%;
     padding-left:10%;
+    overflow: hidden;
 
 `;
 
