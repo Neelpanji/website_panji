@@ -26,10 +26,10 @@ const Footer = () => {
                 <Col md='8' xs='6'>
                     
                     <FooterRow>
-                        <Col md='3' xs='12'><FooterLink to={process.env.PUBLIC_URL+'/'} className='link-footer'>Home</FooterLink></Col>
-                        <Col md='3' xs='12'><FooterLink to={process.env.PUBLIC_URL+'/aboutus'} className='link-footer'>About Us</FooterLink></Col>
-                        <Col md='3' xs='12'><FooterLink to={process.env.PUBLIC_URL+'/products'} className='link-footer'>Products</FooterLink></Col>
-                        <Col md='3' xs='12'><FooterLink to={process.env.PUBLIC_URL+'/contact'} className='link-footer'>Contact Us</FooterLink></Col>
+                        <Col md='3' xs='12'><FooterLink to="/#hero" >Home</FooterLink></Col>
+                        <Col md='3' xs='12'><FooterLink to="/about#top" >About Us</FooterLink></Col>
+                        <Col md='3' xs='12'><FooterLink to="/#services" >Services</FooterLink></Col>
+                        <Col md='3' xs='12'><FooterLink to="/contact#top" >Contact</FooterLink></Col>
                         
                     </FooterRow>
                     

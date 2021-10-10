@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
 // import {FaBars } from 'react-icons';
-import {Nav,NavButton,NavButtonLink,NavItem,NavLink,NavLogo,NavMenu,NavbarContainer,StyledBurger,SocialMedia,SocialMediaIcon} from './NavbarElements';
+import {Nav,NavButton,NavButtonLink,NavItem,NavLink,NavLogo,NavMenu,NavbarContainer,StyledBurger,SocialMedia,SocialMediaIcon, NavLinkS} from './NavbarElements';
 import { Container } from 'reactstrap';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import reactDom from 'react-dom';
 
 const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
@@ -48,6 +49,22 @@ const Navbar = ({ open, toggle}) => {
 
     const { width } = useViewport();
 
+
+    const [scrollService, setScroll] = useState(0);
+
+    
+
+
+    useEffect(() => {
+      document.addEventListener("scrollService", () => {
+        const scrollCheck = window.scrollY > 100 && window.scrollY < 200
+        if (scrollCheck !== scrollService) {
+          setScroll(scrollCheck)
+        }
+      })
+    })
+
+
     return (
                <Nav>
                     <NavbarContainer>
@@ -86,9 +103,12 @@ const Navbar = ({ open, toggle}) => {
                         </NavMenu>
                         <Burger open={open} toggle={toggle}/>
                     </NavbarContainer>
+
                 </Nav>
 
     )
 }
 
 export default Navbar;
+
+

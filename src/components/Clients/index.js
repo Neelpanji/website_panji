@@ -3,7 +3,8 @@ import { Container, Row, Col } from 'reactstrap';
 import {
     ClientsCarouselContainer,
     ClientsContainer, ClientsHeading,
-    ClientsBgImage,ClientsBgImage2
+    ClientsBgImage,ClientsBgImage2,
+    ClientImage
 } from './ClientsElements';
 import useSound from 'use-sound';
 import Carousel from "react-multi-carousel";
@@ -64,7 +65,7 @@ const Clients = (props) => {
 
     const clients = props.clients.map((client)=>{
       // console.log(client);
-        return(<div><img height='253px' width='253px' src={client.image}/></div>);
+        return(<div><ClientImage src={client.image}/></div>);
         
     });
     

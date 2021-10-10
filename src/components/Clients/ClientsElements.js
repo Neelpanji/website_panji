@@ -40,3 +40,13 @@ export const ClientsBgImage2 = styled.img`
         display:block;
     }
 `;
+
+export const ClientImage = styled.img`
+    height: 250px;
+    width:250px;
+
+    @media screen and (max-width:560px){
+        height: 200px;
+        width: 200px;
+    }
+`;

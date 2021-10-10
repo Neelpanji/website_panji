@@ -1,48 +1,78 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import {Container, Row, Col} from 'reactstrap';
-import { AboutContainer, AboutHeading,AboutRectangle1, AboutImageWrapper, AboutImage, AboutContentWrapper, AboutContent,AboutQuoteContainer, AboutQuoteContent, AboutRectangle2 } from './AboutElements';
+import { AboutContainer, AboutHeading,AboutRectangle1, AboutImageWrapper, AboutImageDesktop, AboutImageMobile, AboutContentWrapper, AboutContent,
+    AboutContactContainer,AboutContactContent, AboutContactButton,
+    AboutQuoteContainer, AboutQuoteContent, AboutRectangle2, HighlightGreen } from './AboutElements';
+
+const useViewport = () => {
+    const [width, setWidth] = React.useState(window.innerWidth);
+  
+    React.useEffect(() => {
+      const handleWindowResize = () => setWidth(window.innerWidth);
+      window.addEventListener("resize", handleWindowResize);
+      return () => window.removeEventListener("resize", handleWindowResize);
+    }, []);
+  
+    // Return the width so we can use it in our components
+    return { width };
+}
+
 
 const About = () => {
+
+    const { width } = useViewport();
+
     return (
         <AboutContainer>
             <AboutHeading>About</AboutHeading>
-            <AboutRectangle1/>
-            <Container style={{heigth: '100%'}}>
             
+            <Container >
+            <AboutRectangle1/>
                 <Row>
-                    <Col lg='6'>
+                    <Col lg='8'>
                         
                         <AboutImageWrapper>
-                            <AboutImage src='/pdcst_sample.svg' alt='about_img'>
-                            </AboutImage>
+                            <AboutImageDesktop src='/assets/images/IMG-1730.jpg' alt='about_img'></AboutImageDesktop>
+                            <AboutImageMobile src='/assets/images/IMG-1730-mob.jpg' alt='about_img'></AboutImageMobile>
                         </AboutImageWrapper>
                     </Col>
-                    <Col lg='6'>
+                    <Col lg='4'>
+                        <AboutQuoteContainer>
+                            <AboutQuoteContent>What makeup is to your face, Podcast Editing is to your sound!</AboutQuoteContent>
+                        </AboutQuoteContainer>
+                    </Col>
+                    <Col lg='12'>
                         <AboutContentWrapper>
                             <AboutContent>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Hi, I am Neel! A podcast editor and also a video editor.
+                            I am the makeup artist of podcasts, responsible to make the audio and video sound & look as flawless as you are.
+                            Having produced 69 (and counting)  episodes of podcasts like (AJVC, SOS, ONE MORE NAME) till date in a short span of 1 year has led to significant growth of my professional journey and satisfaction among my clients.
+                            Apart from my professional and personal milestones, with my editing expertise I intend to make the art of podcasting more consumable among masses by producing crisp and clean content along with my partners (clients).
                             </AboutContent>
                         </AboutContentWrapper>
+                    </Col>
+                    <Col lg='8'>
+                        <AboutContactContainer>
+                            <AboutContactContent>Unlocking your Podcast's <HighlightGreen>True Potential </HighlightGreen> is Just a Click Away 😀</AboutContactContent>
+                        </AboutContactContainer>
+                    </Col>
+                    <Col lg='4'>
+                        <AboutContactContainer>
+                            <AboutContactButton>Reach Me !</AboutContactButton>
+                        </AboutContactContainer>
                     </Col>
                 </Row>
             </Container>
-            <AboutQuoteContainer >
+            {/* <AboutQuoteContainer >
                 <AboutQuoteContent>This is a Moving Quote !!
                 </AboutQuoteContent>
-            </AboutQuoteContainer>
-            <Container style={{heigth: '100%'}}>
+            </AboutQuoteContainer> */}
+            <Container >
             
+                {/* adding contact statement, quote !! */}
                 <Row>
-                    <Col lg='6'>
-                        <AboutContentWrapper>
-                            <AboutContent>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </AboutContent>
-                        </AboutContentWrapper>
-                    </Col>
-                    <Col lg='6'>
-                        <AboutRectangle2 />                        
-                    </Col>
+                    
+                    
                 </Row>
             </Container>
          </AboutContainer>

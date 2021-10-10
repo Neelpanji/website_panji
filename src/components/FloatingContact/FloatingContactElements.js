@@ -38,9 +38,10 @@ export const FloatingContactContainer = styled.div`
         width:40px;
     }
     @media screen and (max-width:769px) {
-        bottom:37%;
-        // height: 25%;
-        width:40px;
+        // bottom:37%;
+        // // height: 25%;
+        // width:40px;
+        display:none;
     }
     @media screen and (max-width:560px) {
         display:none;
