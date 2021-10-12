@@ -19,8 +19,7 @@ export const ConversationTextBoxPanji = styled.div`
     top:${props =>props.top};
     left:${props =>props.left};
     color: white;
-    background-color: black;
-    padding: 10px;
+    
 
     font-size:1.5vw;
 
@@ -46,8 +45,7 @@ export const ConversationTextBoxVisitor = styled.div`
     top:${props =>props.top};
     left:${props =>props.left};
     color: #70D9B8;
-    background-color: black;
-    padding: 10px;
+    
     font-size:1.5vw;
     @media screen and (max-width:1990px) {
         // font-size: 1.5rem;
@@ -59,6 +57,12 @@ export const ConversationTextBoxVisitor = styled.div`
         font-size:1.7vw;
         max-width: 40%
     }
+`;
+
+export const ConversationTextBoxContent = styled.div`
+    position: relative;
+    background-color: black;
+    padding: 10px;
 `;
 
 export const ConversationMobileLeftContainer = styled.div`
@@ -80,7 +84,7 @@ export const ConversationMobileImage = styled.img`
 `;
 
 export const ConversationMobileTextBox = styled.div`
-    width: 50%;
+    width: 75%;
     margin: 0 15px;
     color:${props => (props.visitor === "1")?"#70D9B8":"white"};
     font-size: 3.5vw;

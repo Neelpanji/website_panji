@@ -49,7 +49,7 @@ export const AboutImageWrapper = styled.div`
 
 export const AboutImageDesktop = styled.img`
     max-width: 100%;
-    z-index: 1;
+    z-index: 0;
     display:block;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     @media screen and (max-width: 767px){
@@ -59,7 +59,7 @@ export const AboutImageDesktop = styled.img`
 
 export const AboutImageMobile = styled.img`
     max-width: 100%;
-    z-index: 1;
+    z-index: 0;
     display:none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     @media screen and (max-width: 767px){
@@ -123,32 +123,54 @@ export const AboutQuoteContainer = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
-    margin: 10px 0;
+    // margin: 10px 0;
+    position: relative;
+    min-height: 90px;
 `;
 
 export const AboutQuoteContent = styled.div`
     text-align:center;
     font-size: 2.5rem;
+    // position: absolute;
     color: #000;
     background-color: #70D9B8;
     z-index: 5;
     margin-left: -30%;
     margin-top: 30%;
+    // left: -30%;
+    // top: 50%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
+
+    @media screen and (max-width:1024px) {
+        margin-top: 50%;
+        margin-left: -15%;
+        margin-right: 5%;
+        // left: -30%;
+        // top: 50%;
+        font-size: 2.2rem;
+    }
     @media screen and (max-width:992px) {
         margin-top: -15%;
-        margin-left: 10%;
+        margin-left: -10%;
         margin-right: 5%;
+        // top:-50%;
+        // left:10%;
+        width: 85%;
         font-size: 2.5rem;
     }
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 768px){
         font-size: 2rem;
         margin-left: 15%;
         margin-top: -20%;
+        // left:15%;
+        // top: -60%;
+        width: 80%;
     }
     @media screen and (max-width:560px) {
         font-size: 1.8rem;
+        margin-left: 15%;
+        margin-top: -60%;
     }
 `;
 

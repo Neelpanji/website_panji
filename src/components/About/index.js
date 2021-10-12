@@ -3,6 +3,8 @@ import {Container, Row, Col} from 'reactstrap';
 import { AboutContainer, AboutHeading,AboutRectangle1, AboutImageWrapper, AboutImageDesktop, AboutImageMobile, AboutContentWrapper, AboutContent,
     AboutContactContainer,AboutContactContent, AboutContactButton,
     AboutQuoteContainer, AboutQuoteContent, AboutRectangle2, HighlightGreen } from './AboutElements';
+import { Parallax } from 'react-scroll-parallax';
+
 
 const useViewport = () => {
     const [width, setWidth] = React.useState(window.innerWidth);
@@ -38,7 +40,9 @@ const About = () => {
                     </Col>
                     <Col lg='4'>
                         <AboutQuoteContainer>
-                            <AboutQuoteContent>What makeup is to your face, Podcast Editing is to your sound!</AboutQuoteContent>
+                            <Parallax  y={[90, -90]}>
+                                <AboutQuoteContent>What makeup is to your face, Podcast Editing is to your sound!</AboutQuoteContent>
+                            </Parallax>
                         </AboutQuoteContainer>
                     </Col>
                     <Col lg='12'>

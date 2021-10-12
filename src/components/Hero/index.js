@@ -1,4 +1,5 @@
 import React from 'react';
+import { Parallax } from 'react-scroll-parallax';
 import {
     HeroContainer,
     HeroImage,
@@ -15,8 +16,12 @@ const Home = () => {
         <HeroContainer>
             {/* <HeroImage ></HeroImage> */}
             <HeroHeading>Let's Make That <br/> Podcast Dream Of Yours <br/> <HeroHeadingIn>A Reality</HeroHeadingIn></HeroHeading>
+            {/* <Parallax x={[-100,100]}> */}
             <HeroRectangle/>
+            {/* </Parallax> */}
+            <Parallax x={[-20,20]} y={[20,-20]} >
             <HeroImage />
+            </Parallax>
         </HeroContainer>
     )
 }

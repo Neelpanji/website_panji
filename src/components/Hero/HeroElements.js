@@ -21,37 +21,50 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroImage = styled.img`
-    position:absolute;
+    position:relative;
     width: 35%;
     left: 60%;
     top: 5%;
+    // margin-left: 60%;
+    // margin-top: 5%;
     content:url("/assets/images/Wavy_Lst-14_Single-04 [Converted]-1.png");
 
     @media screen and (max-width:1990px) {
         width: 35%;
         left: 60%;
         top: 5%;
+        // margin-left: 60%;
+        // margn-top: 5%;
     }
     @media screen and (max-width:1366px) {
         width: 45%;
         left: 55%;
         top: 10%;
+        // margin-left: 60%;
+        // margn-top: 5%;
     }
     @media screen and (max-width:1026px) {
         width: 45%;
         left: 55%;
         top: 15%;
+        // margin-left: 55%;
+        // margn-top: 15%;
     }
     @media screen and (max-width:769px) {
         width: 85%;
         left: 50%;
         top: 5%;
+        // margin-left: 50%;
+        // margn-top: 5%;
     }
     @media screen and (max-width:560px) {
-        height: 70%;
-        width:auto;
+        // height: 70%;
+        // width:auto;
+        width:120vw;
         left: 25%;
         top: 10%;
+        // margin-left: 25%;
+        // margin-top: 10%;
     }
 `;
 
@@ -113,39 +126,44 @@ export const HeroHeading = styled.div`
 `;
 
 export const HeroRectangle = styled.div`
-    position:absolute;
-    
+    position:relative;
+    display:block;
     font-weight: bold;
     color:#fff;
-    
+    // margin-left: 0;
+    // left:0;
     background-color: #70D9B8;
     z-index:2;
     @media screen and (max-width:1990px) {
-        left: 0%;
         top: 70%;
+        // margin-top: 50%;
         width: 60%;
         height: 10%;
     }
     @media screen and (max-width:1366px) {
-        left: 0%;
+        // left: 0%;
         top: 65%;
+        // margin-top: 55%;
         width: 60%;
         height: 10%;
     }
     @media screen and (max-width:1026px) {
-        left: 0%;
+        // left: 0%;
         top: 65%;
+        // margin-top:65%;
         width: 60%;
         height: 10%;
     }
     @media screen and (max-width:769px) {
-        left: 0%;
+        // left: 0%;
         top: 65%;
+        // margin-top:65%;
         width: 60%;
         height: 15%;
     }
     @media screen and (max-width:560px) {
         height:10%;
         top: 70%;
+        // margin-top:70%;
     }
 `;
