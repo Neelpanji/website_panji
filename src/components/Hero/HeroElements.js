@@ -4,8 +4,8 @@ export const HeroContainer = styled.div`
     position: relative;
     width: 100%;
     background-color: black;
-    overflow:hidden;
-    overflow: hidden;
+    // overflow:hidden;
+    // overflow: hidden;
     @media screen and (max-width:1990px) {
         height:850px;
     }
@@ -21,7 +21,7 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroImage = styled.img`
-    position:relative;
+    position:absolute;
     width: 35%;
     left: 60%;
     top: 5%;
