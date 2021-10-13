@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import "animate.css/animate.min.css";
 
 ReactDOM.render(
   <React.StrictMode>

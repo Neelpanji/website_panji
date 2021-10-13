@@ -5,8 +5,12 @@ import {
     HeroImage,
     HeroHeading,
     HeroRectangle,
-    HeroHeadingIn
+    HeroHeadingIn,
+    HeroRectangleContainer
 } from './HeroElements';
+
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 // import { useController } from 'react-scroll-parallax';
 // import { useLayoutEffect } from 'react';
@@ -31,13 +35,25 @@ const Home = () => {
         // </div>
         <HeroContainer>
             {/* <HeroImage ></HeroImage> */}
-            <HeroHeading>Let's Make That <br/> Podcast Dream Of Yours <br/> <HeroHeadingIn>A Reality</HeroHeadingIn></HeroHeading>
-            {/* <Parallax x={[-100,100]}> */}
-            <HeroRectangle/>
-            {/* </Parallax> */}
+            <HeroHeading>
+                <ScrollAnimation animateIn="animate__fadeInLeft" duration="1.5" animateOnce="true" delay="500">
+                Let's Make That <br/> Podcast Dream Of Yours <br/> 
+                </ScrollAnimation>
+                <ScrollAnimation animateIn="animate__fadeInLeft" duration='2' animateOnce="true" delay="500">
+                <HeroHeadingIn>A Reality</HeroHeadingIn>
+                </ScrollAnimation>
+            </HeroHeading>
+
+            <HeroImage />
+
+            <HeroRectangleContainer>
+            <ScrollAnimation animateIn="animate__fadeInLeft" duration='4' animateOnce="true">
+                <HeroRectangle/>
+            </ScrollAnimation>
+            </HeroRectangleContainer>
             {/* <ParallaxCache /> */}
             {/* <Parallax x={[-20,20]} y={[20,-20]} > */}
-            <HeroImage />
+            
             {/* </Parallax> */}
             {/* <HeroImg /> */}
         </HeroContainer>

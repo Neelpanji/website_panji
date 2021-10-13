@@ -126,14 +126,21 @@ export const HeroHeading = styled.div`
 `;
 
 export const HeroRectangle = styled.div`
-    position:relative;
+    background-color: #70D9B8;
+    z-index:2;
+    width:100%;
+    height:100%;
+`;
+
+export const HeroRectangleContainer = styled.div`
+    position:absolute;
     display:block;
     font-weight: bold;
     color:#fff;
     // margin-left: 0;
     // left:0;
-    background-color: #70D9B8;
-    z-index:2;
+    // background-color: #70D9B8;
+    // z-index:2;
     @media screen and (max-width:1990px) {
         top: 70%;
         // margin-top: 50%;
@@ -165,5 +172,11 @@ export const HeroRectangle = styled.div`
         height:10%;
         top: 70%;
         // margin-top:70%;
+    }
+
+
+    // THIS DIV IS ADDED FOR SUPPORTING RECTANGLE ANIMATION EXPLICITLY !!!!!!!!!!!!!
+    div{
+        height:100%;
     }
 `;
