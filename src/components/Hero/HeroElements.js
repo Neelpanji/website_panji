@@ -5,7 +5,7 @@ export const HeroContainer = styled.div`
     width: 100%;
     background-color: black;
     // overflow:hidden;
-    // overflow: hidden;
+    overflow: hidden;
     @media screen and (max-width:1990px) {
         height:850px;
     }
