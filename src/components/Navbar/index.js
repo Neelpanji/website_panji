@@ -45,6 +45,7 @@ const Navbar = ({ open, toggle}) => {
         if(open===true){
             toggle(open);
         }
+        // window.location.reload();
     }
 
     const { width } = useViewport();
@@ -55,20 +56,20 @@ const Navbar = ({ open, toggle}) => {
     
 
 
-    useEffect(() => {
-      document.addEventListener("scrollService", () => {
-        const scrollCheck = window.scrollY > 100 && window.scrollY < 200
-        if (scrollCheck !== scrollService) {
-          setScroll(scrollCheck)
-        }
-      })
-    })
+    // useEffect(() => {
+    //   document.addEventListener("scrollService", () => {
+    //     const scrollCheck = window.scrollY > 100 && window.scrollY < 200
+    //     if (scrollCheck !== scrollService) {
+    //       setScroll(scrollCheck)
+    //     }
+    //   })
+    // })
 
 
     return (
                <Nav>
                     <NavbarContainer>
-                        <NavLogo  to={process.env.PUBLIC_URL+"/#hero"}  onClick={() => closeSidebar(open)} scroll={el => scrollWithOffset(el)}>
+                        <NavLogo  to={process.env.PUBLIC_URL+"/#hero"} onClick={() => closeSidebar(open)} scroll={el => scrollWithOffset(el)}>
                         {/* <img src={baseUrl+'assets/images/logo.png'} className='nav-logo' alt="ABC Power" /> */}
                         <div>Neel Panji</div>
                         </NavLogo>
@@ -86,12 +87,12 @@ const Navbar = ({ open, toggle}) => {
                                 >About</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="/#services" 
+                                <NavLink smooth  to="/#services" 
                                 scroll={el => scrollWithOffset(el)}
                                 >Services</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="/#clients" 
+                                <NavLink smooth  to="/#clients" 
                                 scroll={el => scrollWithOffset(el)}
                                 >Clients</NavLink>
                             </NavItem>

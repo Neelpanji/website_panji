@@ -5,6 +5,7 @@ export const ServicesContainer = styled.div`
     width: 100%;
     background-color: black;
     color: #fff;
+    // height: 650px;
 `;
 
 export const BookContainer = styled.div`

@@ -105,12 +105,11 @@ const Clients = (props) => {
                     dotListClass="custom-dot-list-style"
                     itemClass="carousel-item-padding-40-px"
                     >
-                    {/* <div><img height='253px' width='253px' src='assets/images/testimonial-img.jfif'></img></div>
-                    <div><img src='assets/images/magic-carpet-cast.jpg'></img></div>
-                    <div><img src='assets/images/Be-My-Neighbor.jpg'></img></div> */}
+                    
                     {clients}
                 </Carousel>
             </ClientsCarouselContainer>
+
         </ClientsContainer>
     )
     }

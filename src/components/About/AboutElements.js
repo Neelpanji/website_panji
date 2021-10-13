@@ -42,6 +42,7 @@ export const AboutImageWrapper = styled.div`
     }
     @media screen and (max-width:767px) {
         height: auto;
+        min-height: 400px;
     }
     
 

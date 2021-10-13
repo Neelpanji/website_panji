@@ -5,6 +5,22 @@ import Services from '../Services';
 import Clients from '../Clients';
 import Conversation from '../Conversation';
 
+// import { useController } from 'react-scroll-parallax';
+// import { useLayoutEffect } from 'react';
+
+
+// const ParallaxCache = () => {
+//   const { parallaxController } = useController();
+
+//   useLayoutEffect(() => {
+//       const handler = () => parallaxController.update();
+//       window.addEventListener('load', handler);
+//       return () => window.removeEventListener('load', handler);
+//   }, [parallaxController]);
+
+//   return null;
+// };
+
 const Home = (props) => {
 
     console.log(props);
@@ -43,12 +59,11 @@ const Home = (props) => {
                 <ServicesComponent />
             </Element>
             </section>
-            <services id="clients">
+            <section id="clients">
             <Element name="clients" className="element">
                 <ClientsComponent />
-                {/* <Clients /> */}
             </Element>
-            </services>
+            </section>
         </div>
     )
 }

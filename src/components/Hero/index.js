@@ -8,6 +8,22 @@ import {
     HeroHeadingIn
 } from './HeroElements';
 
+// import { useController } from 'react-scroll-parallax';
+// import { useLayoutEffect } from 'react';
+
+
+// const ParallaxCache = () => {
+//   const { parallaxController } = useController();
+
+//   useLayoutEffect(() => {
+//       const handler = () => parallaxController.update();
+//       window.addEventListener('load', handler);
+//       return () => window.removeEventListener('load', handler);
+//   }, [parallaxController]);
+
+//   return null;
+// };
+
 const Home = () => {
     return (
         // <div style={{ background:'#fff'}}>
@@ -19,9 +35,11 @@ const Home = () => {
             {/* <Parallax x={[-100,100]}> */}
             <HeroRectangle/>
             {/* </Parallax> */}
-            <Parallax x={[-20,20]} y={[20,-20]} >
+            {/* <ParallaxCache /> */}
+            {/* <Parallax x={[-20,20]} y={[20,-20]} > */}
             <HeroImage />
-            </Parallax>
+            {/* </Parallax> */}
+            {/* <HeroImg /> */}
         </HeroContainer>
     )
 }

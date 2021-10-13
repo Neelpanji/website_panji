@@ -6,7 +6,6 @@ export const ClientsContainer = styled.div`
     color: #fff;
     padding: 30px 0 30px 0;
     text-align:center;
-    
 `;
 
 export const ClientsHeading = styled.div`

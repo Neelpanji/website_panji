@@ -5,6 +5,21 @@ import { AboutContainer, AboutHeading,AboutRectangle1, AboutImageWrapper, AboutI
     AboutQuoteContainer, AboutQuoteContent, AboutRectangle2, HighlightGreen } from './AboutElements';
 import { Parallax } from 'react-scroll-parallax';
 
+// import { useController } from 'react-scroll-parallax';
+// import { useLayoutEffect } from 'react';
+
+
+// const ParallaxCache = () => {
+//   const { parallaxController } = useController();
+
+//   useLayoutEffect(() => {
+//       const handler = () => parallaxController.update();
+//       window.addEventListener('load', handler);
+//       return () => window.removeEventListener('load', handler);
+//   }, [parallaxController]);
+
+//   return null;
+// };
 
 const useViewport = () => {
     const [width, setWidth] = React.useState(window.innerWidth);
@@ -29,9 +44,11 @@ const About = () => {
             <AboutHeading>About</AboutHeading>
             
             <Container >
+                
             <AboutRectangle1/>
                 <Row>
                     <Col lg='8'>
+                        
                         
                         <AboutImageWrapper>
                             <AboutImageDesktop src='/assets/images/IMG-1730.jpg' alt='about_img'></AboutImageDesktop>

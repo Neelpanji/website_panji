@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import {Row} from "reactstrap";
+import { HashLink, NavHashLink } from 'react-router-hash-link';
 
 export const FooterRectangle = styled.div`
     height:10px;
@@ -41,7 +42,7 @@ export const FooterRow = styled(Row)`
     align-items:center;
 `;
 
-export const FooterLink = styled(Link)`
+export const FooterLink = styled(NavHashLink)`
     padding: 0 30px;
     color: #aaa;
     display: flex;

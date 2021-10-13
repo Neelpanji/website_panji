@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const ConversationContainer = styled.div`
     background-color: black;
     position: relative;
+    overflow: hidden;
 `;
 
 export const ConversationImage = styled.img`
@@ -85,7 +86,7 @@ export const ConversationMobileImage = styled.img`
 
 export const ConversationMobileTextBox = styled.div`
     width: 75%;
-    margin: 0 15px;
+    margin: 0px 10px;
     color:${props => (props.visitor === "1")?"#70D9B8":"white"};
     font-size: 3.5vw;
 `;
