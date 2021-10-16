@@ -12,12 +12,14 @@ export const BookContainer = styled.div`
     text-align:center;
     display:flex;
     justify-content:center;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 30px;
     padding-right:10%;
     padding-left:10%;
-    overflow: hidden;
-
+    
+    @media screen and (max-width:768px) {
+        overflow: hidden;
+    }
 `;
 
 export const BookCoverPageContainer = styled.div`
@@ -53,10 +55,24 @@ export const BookCoverPageImg = styled.img`
 `;
 
 export const BookPageContainer = styled.div`
-    border : 3px grey solid;
+    border-left : 2px grey solid;
+    border-right : 2px grey solid;
+    
     width: 100%;
     height:100%;
     display:flex;
+    border-top-right-radius: 90px 10px;
+    border-top-right-radius: ${({ id }) => (id%2===0) ? '90px 10px' : '0px'};
+    border-top-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 10px'};
+    border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
+    border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
+    overflow: hidden;
+    @media screen and (max-width:768px) {
+        border-top-right-radius: ${({ id }) => (id%2===0) ? '90px 5px' : '0px'};
+        border-top-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 5px'};
+        border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
+        border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
+    }
 `;
 
 export const BookPageLogoContainer = styled.div`
@@ -64,6 +80,10 @@ export const BookPageLogoContainer = styled.div`
     width: 30%;
     height:100%;
     position:relative;
+    box-shadow : ${({ id }) => (id%2===0) ? 'rgba(0, 0, 0, 0) -50px 0px 36px -28px inset' : 'rgba(0, 0, 0, 0.35) 50px 0px 36px -28px inset'};
+    @media screen and (max-width:768px) {
+        box-shadow: rgba(0, 0, 0, 0.25) 50px 0px 36px -28px inset;
+    }
 `;
 
 export const BookPageLogo = styled.img`
@@ -79,6 +99,11 @@ export const BookPageContentContainer = styled.div`
     height:100%;
     position:relative;
     color: #000;
+    box-shadow : ${({ id }) => (id%2===0) ? 'rgba(0, 0, 0, 0.35) -50px 0px 36px -28px inset' : 'rgba(0, 0, 0, 0) -50px 0px 36px -28px inset'};
+    // box-shadow: rgba(0, 0, 0, 0.35) -50px 0px 36px -28px inset;
+    @media screen and (max-width:768px) {
+        box-shadow: rgba(0, 0, 0, 0.25) -50px 0px 36px -28px inset;
+    }
 `;
 
 export const BookPageHeader = styled.h2`
@@ -154,7 +179,7 @@ export const BookInquireLink = styled(Link)`
     }
 `;
 
-export const ServicesHeading = styled.h2`
+export const ServicesHeading = styled.h1`
 text-align: center;
 // margin-bottom:0;
 padding-top: 80px;
@@ -221,7 +246,7 @@ export const ServiceImage = styled.img`
     max-width:100%;
 `;
 
-export const ServiceHeading = styled.h3`
+export const ServiceHeading = styled.h1`
     text-align:center;
     padding: 15px 0;
 `;
@@ -230,3 +255,12 @@ export const SerivceContent = styled.div`
     padding: 0 20px;
     text-align: justify;
 `;
+
+export const ServiceInfo = styled.h5`
+    text-align:center;
+    padding: 15px 10px;  
+`;
+
+export const HighlightGreen = styled.span`
+    color: #70D9B8;
+`; 

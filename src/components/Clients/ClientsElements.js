@@ -8,8 +8,8 @@ export const ClientsContainer = styled.div`
     text-align:center;
 `;
 
-export const ClientsHeading = styled.div`
-    font-size:40px;
+export const ClientsHeading = styled.h1`
+    // font-size:40px;
     padding: 30px 0 40px 0;
     
 `;

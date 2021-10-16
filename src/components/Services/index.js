@@ -8,7 +8,9 @@ import {
     ServiceImage,
     ServiceHeading,
     SerivceContent,
-    ServicesHeading
+    ServicesHeading,
+    ServiceInfo,
+    HighlightGreen
 } from './ServicesElements';
 import { Loading } from '../Loading/LoadingComponent';
 
@@ -29,6 +31,7 @@ const Services = (props) => {
         return (
             <ServicesContainer>
                 <ServicesHeading>Services</ServicesHeading>
+                <ServiceInfo><HighlightGreen>Flip</HighlightGreen> through my <HighlightGreen>Service Booklet</HighlightGreen> to know more!</ServiceInfo>
                 {/* <Container>
                     <Row>
                         <Col lg='3' md='6'>

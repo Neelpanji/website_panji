@@ -13,11 +13,13 @@ const PageCover = React.forwardRef((props, ref) => {
           {/* <div className="page-content">
             <h2>{props.children}</h2>
           </div> */}
-          <BookFlipContainer>Flip to know more!</BookFlipContainer>
+          {/* <BookFlipContainer>Flip to know more!</BookFlipContainer> */}
         </BookCoverPageContainer>
       </div>
     );
   });
+
+  
 
 const Page = React.forwardRef((props, ref) => {
   // console.log(props.service);
@@ -26,17 +28,17 @@ const Page = React.forwardRef((props, ref) => {
     return(<li>{feature}</li>);
   });
     return (
-        <div className="demoPage" ref={ref} >
-            <BookPageContainer>
-            <BookPageLogoContainer>
+        <div className="page-content" ref={ref} >
+            <BookPageContainer id = {props.service.id}>
+            <BookPageLogoContainer  id = {props.service.id}>
               <BookPageLogo src={props.service.image}/>
             </BookPageLogoContainer>
-            <BookPageContentContainer>
+            <BookPageContentContainer id = {props.service.id}>
               <BookPageHeader>
                 {props.service.name}
               </BookPageHeader>
               <BookPageFeatures>
-                {features}  
+                {features} 
               </BookPageFeatures>
               <BookInquireContainer>
                 <BookInquireLink to="/enquiry#top">Inquire</BookInquireLink>
@@ -69,9 +71,9 @@ const Book = (props) => {
           size="stretch"
           minWidth={315}
           maxWidth={1000}
-          minHeight={300}
+          minHeight={250}
           maxHeight={1533}
-          maxShadowOpacity={0.5}
+          maxShadowOpacity={0.6}
           showCover={true}
           mobileScrollSupport={true}
           // onFlip={this.onPage}
@@ -88,6 +90,7 @@ const Book = (props) => {
             <Page number="4">Page text</Page>
             <Page number="5">Page text</Page>
             <Page number="6">Page text</Page> */}
+
         </HTMLFlipBook>
         </BookContainer>
     )

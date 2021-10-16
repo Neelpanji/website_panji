@@ -2,11 +2,13 @@ import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import {
     HeroContainer,
-    HeroImage,
     HeroHeading,
     HeroRectangle,
     HeroHeadingIn,
-    HeroRectangleContainer
+    HeroRectangleContainer,
+    HeroImage1,
+    HeroImage2,
+    HeroImageWrapper
 } from './HeroElements';
 
 import "animate.css/animate.min.css";
@@ -44,7 +46,10 @@ const Home = () => {
                 </ScrollAnimation>
             </HeroHeading>
 
-            <HeroImage />
+            <HeroImageWrapper>
+            <HeroImage1 />
+            <HeroImage2 />
+            </HeroImageWrapper>
 
             <HeroRectangleContainer>
             <ScrollAnimation animateIn="animate__fadeInLeft" duration='4' animateOnce="true">
