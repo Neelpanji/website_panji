@@ -14,6 +14,9 @@ import {
 } from './ServicesElements';
 import { Loading } from '../Loading/LoadingComponent';
 
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 const Services = (props) => {
 
 
@@ -31,7 +34,14 @@ const Services = (props) => {
         return (
             <ServicesContainer>
                 <ServicesHeading>Services</ServicesHeading>
-                <ServiceInfo><HighlightGreen>Flip</HighlightGreen> through my <HighlightGreen>Service Booklet</HighlightGreen> to know more!</ServiceInfo>
+                
+                <ServiceInfo>
+                    <ScrollAnimation animateIn="animate__fadeIn" duration="1.5" animateOnce="true" delay="500">
+                    <HighlightGreen>Flip</HighlightGreen> through my <HighlightGreen>Service Booklet</HighlightGreen> to know more!
+                    </ScrollAnimation>
+                    
+                </ServiceInfo>
+                
                 {/* <Container>
                     <Row>
                         <Col lg='3' md='6'>
@@ -73,7 +83,9 @@ const Services = (props) => {
     
                     </Row>
                 </Container> */}
+                {/* <ScrollAnimation animateIn="animate__slideInRight" duration="1.5" animateOnce="true" delay="500"> */}
                 <Book services={props.services}/>
+                {/* </ScrollAnimation> */}
             </ServicesContainer>
         )
     }

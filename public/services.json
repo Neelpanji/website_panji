@@ -3,24 +3,28 @@
         "id":0,
         "name":"Service 1",
         "image":"assets/images/services/podcast-01.png",
-        "features":["Feature 1","Feature 2","Feature 3","Feature 4"]
+        "features":["Feature 1","Feature 2","Feature 3","Feature 4"],
+        "link":"https://www.youtube.com/"
     },
     {
         "id":1,
         "name":"Service 2",
         "image":"assets/images/services/podcast-01.png",
-        "features":["Feature 1","Feature 2","Feature 3","Feature 4"]
+        "features":["Feature 1","Feature 2","Feature 3","Feature 4"],
+        "link":"https://www.youtube.com/"
     },
     {
         "id":2,
         "name":"Service 3",
         "image":"assets/images/services/podcast-01.png",
-        "features":["Feature 1","Feature 2","Feature 3","Feature 4"]
+        "features":["Feature 1","Feature 2","Feature 3","Feature 4"],
+        "link":"https://www.youtube.com/"
     },
     {
         "id":3,
         "name":"Service 4",
         "image":"assets/images/services/podcast-01.png",
-        "features":["Feature 1","Feature 2","Feature 3","Feature 4"]
+        "features":["Feature 1","Feature 2","Feature 3","Feature 4"],
+        "link":"https://www.youtube.com/"
     }
 ]

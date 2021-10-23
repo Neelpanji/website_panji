@@ -47,8 +47,12 @@ const Home = () => {
             </HeroHeading>
 
             <HeroImageWrapper>
+            {/* <ScrollAnimation animateIn="animate__fadeInRight" duration="2" animateOnce="true" delay="500">
             <HeroImage1 />
+            </ScrollAnimation> */}
+            <ScrollAnimation animateIn="animate__fadeInRight" duration="2" animateOnce="true" delay="500">
             <HeroImage2 />
+            </ScrollAnimation>
             </HeroImageWrapper>
 
             <HeroRectangleContainer>

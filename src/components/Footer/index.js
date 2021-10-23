@@ -44,7 +44,10 @@ const Footer = () => {
                 
                 <Col>
                     <FooterCopyright>
-                    © Copyright 2021. ABC Power Systems. All Rights Reserved.
+                    © Copyright {new Date().getFullYear()}. Neel Panji. All Rights Reserved.
+                    </FooterCopyright>
+                    <FooterCopyright>
+                        <FooterMail href="">Made by Mohit</FooterMail>
                     </FooterCopyright>
                 </Col>
             </FooterRow>

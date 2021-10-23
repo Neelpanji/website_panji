@@ -21,118 +21,86 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroImageWrapper = styled.div`
+position: absolute;
+@media screen and (max-width:1990px) {
+    width: 35%;
+    left: 60%;
+    top: 5%;
+    // margin-left: 60%;
+    // margn-top: 5%;
+}
+@media screen and (max-width:1366px) {
+    width: 45%;
+    left: 55%;
+    top: 10%;
+    // margin-left: 60%;
+    // margn-top: 5%;
+}
+@media screen and (max-width:1026px) {
+    width: 45%;
+    left: 55%;
+    top: 15%;
+    // margin-left: 55%;
+    // margn-top: 15%;
+}
+@media screen and (max-width:769px) {
+    width: 85%;
+    left: 50%;
+    top: 5%;
+    // margin-left: 50%;
+    // margn-top: 5%;
+}
+@media screen and (max-width:560px) {
+    // height: 70%;
+    // width:auto;
+    width:120vw;
+    left: 25%;
+    top: 10%;
+    // margin-left: 25%;
+    // margin-top: 10%;
+}
     
 `;
 
 export const HeroImage1 = styled.img`
     position:absolute;
-    width: 35%;
-    left: 60%;
-    top: 5%;
+    // width: 35%;
+    // left: 60%;
+    // top: 5%;
     // margin-left: 60%;
     // margin-top: 5%;
+    width: 100%;
     content:url("/assets/images/Wavy_Lst-14_Single-04 [Converted]-1.png");
 
-    @media screen and (max-width:1990px) {
-        width: 35%;
-        left: 60%;
-        top: 5%;
-        // margin-left: 60%;
-        // margn-top: 5%;
-    }
-    @media screen and (max-width:1366px) {
-        width: 45%;
-        left: 55%;
-        top: 10%;
-        // margin-left: 60%;
-        // margn-top: 5%;
-    }
-    @media screen and (max-width:1026px) {
-        width: 45%;
-        left: 55%;
-        top: 15%;
-        // margin-left: 55%;
-        // margn-top: 15%;
-    }
-    @media screen and (max-width:769px) {
-        width: 85%;
-        left: 50%;
-        top: 5%;
-        // margin-left: 50%;
-        // margn-top: 5%;
-    }
-    @media screen and (max-width:560px) {
-        // height: 70%;
-        // width:auto;
-        width:120vw;
-        left: 25%;
-        top: 10%;
-        // margin-left: 25%;
-        // margin-top: 10%;
-    }
 
-
-    clip-path : polygon(0% 0%, 30.1% 0%, 70.1% 100%, 0% 100%);
-    transform: translate(0px, 0px);
-    transition: transform 250ms ease-in-out;
-    transform-origin: top;
+    // clip-path : polygon(0% 0%, 30.1% 0%, 70.1% 100%, 0% 100%);
+    clip-path : polygon(0% 0%, 100% 0%, 100% 50.1%, 0% 50.1%);
+    // transform: translate(0px, 0px);
+    // transition: transform 250ms ease-in-out;
+    // transform-origin: top;
     ${HeroImageWrapper}:hover &{
-        transform: translate(-2px,-5px);
+        // transform: translate(2px,0px);
     }
 `;
 export const HeroImage2 = styled.img`
-    position:absolute;
-    width: 35%;
-    left: 60%;
-    top: 5%;
+    // position:absolute;
+    // width: 35%;
+    // left: 60%;
+    // top: 5%;
     // margin-left: 60%;
     // margin-top: 5%;
+    width: 100%;
     content:url("/assets/images/Wavy_Lst-14_Single-04 [Converted]-1.png");
 
-    @media screen and (max-width:1990px) {
-        width: 35%;
-        left: 60%;
-        top: 5%;
-        // margin-left: 60%;
-        // margn-top: 5%;
-    }
-    @media screen and (max-width:1366px) {
-        width: 45%;
-        left: 55%;
-        top: 10%;
-        // margin-left: 60%;
-        // margn-top: 5%;
-    }
-    @media screen and (max-width:1026px) {
-        width: 45%;
-        left: 55%;
-        top: 15%;
-        // margin-left: 55%;
-        // margn-top: 15%;
-    }
-    @media screen and (max-width:769px) {
-        width: 85%;
-        left: 50%;
-        top: 5%;
-        // margin-left: 50%;
-        // margn-top: 5%;
-    }
-    @media screen and (max-width:560px) {
-        // height: 70%;
-        // width:auto;
-        width:120vw;
-        left: 25%;
-        top: 10%;
-        // margin-left: 25%;
-        // margin-top: 10%;
-    }
+    
 
-    clip-path : polygon(30% 0%, 100% 0%, 100% 100%, 70% 100%);
-    transform: translate(0px, 0px);
-    transition: transform 250ms ease-in-out;
-    transform-origin: top;
+    // clip-path : polygon(30% 0%, 100% 0%, 100% 100%, 70% 100%);
+    // clip-path : polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+    // transform: translate(0px, 0px);
+    // transition: transform 250ms ease-in-out;
+    // transform-origin: top;
     ${HeroImageWrapper}:hover &{
-        transform: translate(2px,5px);
+        // transform: translate(-2px,0px);
     }
 `;
 

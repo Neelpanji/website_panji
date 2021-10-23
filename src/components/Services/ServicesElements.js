@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const ServicesContainer = styled.div`
@@ -27,7 +27,20 @@ export const BookCoverPageContainer = styled.div`
     width: 100%;
     height:100%;
     background-color: #70D9B8;  
-    
+    border-radius: 2px;
+    // box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    box-shadow: rgba(70, 70, 70, 0.55) 0px 10px 25px, rgba(70, 70, 70, 0.40) 15px 5px 15px;
+`;
+
+export const BookCoverBackContainer = styled.div`
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    width:100%;
+    font-size: 1.5rem;
+    background-color: #70D9B8;
+    color: #000;
 `;
 
 export const BookFlipContainer = styled.div`
@@ -52,6 +65,10 @@ export const BookCoverPageImg = styled.img`
     position: absolute;
     bottom: 3px;
     left:0;
+
+    @media screen and (max-width:560px){
+        // display:none;
+    }
 `;
 
 export const BookPageContainer = styled.div`
@@ -61,7 +78,7 @@ export const BookPageContainer = styled.div`
     width: 100%;
     height:100%;
     display:flex;
-    border-top-right-radius: 90px 10px;
+    // border-top-right-radius: 90px 10px;
     border-top-right-radius: ${({ id }) => (id%2===0) ? '90px 10px' : '0px'};
     border-top-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 10px'};
     border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
@@ -73,6 +90,33 @@ export const BookPageContainer = styled.div`
         border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
         border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
     }
+
+    // ${props => (props.id%2===0) && css`
+    // border-top-right-radius: '90px 10px';
+    // border-top-left-radius: '0px';
+    // border-bottom-right-radius: '90px 3px';
+    // border-bottom-left-radius: '0px';
+
+    // @media only screen and (max-width: 768px) {
+    //     border-top-right-radius: '90px 5px';
+    //     border-top-left-radius: '0px';
+    //     border-bottom-right-radius: '90px 3px';
+    //     border-bottom-left-radius: '0px';
+    // }
+    // `}
+    // ${props => (props.id%2!==0) && css`
+    // border-top-right-radius: '0px';
+    // border-top-left-radius: '90px 10px';
+    // border-bottom-right-radius: '0px';
+    // border-bottom-left-radius: '90px 3px';
+
+    // @media only screen and (max-width: 768px) {
+    //     border-top-right-radius: '0px';
+    //     border-top-left-radius: '90px 5px';
+    //     border-bottom-right-radius: '0px';
+    //     border-bottom-left-radius: '90px 3px';
+    // }
+    // `}
 `;
 
 export const BookPageLogoContainer = styled.div`
@@ -141,6 +185,48 @@ export const BookInquireContainer = styled.div`
     position:absolute;
     bottom:15%;
     left:5%;
+`;
+
+export const BookKnowMoreContainer = styled.div`
+    position:absolute;
+    bottom:15%;
+    left:35%;
+`;
+
+export const BookKnowMoreLink = styled.a`
+    color:#000;
+    position: relative;
+    text-decoration:none;
+    font-size: 1.1rem;
+    @media screen and (min-width:1400px){
+        font-size: 1.5rem;
+    }
+    @media screen and (max-width: 992px) {
+        font-size: 1.3rem;
+    }
+    @media screen and (max-width:560px){
+    font-size: 1.1rem;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 2px;
+        bottom: -2px;
+        left: 15%;
+        background-color: #000;
+        // visibility: hidden;
+        transition: all 0.2s ease-in-out;
+    }
+    &:hover{
+        color:#000 !important;
+    }
+    &:hover:before{
+        visibility: visible;
+        width: 100%;
+        left:0;
+
+    }
 `;
 
 export const BookInquireLink = styled(Link)`
@@ -264,3 +350,30 @@ export const ServiceInfo = styled.h5`
 export const HighlightGreen = styled.span`
     color: #70D9B8;
 `; 
+
+export const BookEndPageContainer = styled.div`
+    border-left : 2px grey solid;
+    border-right : 2px grey solid;
+    
+    width: 100%;
+    height:100%;
+    display:flex;
+    // border-top-right-radius: 90px 10px;
+    border-top-right-radius: ${({ id }) => (id%2===0) ? '90px 10px' : '0px'};
+    border-top-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 10px'};
+    border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
+    border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
+    overflow: hidden;
+    @media screen and (max-width:768px) {
+        border-top-right-radius: ${({ id }) => (id%2===0) ? '90px 5px' : '0px'};
+        border-top-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 5px'};
+        border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
+        border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
+    }
+
+    // box-shadow : ${({ id }) => (id%2===0) ? 'rgba(0, 0, 0, 0) -50px 0px 36px -28px inset' : 'rgba(0, 0, 0, 0.35) 50px 0px 36px -28px inset'};
+    
+    
+     ${({pageNum}) =>     pageNum%2 !== 0 && css`
+     border-radius: 0px;`  };
+`;
