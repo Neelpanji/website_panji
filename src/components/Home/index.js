@@ -44,7 +44,7 @@ const Home = (props) => {
     }
 
     return (
-        <div>
+        <div style={{backgroundColor: "black"}}>
             <section id="hero">
             <Element name="hero" className="element">
                 <Hero id='hero'/>
