@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { baseUrl } from '../../shared/baseUrl';
+import { HashLink, NavHashLink } from 'react-router-hash-link';
 
 export const AboutContainer = styled.div`
     width: 100%;
@@ -100,6 +101,10 @@ export const AboutContactContainer = styled.div`
 export const AboutContactContent = styled.div`
     text-align:center;
     font-size: 2rem;
+`;
+
+export const AboutContactLink = styled(HashLink)`
+    text-decoration: none;
 `;
 
 export const AboutContactButton = styled.button`

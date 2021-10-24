@@ -2,6 +2,8 @@ import React,{useState,useEffect} from 'react'
 import {ConversationImage, ConversationContainer, ConversationTextBoxVisitor, ConversationTextBoxPanji, ConversationMobileLeftContainer, ConversationMobileRightContainer, ConversationMobileImage, ConversationMobileTextBox
     ,ConversationTextBoxContent
 } from './ConversationElements';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import { Parallax } from 'react-scroll-parallax';
 
@@ -120,7 +122,9 @@ const Conversation = () => {
                 <ConversationContainer>
                     {/* <ConversationImage src="/assets/images/conversation.png"/>  */}
                     <ConversationMobileLeftContainer>
+                        <ScrollAnimation animateIn="animate__fadeInLeft" duration="1.5" animateOnce="true" delay="100">
                         <ConversationMobileImage src="/assets/images/bitmoji/1-resize.png"/>
+                        </ScrollAnimation>
                         <Parallax x={[-5,5]}>
                         <ConversationMobileTextBox visitor="0">Hello there, seems you are in search of an EDITOR?</ConversationMobileTextBox>
                         </Parallax>
@@ -129,10 +133,14 @@ const Conversation = () => {
                         <Parallax x={[20,5]}>
                         <ConversationMobileTextBox visitor="1">Yes, I am!</ConversationMobileTextBox>
                         </Parallax>
+                        <ScrollAnimation animateIn="animate__fadeInRight" duration="1.5" animateOnce="true" delay="300">
                         <ConversationMobileImage src="/assets/images/bitmoji/2.png"/>
+                        </ScrollAnimation>
                     </ConversationMobileRightContainer>
                     <ConversationMobileLeftContainer>
+                        <ScrollAnimation animateIn="animate__fadeInLeft" duration="1.5" animateOnce="true" delay="300">
                         <ConversationMobileImage src="/assets/images/bitmoji/3.png"/>
+                        </ScrollAnimation>
                         <Parallax x={[-5,5]}>
                         <ConversationMobileTextBox visitor="0">Well presenting a Professional Podcast Editor at your Service. I am here to handle everything around your podcast, so that you can focus on the creative aspect of your Podcast.</ConversationMobileTextBox>
                         </Parallax>
@@ -141,10 +149,14 @@ const Conversation = () => {
                         <Parallax x={[15,5]}>
                         <ConversationMobileTextBox visitor="1">Hmmm, that sounds interesting. Tell me more!</ConversationMobileTextBox>
                         </Parallax>
+                        <ScrollAnimation animateIn="animate__fadeInRight" duration="1.5" animateOnce="true" delay="300">
                         <ConversationMobileImage src="/assets/images/bitmoji/4.png"/>
+                        </ScrollAnimation>
                     </ConversationMobileRightContainer>
                     <ConversationMobileLeftContainer>
+                        <ScrollAnimation animateIn="animate__fadeInLeft" duration="1.5" animateOnce="true" delay="300">
                         <ConversationMobileImage src="/assets/images/bitmoji/5.png"/>
+                        </ScrollAnimation>
                         <Parallax x={[-10,10]}>
                         <ConversationMobileTextBox visitor="0">Awesome! Let’s Scroll Down to know more about My Services.</ConversationMobileTextBox>
                         </Parallax>

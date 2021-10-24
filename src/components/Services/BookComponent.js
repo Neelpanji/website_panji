@@ -61,8 +61,19 @@ const PageCover = React.forwardRef((props, ref) => {
   
 
 const Page = React.forwardRef((props, ref) => {
-  // console.log(props.service);
+  // console.log(props.service.link);
 
+  const KnowMoreLink = () => {
+    if(props.service.link === ""){
+      return(
+        <span></span>
+      );
+    } else {
+      return(
+        <BookKnowMoreLink href={props.service.link}>Recent Projects</BookKnowMoreLink>
+      );
+    }
+  };
 
   const features = props.service.features.map((feature) => {
     return(<li>{feature}</li>);
@@ -81,7 +92,7 @@ const Page = React.forwardRef((props, ref) => {
                 {features} 
               </BookPageFeatures>
               <BookKnowMoreContainer>
-                <BookKnowMoreLink href={props.service.link}>Recent Projects</BookKnowMoreLink>
+                <KnowMoreLink />
               </BookKnowMoreContainer>
               <BookInquireContainer>
                 <BookInquireLink to="/enquiry#top">Inquire</BookInquireLink>

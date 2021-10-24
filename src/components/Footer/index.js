@@ -39,7 +39,7 @@ const Footer = () => {
                     <br/>
                     <a className='link-footer' href="tel:+91-9825029182"> <FaMobile/> +91 9825029182</a>
                     <br/> */}
-                    <FooterMail className='link-footer' href="mailto: sample@gmail.com"><FaEnvelope /><div style={{paddingLeft: "5px"}}/> panjiKaMal@gmail.com</FooterMail> 
+                    <FooterMail className='link-footer' href="mailto: neelpanji@gmail.com"><FaEnvelope /><div style={{paddingLeft: "5px"}}/> neelpanji@gmail.com</FooterMail> 
                 </Col>
                 
                 <Col>
@@ -47,7 +47,7 @@ const Footer = () => {
                     © Copyright {new Date().getFullYear()}. Neel Panji. All Rights Reserved.
                     </FooterCopyright>
                     <FooterCopyright>
-                        <FooterMail href="">Made by Mohit</FooterMail>
+                        <FooterMail target="_blank" href="https://www.linkedin.com/in/mohitgidwani13">Made by Mohit</FooterMail>
                     </FooterCopyright>
                 </Col>
             </FooterRow>
