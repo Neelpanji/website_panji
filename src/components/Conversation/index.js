@@ -29,20 +29,22 @@ const Conversation = () => {
         return(
             <div>
                 <ConversationContainer>
-                    <ConversationImage src="/assets/images/conversation.png" /> 
+                    <ConversationImage src="/assets/images/conversation.2.png" /> 
                     
-                    <ConversationTextBoxPanji top="6%" left="28%">
+                    <ConversationTextBoxPanji top="6%" left="22%">
                         <Parallax x={[-5,5]}>
                         <ConversationTextBoxContent>
-                        Hello there, seems you are in search of an EDITOR?
+                        Are you feeling exhausted and tired by spending time editing episodes?
                         </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
                     
-                    <ConversationTextBoxVisitor top="22%" left="62%">
-                        <Parallax x={[20,-10]}>
+                    <ConversationTextBoxVisitor top="22%" left="28%">  
+                    {/* left  = 62% */}
+                        <Parallax x={[5,-5]}>
+                            {/* 20,-10 */}
                             <ConversationTextBoxContent>
-                            Yes, I am!
+                            Do you think you are unable to find enough time to promote your show because of editing?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxVisitor>
@@ -50,15 +52,17 @@ const Conversation = () => {
                     <ConversationTextBoxPanji top="44%" left="22%">
                         <Parallax x={[-5,5]}>
                             <ConversationTextBoxContent>
-                            Well presenting a Professional Podcast Editor at your Service. I am here to handle everything around your podcast, so that you can focus on the creative aspect of your Podcast.
+                            Are you someone who just wants to enjoy recording and foget all worries of editing?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
 
-                    <ConversationTextBoxVisitor top="66%" left="47%">
-                        <Parallax x={[5,-15]}>
+                    <ConversationTextBoxVisitor top="62%" left="27%">
+                        {/* left = 47% */}
+                        <Parallax x={[5,-5]}>
+                            {/* 5,-15 */}
                             <ConversationTextBoxContent>
-                            Hmmm, that sounds interesting. Tell me more!
+                            Do you believe that your audience's time is precious which should not be wasted because of poor quality audio filled of umms?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxVisitor>
@@ -66,7 +70,7 @@ const Conversation = () => {
                     <ConversationTextBoxPanji top="81%" left="28%">
                         <Parallax x={[-5,5]}>
                             <ConversationTextBoxContent>
-                            Awesome! Let’s Scroll Down to know more about My Services.
+                            It is highly appreciable if you feel any one of the above questions apply to you and taking steps to bring in an editor in your team.
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
@@ -77,39 +81,39 @@ const Conversation = () => {
         return(
             <div>
                 <ConversationContainer>
-                    <ConversationImage src="/assets/images/conversation_tablet.png"/> 
+                    <ConversationImage src="/assets/images/conversation_tablet.2.png"/> 
                     <ConversationTextBoxPanji top="6%" left="27%">
                         <Parallax x={[-20,-10]}>
                             <ConversationTextBoxContent>
-                            Hello there, seems you are in search of an EDITOR?
+                            Are you feeling exhausted and tired by spending time editing episodes?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
                     <ConversationTextBoxVisitor top="23%" left="50%">
-                        <Parallax x={[120,30]}>
+                        <Parallax x={[-20,-30]}>
                             <ConversationTextBoxContent>
-                            Yes, I am!
+                            Do you think you are unable to find enough time to promote your show because of editing?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxVisitor>
                     <ConversationTextBoxPanji top="40%" left="28%">
                         <Parallax x={[-5,5]}>
                             <ConversationTextBoxContent>
-                            Well presenting a Professional Podcast Editor at your Service. I am here to handle everything around your podcast, so that you can focus on the creative aspect of your Podcast.
+                            Are you someone who just wants to enjoy recording and foget all worries of editing?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
-                    <ConversationTextBoxVisitor top="68%" left="37%">
+                    <ConversationTextBoxVisitor top="62%" left="37%">
                         <Parallax x={[10,-15]}>
                             <ConversationTextBoxContent>
-                            Hmmm, that sounds interesting. Tell me more!
+                            Do you believe that your audience's time is precious which should not be wasted because of poor quality audio filled of umms?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxVisitor>
-                    <ConversationTextBoxPanji top="85%" left="28%">
+                    <ConversationTextBoxPanji top="85%" left="30%">
                         <Parallax x={[-10,10]}>
                             <ConversationTextBoxContent>
-                            Awesome! Let’s Scroll Down to know more about My Services.
+                            It is highly appreciable if you feel any one of the above questions apply to you and taking steps to bring in an editor in your team.
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
@@ -126,15 +130,15 @@ const Conversation = () => {
                         <ConversationMobileImage src="/assets/images/bitmoji/1-resize.png"/>
                         </ScrollAnimation>
                         <Parallax x={[-5,5]}>
-                        <ConversationMobileTextBox visitor="0">Hello there, seems you are in search of an EDITOR?</ConversationMobileTextBox>
+                        <ConversationMobileTextBox visitor="0">Are you feeling exhausted and tired by spending time editing episodes?</ConversationMobileTextBox>
                         </Parallax>
                     </ConversationMobileLeftContainer>
                     <ConversationMobileRightContainer>
                         <Parallax x={[20,5]}>
-                        <ConversationMobileTextBox visitor="1">Yes, I am!</ConversationMobileTextBox>
+                        <ConversationMobileTextBox visitor="1">Do you think you are unable to find enough time to promote your show because of editing?</ConversationMobileTextBox>
                         </Parallax>
                         <ScrollAnimation animateIn="animate__fadeInRight" duration="1.5" animateOnce="true" delay="300">
-                        <ConversationMobileImage src="/assets/images/bitmoji/2.png"/>
+                        <ConversationMobileImage src="/assets/images/bitmoji/2.2.png"/>
                         </ScrollAnimation>
                     </ConversationMobileRightContainer>
                     <ConversationMobileLeftContainer>
@@ -142,15 +146,15 @@ const Conversation = () => {
                         <ConversationMobileImage src="/assets/images/bitmoji/3.png"/>
                         </ScrollAnimation>
                         <Parallax x={[-5,5]}>
-                        <ConversationMobileTextBox visitor="0">Well presenting a Professional Podcast Editor at your Service. I am here to handle everything around your podcast, so that you can focus on the creative aspect of your Podcast.</ConversationMobileTextBox>
+                        <ConversationMobileTextBox visitor="0">Are you someone who just wants to enjoy recording and foget all worries of editing?</ConversationMobileTextBox>
                         </Parallax>
                     </ConversationMobileLeftContainer>
                     <ConversationMobileRightContainer>
                         <Parallax x={[15,5]}>
-                        <ConversationMobileTextBox visitor="1">Hmmm, that sounds interesting. Tell me more!</ConversationMobileTextBox>
+                        <ConversationMobileTextBox visitor="1">Do you believe that your audience's time is precious which should not be wasted because of poor quality audio filled of umms?</ConversationMobileTextBox>
                         </Parallax>
                         <ScrollAnimation animateIn="animate__fadeInRight" duration="1.5" animateOnce="true" delay="300">
-                        <ConversationMobileImage src="/assets/images/bitmoji/4.png"/>
+                        <ConversationMobileImage src="/assets/images/bitmoji/4.2.png"/>
                         </ScrollAnimation>
                     </ConversationMobileRightContainer>
                     <ConversationMobileLeftContainer>
@@ -158,7 +162,7 @@ const Conversation = () => {
                         <ConversationMobileImage src="/assets/images/bitmoji/5.png"/>
                         </ScrollAnimation>
                         <Parallax x={[-10,10]}>
-                        <ConversationMobileTextBox visitor="0">Awesome! Let’s Scroll Down to know more about My Services.</ConversationMobileTextBox>
+                        <ConversationMobileTextBox visitor="0">It is highly appreciable if you feel any one of the above questions apply to you and taking steps to bring in an editor in your team.</ConversationMobileTextBox>
                         </Parallax>
                     </ConversationMobileLeftContainer>
                 </ConversationContainer>
