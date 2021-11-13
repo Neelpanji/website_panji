@@ -1,30 +1,64 @@
+
+
 [
     {
         "id":0,
-        "name":"Service 1",
-        "image":"assets/images/services/podcast-01.png",
-        "features":["Feature 1","Feature 2","Feature 3","Feature 4"],
-        "link":"https://www.youtube.com/"
+        "number":1,
+        "name":"Podcast Post Production Partner Support",
+        "features":[],
+        "link":""
     },
     {
         "id":1,
-        "name":"Service 2",
+        "number":1,
+        "name":"Podcast Post Production Partner Support",
+        "sub_name":"Editing Support",
         "image":"assets/images/services/podcast-01.png",
-        "features":["Feature 1","Feature 2","Feature 3","Feature 4"],
+        "features":["Removal of unwanted “ums”, pauses, etc","Audio matching to industry standards for quality listening (inclusive of standard processes  REMOVAL OF LOUD PLOSIVES, ROOM REVERB REDUCTION, NOISE REDUCTION, MASTERING FOR LOUDNESS )","Full ID3 Tagging","Distribution of podcast episode to your podcast host","Commercial/sponsor messages at specific timestamps","Add your intros and outros","Add your music"],
         "link":""
     },
     {
         "id":2,
-        "name":"Service 3",
+        "number":1,
+        "name":"Podcast Post Production Partner Support",
+        "sub_name":"Marketing Support",
         "image":"assets/images/services/podcast-01.png",
-        "features":["Feature 1","Feature 2","Feature 3","Feature 4"],
+        "features":["Audio trailers promoting podcast episodes (Audiograms)","SEO focused show notes","Instagram design thread (Connect to know more)","Create YouTube videos from episodes and more "],
         "link":"https://www.youtube.com/"
     },
     {
         "id":3,
-        "name":"Service 4",
+        "number":2,
+        "name":"Videocast Post Production Partner Support",
         "image":"assets/images/services/podcast-01.png",
-        "features":["Feature 1","Feature 2","Feature 3","Feature 4"],
+        "features":[],
+        "link":"https://www.youtube.com/"
+    },
+    {
+        "id":4,
+        "number":2,
+        "name":"Videocast Post Production Partner Support",
+        "sub_name":"Editing Support",
+        "image":"assets/images/services/podcast-01.png",
+        "features":["Cutting and mastering video sequence from multiple camera angles","Addition of intro and music","Addition of transitions and lower thirds ( guest names etc)","Removal of unwanted pauses to provide a smooth holistic experience to your audience","Audio matching to industry standards for quality listening","Uploading on youtube or any other website","Youtube management"],
+        "link":""
+    },
+    {
+        "id":5,
+        "number":2,
+        "name":"Videocast Post Production Partner Support",
+        "sub_name":"Marketing Support",
+        "image":"assets/images/services/podcast-01.png",
+        "features":["Video trailers promoting podcast episodes (Audiograms)","SEO focused show notes","Instagram design thread (Connect to know more) and more"],
+        "link":"https://www.youtube.com/"
+    },
+    {
+        "id":6,
+        "number":2,
+        "name":"Videocast Post Production Partner Support",
+        "sub_name":"Marketing Video Editing",
+        "image":"assets/images/services/podcast-01.png",
+        "features":["Guidance for video shoot equipments and quality","Guidance for selection of stock videos and footages (need basis)","Joining clips and streamlining content to tell your product story","Voice over support and more"],
         "link":"https://www.youtube.com/"
     }
 ]

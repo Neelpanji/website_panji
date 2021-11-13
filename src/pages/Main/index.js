@@ -105,7 +105,7 @@ class Main extends Component{
                         <Contact />
                     </Route>
                     <Route path="/enquiry">
-                        <Enquiry />
+                        <Enquiry servicesProps={this.props.services}/>
                     </Route>
                 </Switch>
                 <FloatingContact />

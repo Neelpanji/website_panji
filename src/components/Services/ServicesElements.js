@@ -19,6 +19,23 @@ export const BookContainer = styled.div`
     
     @media screen and (max-width:768px) {
         overflow: hidden;
+        display:none;
+    }
+`;
+
+export const BookContainerMobile = styled.div`
+    display:none;
+    
+    @media screen and (max-width:768px) {
+        overflow: hidden;
+
+        text-align:center;
+        display:flex;
+        justify-content:center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right:10%;
+        padding-left:10%;
     }
 `;
 
@@ -41,6 +58,9 @@ export const BookCoverBackContainer = styled.div`
     font-size: 1.5rem;
     background-color: #70D9B8;
     color: #000;
+    padding: 0px 30px;
+
+    box-shadow: rgba(0, 0, 0, 0.25) -50px 0px 36px -28px inset;
 `;
 
 export const BookFlipContainer = styled.div`
@@ -197,15 +217,20 @@ export const BookKnowMoreLink = styled.a`
     color:#000;
     position: relative;
     text-decoration:none;
-    font-size: 1.1rem;
-    @media screen and (min-width:1400px){
-        font-size: 1.5rem;
+    @media screen and (max-width:1990px) {
+        font-size:1.5rem;
     }
-    @media screen and (max-width: 992px) {
-        font-size: 1.3rem;
+    @media screen and (max-width:1366px) {
+        font-size:1.2rem;
     }
-    @media screen and (max-width:560px){
-    font-size: 1.1rem;
+    @media screen and (max-width:1026px) {
+        font-size:1rem;
+    }
+    @media screen and (max-width:769px) {
+        font-size:1.2rem;
+    }
+    @media screen and (max-width:561px) {
+        font-size:.9rem;
     }
     &:before{
         content: "";
@@ -233,15 +258,20 @@ export const BookInquireLink = styled(Link)`
     color:#000;
     position: relative;
     text-decoration:none;
-    font-size: 1.1rem;
-    @media screen and (min-width:1400px){
-        font-size: 1.5rem;
+    @media screen and (max-width:1990px) {
+        font-size:1.5rem;
     }
-    @media screen and (max-width: 992px) {
-        font-size: 1.3rem;
+    @media screen and (max-width:1366px) {
+        font-size:1.2rem;
     }
-    @media screen and (max-width:560px){
-    font-size: 1.1rem;
+    @media screen and (max-width:1026px) {
+        font-size:1rem;
+    }
+    @media screen and (max-width:769px) {
+        font-size:1.2rem;
+    }
+    @media screen and (max-width:561px) {
+        font-size:.9rem;
     }
     &:before{
         content: "";
@@ -376,4 +406,249 @@ export const BookEndPageContainer = styled.div`
     
      ${({pageNum}) =>     pageNum%2 !== 0 && css`
      border-radius: 0px;`  };
+`;
+
+
+// page style 2 components !!
+
+export const BookPage2Container = styled.div`
+    border-left : 2px grey solid;
+    border-right : 2px grey solid;
+
+
+    background-color:white;
+    box-shadow : ${({ id }) => (id%2===0) ? 'rgba(0, 0, 0, 0.35) -50px 0px 36px -28px inset' : 'rgba(0, 0, 0, 0.35) 50px 0px 36px -28px inset'};
+    
+
+    width: 100%;
+    height:100%;
+    // border-top-right-radius: 90px 10px;
+    border-top-right-radius: ${({ id }) => (id%2===0) ? '90px 10px' : '0px'};
+    border-top-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 10px'};
+    border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
+    border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
+    overflow: hidden;
+    @media screen and (max-width:768px) {
+        border-top-right-radius: ${({ id }) => (id%2===0) ? '90px 5px' : '0px'};
+        border-top-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 5px'};
+        border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
+        border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
+    }
+`;
+
+export const BookPage2NumberContainer = styled.div`
+    align-items:center;
+    display:flex;
+    justify-content: center;
+    background-color: white;
+    height: 25%;
+    width:100%;
+
+    box-shadow : ${({ id }) => (id%2===0) ? 'rgba(0, 0, 0, 0.35) -50px 0px 36px -28px inset' : 'rgba(0, 0, 0, 0.35) 50px 0px 36px -28px inset'};
+    // @media screen and (max-width:768px) {
+    //     box-shadow: rgba(0, 0, 0, 0.25) -50px 0px 36px -28px inset;
+    // }
+
+    
+`;
+export const BookPage2Number = styled.div`
+    color:black;
+    @media screen and (max-width:1990px) {
+        font-size:8rem;
+    }
+    @media screen and (max-width:1366px) {
+        font-size:6rem;
+    }
+    @media screen and (max-width:1026px) {
+        font-size:4.5rem;
+    }
+    @media screen and (max-width:769px) {
+        font-size:7rem;
+    }
+    @media screen and (max-width:561px) {
+        font-size:3rem;
+    }
+`;
+
+export const BookPage2MainHeadingContainer = styled.div`
+    align-items:center;
+    display:flex;
+    justify-content: center;
+    background-color: #70D9B8;
+    height: 75%;
+    width:100%;
+    padding: 0px 20px;
+    box-shadow : ${({ id }) => (id%2===0) ? 'rgba(0, 0, 0, 0.35) -50px 0px 36px -28px inset' : 'rgba(0, 0, 0, 0.35) 50px 0px 36px -28px inset'};
+    // @media screen and (max-width:768px) {
+    //     box-shadow: rgba(0, 0, 0, 0.25) -50px 0px 36px -28px inset;
+    // }
+
+    border-top-right-radius: ${({ id }) => (id%2===0) ? '90px 7px' : '0px'};
+    border-top-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 7px'};
+    border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
+    border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
+    overflow: hidden;
+    @media screen and (max-width:768px) {
+        border-top-right-radius: ${({ id }) => (id%2===0) ? '90px 5px' : '0px'};
+        border-top-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 5px'};
+        border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
+        border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
+    }
+`;
+
+export const BookPage2MainHeading = styled.div`
+    
+    color:black;
+    @media screen and (max-width:1990px) {
+        font-size:4rem;
+    }
+    @media screen and (max-width:1366px) {
+        font-size:3.2rem;
+    }
+    @media screen and (max-width:1026px) {
+        font-size:2.5rem;
+    }
+    @media screen and (max-width:769px) {
+        font-size:3.6rem;
+    }
+    @media screen and (max-width:561px) {
+        font-size:2.5rem;
+    }
+`;
+
+//below is for normal service page in Page 2 schema
+
+export const BookPage2MainHeadingSmallContainer = styled.div`
+    align-items:center;
+    display:flex;
+    justify-content: center;
+    background-color: white;
+    height: 8.1%;
+    width:100%;
+
+    box-shadow : ${({ id }) => (id%2===0) ? 'rgba(0, 0, 0, 0.35) -50px 0px 36px -28px inset' : 'rgba(0, 0, 0, 0.35) 50px 0px 36px -28px inset'};
+    // @media screen and (max-width:768px) {
+    //     box-shadow: rgba(0, 0, 0, 0.25) -50px 0px 36px -28px inset;
+    // }
+`;
+export const BookPage2MainHeadingSmall = styled.div`
+    
+    color:black;
+    @media screen and (max-width:1990px) {
+        font-size:1.5rem;
+    }
+    @media screen and (max-width:1366px) {
+        font-size:1.3rem;
+    }
+    @media screen and (max-width:1026px) {
+        font-size:1rem;
+    }
+    @media screen and (max-width:769px) {
+        font-size:1.3rem;
+    }
+    @media screen and (max-width:561px) {
+        font-size:.9rem;
+    }
+`;
+export const BookPage2SubHeadingContainer = styled.div`
+    align-items:center;
+    display:flex;
+    justify-content: center;
+    background-color: white;
+    height: 17.1%;
+    width:100%;
+
+    box-shadow : ${({ id }) => (id%2===0) ? 'rgba(0, 0, 0, 0.35) -50px 0px 36px -28px inset' : 'rgba(0, 0, 0, 0.35) 50px 0px 36px -28px inset'};
+    // @media screen and (max-width:768px) {
+    //     box-shadow: rgba(0, 0, 0, 0.25) -50px 0px 36px -28px inset;
+    // }
+`;
+export const BookPage2SubHeading = styled.div`
+    
+    color:black;
+    @media screen and (max-width:1990px) {
+        font-size:2.8rem;
+    }
+    @media screen and (max-width:1366px) {
+        font-size:2.5rem;
+    }
+    @media screen and (max-width:1026px) {
+        font-size:2.1rem;
+    }
+    @media screen and (max-width:769px) {
+        font-size:2.8rem;
+    }
+    @media screen and (max-width:561px) {
+        font-size:1.7rem;
+    }
+`;
+
+export const BookPage2MainContainer = styled.div`
+    align-items:center;
+    display:flex;
+    justify-content: center;
+    background-color: #70D9B8;
+    height: 75%;
+    width:100%;
+    box-shadow : ${({ id }) => (id%2===0) ? 'rgba(0, 0, 0, 0.35) -50px 0px 36px -28px inset' : 'rgba(0, 0, 0, 0.35) 50px 0px 36px -28px inset'};
+    // @media screen and (max-width:768px) {
+    //     box-shadow: rgba(0, 0, 0, 0.25) -50px 0px 36px -28px inset;
+    // }
+
+    border-top-right-radius: ${({ id }) => (id%2===0) ? '90px 7px' : '0px'};
+    border-top-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 7px'};
+    border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
+    border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
+    overflow: hidden;
+    @media screen and (max-width:768px) {
+        border-top-right-radius: ${({ id }) => (id%2===0) ? '90px 5px' : '0px'};
+        border-top-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 5px'};
+        border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
+        border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
+    }
+`;
+
+export const BookPage2Features = styled.ul`
+    position:absolute;
+    top:35%;
+    left: 10%;
+    width: 80%;
+    text-align: left;
+    color:black;
+    @media screen and (max-width:1990px) {
+        font-size:1.5rem;
+    }
+    @media screen and (max-width:1366px) {
+        font-size:1.05rem;
+    }
+    @media screen and (max-width:1026px) {
+        font-size:.8rem;
+    }
+    @media screen and (max-width:769px) {
+        font-size:1.3rem;
+    }
+    @media screen and (max-width:561px) {
+        font-size:.8rem;
+        left: 7%;
+        top: 30%;
+        width: 86%;
+    }
+`;
+
+export const BookInquireContainer2 = styled.div`
+    position:absolute;
+    bottom:15%;
+    left:15%;
+    @media screen and (max-width:1026px) {
+        bottom: 11%;
+    }
+`;
+
+export const BookKnowMoreContainer2 = styled.div`
+    position:absolute;
+    bottom:15%;
+    left:50%;
+    @media screen and (max-width:1026px) {
+        bottom: 11%;
+    }
 `;

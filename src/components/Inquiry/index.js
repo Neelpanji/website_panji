@@ -3,7 +3,8 @@ import emailjs from 'emailjs-com';
 import { Container, Row,Col } from 'reactstrap';
 import { FormElement,ContcatHeading, LabelElement, InputElement, ContactContainer, InputTextArea, FormSubmitButton, SelectElement, OptionElement } from './EnquiryElements'
 
-const Enquiry = () => {
+const Enquiry = (props) => {
+    console.log(props.servicesProps.services);
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
@@ -17,6 +18,12 @@ const Enquiry = () => {
         //         console.log(error.text);
         //     });
       };
+
+    const services = props.servicesProps.services.map((service) => {
+        if(service.features.length === 0){
+            return(<OptionElement value={service.name}>{service.name}</OptionElement>);
+        }      
+    });
 
     return (
         <ContactContainer>
@@ -45,10 +52,11 @@ const Enquiry = () => {
                         </Col>
                         <Col lg='12'>
                             <SelectElement  id="services" name="services" placeholder='Select Service'>
-                                <OptionElement value="service1">Service 1</OptionElement>
+                                {/* <OptionElement value="service1">Service 1</OptionElement>
                                 <OptionElement value="service1">Service 2</OptionElement>
                                 <OptionElement value="service1">Service 3</OptionElement>
-                                <OptionElement value="service1">Service 4</OptionElement>
+                                <OptionElement value="service1">Service 4</OptionElement> */}
+                                {services}
                             </SelectElement>
                         </Col>
                     </Row>
