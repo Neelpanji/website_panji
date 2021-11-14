@@ -227,7 +227,7 @@ export const BookKnowMoreLink = styled.a`
         font-size:1rem;
     }
     @media screen and (max-width:769px) {
-        font-size:1.2rem;
+        font-size:1.3rem;
     }
     @media screen and (max-width:561px) {
         font-size:.9rem;
@@ -268,7 +268,7 @@ export const BookInquireLink = styled(Link)`
         font-size:1rem;
     }
     @media screen and (max-width:769px) {
-        font-size:1.2rem;
+        font-size:1.3rem;
     }
     @media screen and (max-width:561px) {
         font-size:.9rem;
@@ -449,6 +449,9 @@ export const BookPage2NumberContainer = styled.div`
     //     box-shadow: rgba(0, 0, 0, 0.25) -50px 0px 36px -28px inset;
     // }
 
+    @media screen and (max-width:561px) {
+        height: 22.2%;
+    }
     
 `;
 export const BookPage2Number = styled.div`
@@ -494,6 +497,10 @@ export const BookPage2MainHeadingContainer = styled.div`
         border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
         border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
     }
+
+    @media screen and (max-width:561px) {
+        height: 78%;
+    }
 `;
 
 export const BookPage2MainHeading = styled.div`
@@ -512,7 +519,7 @@ export const BookPage2MainHeading = styled.div`
         font-size:3.6rem;
     }
     @media screen and (max-width:561px) {
-        font-size:2.5rem;
+        font-size:2.2rem;
     }
 `;
 
@@ -530,6 +537,10 @@ export const BookPage2MainHeadingSmallContainer = styled.div`
     // @media screen and (max-width:768px) {
     //     box-shadow: rgba(0, 0, 0, 0.25) -50px 0px 36px -28px inset;
     // }
+    @media screen and (max-width:561px) {
+        height: 6%;
+    }
+
 `;
 export const BookPage2MainHeadingSmall = styled.div`
     
@@ -562,6 +573,9 @@ export const BookPage2SubHeadingContainer = styled.div`
     // @media screen and (max-width:768px) {
     //     box-shadow: rgba(0, 0, 0, 0.25) -50px 0px 36px -28px inset;
     // }
+    @media screen and (max-width:561px) {
+        height: 15%;
+    }
 `;
 export const BookPage2SubHeading = styled.div`
     
@@ -606,6 +620,10 @@ export const BookPage2MainContainer = styled.div`
         border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
         border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
     }
+
+    @media screen and (max-width:561px) {
+        height: 78%;
+    }
 `;
 
 export const BookPage2Features = styled.ul`
@@ -629,9 +647,9 @@ export const BookPage2Features = styled.ul`
     }
     @media screen and (max-width:561px) {
         font-size:.8rem;
-        left: 7%;
-        top: 30%;
-        width: 86%;
+        left: 6%;
+        top: 26%;
+        width: 88%;
     }
 `;
 

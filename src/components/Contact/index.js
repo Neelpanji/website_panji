@@ -9,7 +9,7 @@ const Contact = () => {
         e.preventDefault();
     
         // // !!!!!!!!!!!!!!!!!!!!!!!!!uncomment when want to test !!!!!!!!!!!!!!!!!!!!!!!!!
-        // emailjs.sendForm('service_nc6j9ut', 'template_oa0jgdj', e.target, 'user_H2i5PETnod5gp0FBBylNm')
+        // emailjs.sendForm('service_sgr56di', 'template_hghbgby', e.target, 'user_H2i5PETnod5gp0FBBylNm')
         //     .then((result) => {
         //         console.log(result.text);
         //         alert('Your Form has been Submitted. Thank You for reaching us.');
