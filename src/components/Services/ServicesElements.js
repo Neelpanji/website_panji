@@ -656,16 +656,17 @@ export const BookPage2Features = styled.ul`
 export const BookInquireContainer2 = styled.div`
     position:absolute;
     bottom:15%;
-    left:15%;
+    left:25%;
     @media screen and (max-width:1026px) {
         bottom: 11%;
+        left:20%;
     }
 `;
 
 export const BookKnowMoreContainer2 = styled.div`
     position:absolute;
     bottom:15%;
-    left:50%;
+    left:55%;
     @media screen and (max-width:1026px) {
         bottom: 11%;
     }

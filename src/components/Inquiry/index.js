@@ -10,13 +10,13 @@ const Enquiry = (props) => {
         e.preventDefault();
     
         // // !!!!!!!!!!!!!!!!!!!!!!!!!uncomment when want to test !!!!!!!!!!!!!!!!!!!!!!!!!
-        // emailjs.sendForm('service_nc6j9ut', 'template_oa0jgdj', e.target, 'user_H2i5PETnod5gp0FBBylNm')
-        //     .then((result) => {
-        //         console.log(result.text);
-        //         alert('Your Form has been Submitted. Thank You for reaching us.');
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
+        emailjs.sendForm('service_hllzzpo', 'template_6qbrr2s', e.target, 'user_nlsEMvuE69qao2t7h0SCS')
+            .then((result) => {
+                console.log(result.text);
+                alert('Your Form has been Submitted. Thank You for reaching us.');
+            }, (error) => {
+                console.log(error.text);
+            });
       };
 
     const services = props.servicesProps.services.map((service) => {

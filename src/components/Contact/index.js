@@ -9,13 +9,13 @@ const Contact = () => {
         e.preventDefault();
     
         // // !!!!!!!!!!!!!!!!!!!!!!!!!uncomment when want to test !!!!!!!!!!!!!!!!!!!!!!!!!
-        // emailjs.sendForm('service_sgr56di', 'template_hghbgby', e.target, 'user_H2i5PETnod5gp0FBBylNm')
-        //     .then((result) => {
-        //         console.log(result.text);
-        //         alert('Your Form has been Submitted. Thank You for reaching us.');
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
+        emailjs.sendForm('service_hllzzpo', 'template_rwenu6d', e.target, 'user_nlsEMvuE69qao2t7h0SCS')
+            .then((result) => {
+                console.log(result.text);
+                alert('Your Form has been Submitted. Thank You for reaching us.');
+            }, (error) => {
+                console.log(error.text);
+            });
       };
 
     return (
