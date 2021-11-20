@@ -71,10 +71,10 @@ class Main extends Component{
     }
     
     componentDidUpdate(prevProps) {
-        console.log(prevProps.location,this.props.location);
+        // console.log(prevProps.location,this.props.location);
         if (prevProps.location !== this.props.location) {
             this.props.parallaxController.update();
-        console.log("gg");
+        // console.log("gg");
         }
     }
 
