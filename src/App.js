@@ -8,7 +8,9 @@ import { ConfigureStore } from './redux/configureStore';
 
 import { useController } from 'react-scroll-parallax';
 import { useLayoutEffect } from 'react';
-
+import ReactGA from 'react-ga';
+const TRACKING_ID = "UA-213422662-1"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 const ParallaxCache = () => {
   const { parallaxController } = useController();
