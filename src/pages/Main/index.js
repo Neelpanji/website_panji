@@ -10,7 +10,6 @@ import About from '../../components/About';
 import {
     Switch,
     Route,
-    Link as LinkR,
     withRouter
   } from "react-router-dom";
 import Home from '../../components/Home';
