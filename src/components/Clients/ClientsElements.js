@@ -49,3 +49,7 @@ export const ClientImage = styled.img`
         width: 200px;
     }
 `;
+
+export const ClientImageLink = styled.a`
+
+`;
