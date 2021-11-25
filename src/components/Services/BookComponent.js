@@ -2,7 +2,7 @@ import HTMLFlipBook from 'react-pageflip';
 import React,{useRef} from 'react';
 import {  BookContainer, BookPageContainer, BookCoverPageContainer, BookPageLogoContainer, BookPageLogo, BookPageContentContainer, BookPageHeader, BookPageFeatures, BookCoverPageImg, BookInquireContainer, BookInquireLink, BookFlipContainer, BookCoverBackContainer, BookKnowMoreContainer, BookKnowMoreLink,
   BookPage2Number, BookPage2MainHeading, BookPage2NumberContainer,BookPage2Container, BookPage2MainHeadingContainer, BookPage2MainHeadingSmallContainer, BookPage2MainHeadingSmall, BookPage2SubHeadingContainer, BookPage2SubHeading, BookPage2MainContainer,
-  BookPage2Features,BookInquireContainer2,BookKnowMoreContainer2, BookContainerMobile
+  BookPage2Features,BookInquireContainer2,BookKnowMoreContainer2, BookContainerMobile,BookPage2FeatureLi,BookFlipPageInfo
 } from './ServicesElements';
 import {Row, Container, Col} from 'reactstrap';
 
@@ -32,8 +32,10 @@ const PageCover = React.forwardRef((props, ref) => {
         <BookPageContainer id = {0}>
           
           <BookCoverBackContainer>
+          <BookFlipPageInfo>
           Please flip through my booklet to Know More<br/><br/>
           Customizable packages for your own needs always availabe as each podcast is unique.
+          </BookFlipPageInfo>
           </BookCoverBackContainer>
           {/* <div className="page-content">
             <h2>{props.children}</h2>
@@ -79,7 +81,7 @@ const Page2 = React.forwardRef((props,ref) =>{
   };
 
   const features = props.service.features.map((feature) => {
-    return(<li>{feature}</li>);
+    return(<BookPage2FeatureLi>{feature}</BookPage2FeatureLi>);
   });
 
   if(props.service.features.length === 0){
@@ -192,7 +194,7 @@ const Book = (props) => {
         <BookContainer>
         <HTMLFlipBook 
           width={550}
-          height={650}
+          height={620}
           size="stretch"
           minWidth={315}
           maxWidth={1000}
@@ -227,7 +229,7 @@ const Book = (props) => {
         <BookContainerMobile>
         <HTMLFlipBook 
           width={320}
-          height={450}
+          height={480}
           size="stretch"
           minWidth={315}
           maxWidth={1000}

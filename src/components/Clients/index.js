@@ -4,7 +4,7 @@ import {
     ClientsCarouselContainer,
     ClientsContainer, ClientsHeading,
     ClientsBgImage,ClientsBgImage2,
-    ClientImage
+    ClientImage,ClientImageLink
 } from './ClientsElements';
 import useSound from 'use-sound';
 import Carousel from "react-multi-carousel";
@@ -65,7 +65,7 @@ const Clients = (props) => {
 
     const clients = props.clients.map((client)=>{
       // console.log(client);
-        return(<div><ClientImage src={client.image}/></div>);
+        return(<div><ClientImageLink target="_blank" rel="noopener noreferrer" href={client.link}><ClientImage src={client.image}/></ClientImageLink></div>);
         
     });
     

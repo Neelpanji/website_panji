@@ -47,6 +47,7 @@ export const BookCoverPageContainer = styled.div`
     border-radius: 2px;
     // box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
     box-shadow: rgba(70, 70, 70, 0.55) 0px 10px 25px, rgba(70, 70, 70, 0.40) 15px 5px 15px;
+    overflow: hidden;
 `;
 
 export const BookCoverBackContainer = styled.div`
@@ -88,6 +89,7 @@ export const BookCoverPageImg = styled.img`
 
     @media screen and (max-width:560px){
         // display:none;
+        // width:110%;
     }
 `;
 
@@ -543,8 +545,9 @@ export const BookPage2MainHeadingSmallContainer = styled.div`
 
 `;
 export const BookPage2MainHeadingSmall = styled.div`
-    
+    position:absolute;
     color:black;
+    font-weight: 560;
     @media screen and (max-width:1990px) {
         font-size:1.5rem;
     }
@@ -559,6 +562,17 @@ export const BookPage2MainHeadingSmall = styled.div`
     }
     @media screen and (max-width:561px) {
         font-size:.9rem;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 1px;
+        bottom: -3px;
+        left: 15%;
+        background-color: #000;
+        // visibility: hidden;
+        transition: all 0.2s ease-in-out;
     }
 `;
 export const BookPage2SubHeadingContainer = styled.div`
@@ -578,7 +592,7 @@ export const BookPage2SubHeadingContainer = styled.div`
     }
 `;
 export const BookPage2SubHeading = styled.div`
-    
+    font-weight: 600;
     color:black;
     @media screen and (max-width:1990px) {
         font-size:2.8rem;
@@ -602,7 +616,7 @@ export const BookPage2MainContainer = styled.div`
     display:flex;
     justify-content: center;
     background-color: #70D9B8;
-    height: 75%;
+    height: 76%;
     width:100%;
     box-shadow : ${({ id }) => (id%2===0) ? 'rgba(0, 0, 0, 0.35) -50px 0px 36px -28px inset' : 'rgba(0, 0, 0, 0.35) 50px 0px 36px -28px inset'};
     // @media screen and (max-width:768px) {
@@ -633,6 +647,8 @@ export const BookPage2Features = styled.ul`
     width: 80%;
     text-align: left;
     color:black;
+    font-weight: 600;
+    line-height: 1.6;
     @media screen and (max-width:1990px) {
         font-size:1.5rem;
     }
@@ -646,11 +662,15 @@ export const BookPage2Features = styled.ul`
         font-size:1.3rem;
     }
     @media screen and (max-width:561px) {
-        font-size:.8rem;
+        font-size:.9rem;
         left: 6%;
         top: 26%;
         width: 88%;
     }
+`;
+
+export const BookPage2FeatureLi = styled.li`
+    padding-bottom:.6rem;
 `;
 
 export const BookInquireContainer2 = styled.div`
@@ -669,5 +689,12 @@ export const BookKnowMoreContainer2 = styled.div`
     left:55%;
     @media screen and (max-width:1026px) {
         bottom: 11%;
+    }
+`;
+
+export const BookFlipPageInfo = styled.div`
+    font-size: 2vw;
+    @media screen and (max-width:769px) {
+        font-size: 4.1vw;
     }
 `;

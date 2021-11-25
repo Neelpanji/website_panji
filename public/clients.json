@@ -2,21 +2,25 @@
     {
         "id":0,
         "name":"Podcast Services",
-        "image":"assets/images/testimonial-img.jfif"
+        "image":"assets/images/testimonial-img.jfif",
+        "link":"https://www.google.com/search?q=link+daal+be+!!&rlz=1C1ASVC_enIN956IN956&oq=link+daal+be+!!&aqs=chrome..69i57.4739j0j7&sourceid=chrome&ie=UTF-8"
     },
     {
         "id":1,
         "name":"Podcast Services",
-        "image":"assets/images/magic-carpet-cast.jpg"
+        "image":"assets/images/magic-carpet-cast.jpg",
+        "link":"https://www.google.com/search?q=link+daal+be+!!&rlz=1C1ASVC_enIN956IN956&oq=link+daal+be+!!&aqs=chrome..69i57.4739j0j7&sourceid=chrome&ie=UTF-8"
     },
     {
         "id":2,
         "name":"Podcast Services",
-        "image":"assets/images/Be-My-Neighbor.jpg"
+        "image":"assets/images/Be-My-Neighbor.jpg",
+        "link":"https://www.google.com/search?q=link+daal+be+!!&rlz=1C1ASVC_enIN956IN956&oq=link+daal+be+!!&aqs=chrome..69i57.4739j0j7&sourceid=chrome&ie=UTF-8"
     },
     {
         "id":3,
         "name":"Podcast Services",
-        "image":"assets/images/magic-carpet-cast.jpg"
+        "image":"assets/images/magic-carpet-cast.jpg",
+        "link":"https://www.google.com/search?q=link+daal+be+!!&rlz=1C1ASVC_enIN956IN956&oq=link+daal+be+!!&aqs=chrome..69i57.4739j0j7&sourceid=chrome&ie=UTF-8"
     }
 ]

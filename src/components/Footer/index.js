@@ -47,7 +47,7 @@ const Footer = () => {
                     © Copyright {new Date().getFullYear()}. Neel Panji. All Rights Reserved.
                     </FooterCopyright>
                     <FooterCopyright>
-                        <FooterMail target="_blank" href="https://www.linkedin.com/in/mohitgidwani13">Made by Mohit</FooterMail>
+                        <FooterMail target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mohitgidwani13">Made by Mohit</FooterMail>
                     </FooterCopyright>
                 </Col>
             </FooterRow>
