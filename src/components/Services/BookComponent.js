@@ -2,9 +2,10 @@ import HTMLFlipBook from 'react-pageflip';
 import React,{useRef} from 'react';
 import {  BookContainer, BookPageContainer, BookCoverPageContainer, BookPageLogoContainer, BookPageLogo, BookPageContentContainer, BookPageHeader, BookPageFeatures, BookCoverPageImg, BookInquireContainer, BookInquireLink, BookFlipContainer, BookCoverBackContainer, BookKnowMoreContainer, BookKnowMoreLink,
   BookPage2Number, BookPage2MainHeading, BookPage2NumberContainer,BookPage2Container, BookPage2MainHeadingContainer, BookPage2MainHeadingSmallContainer, BookPage2MainHeadingSmall, BookPage2SubHeadingContainer, BookPage2SubHeading, BookPage2MainContainer,
-  BookPage2Features,BookInquireContainer2,BookKnowMoreContainer2, BookContainerMobile,BookPage2FeatureLi,BookFlipPageInfo
+  BookPage2Features,BookInquireContainer2,BookKnowMoreContainer2, BookContainerMobile,BookPage2FeatureLi,BookFlipPageInfo, ButtonService
 } from './ServicesElements';
 import {Row, Container, Col} from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -75,7 +76,8 @@ const Page2 = React.forwardRef((props,ref) =>{
       );
     } else {
       return(
-        <BookKnowMoreLink href={props.service.link}>Recent Projects</BookKnowMoreLink>
+        // <BookKnowMoreLink href={props.service.link}>Recent Projects</BookKnowMoreLink>
+        <a target="_blank" rel="noopener noreferrer" href={props.service.link}><ButtonService >Recent Projects</ButtonService></a>
       );
     }
   };
@@ -116,7 +118,8 @@ const Page2 = React.forwardRef((props,ref) =>{
                 <KnowMoreLink />
               </BookKnowMoreContainer2>
               <BookInquireContainer2>
-                <BookInquireLink to="/enquiry#top">Inquire</BookInquireLink>
+                {/* <BookInquireLink to="/enquiry#top">Inquire</BookInquireLink> */}
+                <Link to="/enquiry#top"><ButtonService>Inquire</ButtonService></Link>
               </BookInquireContainer2>
         </BookPage2MainContainer>
       </BookPage2Container>

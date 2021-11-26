@@ -23,7 +23,7 @@ import Conversation from '../Conversation';
 
 const Home = (props) => {
 
-    console.log(props);
+    // console.log(props);
 
     const ServicesComponent = () => {
         return(

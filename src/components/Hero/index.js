@@ -8,12 +8,20 @@ import {
     HeroRectangleContainer,
     HeroImage1,
     HeroImage2,
-    HeroImageWrapper
+    HeroImageWrapper,
+    ButtonHero,
+    HeroButtonContainer,
+    HeroRectangleContent
 } from './HeroElements';
 
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
+const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -80; 
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+}
 // import { useController } from 'react-scroll-parallax';
 // import { useLayoutEffect } from 'react';
 
@@ -57,9 +65,20 @@ const Home = () => {
 
             <HeroRectangleContainer>
             <ScrollAnimation animateIn="animate__fadeInLeft" duration='4' animateOnce="true">
-                <HeroRectangle/>
+                <HeroRectangle>
+                    <ScrollAnimation animateIn="animate__fadeIn" duration='3.5' animateOnce="true" delay="1000">
+                    <HeroRectangleContent to="/#services" scroll={el => scrollWithOffset(el)}>
+                    Jump To Services
+                    </HeroRectangleContent>
+                    </ScrollAnimation>
+                </HeroRectangle>
             </ScrollAnimation>
             </HeroRectangleContainer>
+
+            {/* <HeroButtonContainer>
+                <ButtonHero>Jump To Services</ButtonHero>
+            </HeroButtonContainer> */}
+
             {/* <ParallaxCache /> */}
             {/* <Parallax x={[-20,20]} y={[20,-20]} > */}
             

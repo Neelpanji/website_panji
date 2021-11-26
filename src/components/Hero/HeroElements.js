@@ -1,4 +1,6 @@
+
 import styled from 'styled-components';
+import { NavHashLink } from 'react-router-hash-link';
 
 export const HeroContainer = styled.div`
     position: relative;
@@ -166,6 +168,43 @@ export const HeroRectangle = styled.div`
     z-index:2;
     width:100%;
     height:100%;
+    
+`;
+
+export const HeroRectangleContent = styled(NavHashLink)`
+    z-index:2;
+    width:100%;
+    height:100%;
+    transition: ease-in-out .5s;
+    text-decoration:none;
+    color: white;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    font-weight: 400;
+    &:hover{
+        // background-color:white;
+        color: white;
+    }
+
+    @media screen and (max-width:1990px) {
+        font-size: 3.5vw;
+        display:none;
+        
+    }
+    @media screen and (max-width:1366px) {
+        // font-size:1.2rem;
+    }
+    @media screen and (max-width:1026px) {
+        // font-size:1rem;
+    }
+    @media screen and (max-width:769px) {
+        font-size: 4.5vw;
+        display:flex;
+    }
+    @media screen and (max-width:561px) {
+        font-size: 5.5vw;
+    }
 `;
 
 export const HeroRectangleContainer = styled.div`
@@ -214,5 +253,73 @@ export const HeroRectangleContainer = styled.div`
     // THIS DIV IS ADDED FOR SUPPORTING RECTANGLE ANIMATION EXPLICITLY !!!!!!!!!!!!!
     div{
         height:100%;
+    }
+`;
+
+export const HeroButtonContainer = styled.div`
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    left: 0%;
+    top:85%;
+    width: 100%;
+    @media screen and (max-width:1990px) {
+        // left: 15%;
+        // width: 60%;
+        // top: 25%;
+        font-size: 3.5vw;
+    }
+    @media screen and (max-width:1366px) {
+        // left: 10%;
+        // width: 55%;
+        // top: 25%;
+        // font-size: 6rem;
+    }
+    @media screen and (max-width:1026px) {
+        // left: 10%;
+        // top: 25%;
+        // font-size: 6rem;
+        // width: 50%;
+    }
+    @media screen and (max-width:769px) {
+        // left: 10%;
+        // top: 30%;
+        font-size: 4.5vw;
+        // width: 60%;
+    }
+    @media screen and (max-width:561px) {
+        // left: 10%;
+        // top: 12%;
+        font-size: 6.5vw;
+        // width: 60%;
+    }
+`;
+
+export const ButtonHero = styled.button`
+    outline:none;
+    background: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    transition: ease-in-out .3s;
+    &:hover{
+        transform:translateY(-1px);
+        color: #70D9B8;
+        background-color: #000;
+    }
+    @media screen and (max-width:1990px) {
+        // font-size:1.5rem;
+    }
+    @media screen and (max-width:1366px) {
+        // font-size:1.2rem;
+    }
+    @media screen and (max-width:1026px) {
+        // font-size:1rem;
+    }
+    @media screen and (max-width:769px) {
+        // font-size:1.3rem;
+    }
+    @media screen and (max-width:561px) {
+        // font-size:.9rem;
     }
 `;

@@ -34,7 +34,7 @@ const Conversation = () => {
                     <ConversationTextBoxPanji top="6%" left="22%">
                         <Parallax x={[-5,5]}>
                         <ConversationTextBoxContent>
-                        Are you feeling exhausted and tired by spending time editing episodes?
+                        Are you feeling exhausted by spending time editing episodes?
                         </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
@@ -52,7 +52,7 @@ const Conversation = () => {
                     <ConversationTextBoxPanji top="44%" left="22%">
                         <Parallax x={[-5,5]}>
                             <ConversationTextBoxContent>
-                            Are you someone who just wants to enjoy recording and foget all worries of editing?
+                            Are you someone who just wants to enjoy recording and forget all worries of editing?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
@@ -62,7 +62,7 @@ const Conversation = () => {
                         <Parallax x={[5,-5]}>
                             {/* 5,-15 */}
                             <ConversationTextBoxContent>
-                            Do you believe that your audience's time is precious which should not be wasted because of poor quality audio filled of umms?
+                            Do you believe that your audience's time is precious which should not be wasted because of poor quality audio filled with umms?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxVisitor>
@@ -70,7 +70,8 @@ const Conversation = () => {
                     <ConversationTextBoxPanji top="81%" left="28%">
                         <Parallax x={[-5,5]}>
                             <ConversationTextBoxContent>
-                            It is highly appreciable if you feel any one of the above questions apply to you and taking steps to bring in an editor in your team.
+                            {/* It is highly appreciable if you feel any one of the above questions apply to you and taking steps to bring in an editor in your team. */}
+                            If you correlate with any of the above questions, maybe it's time to bring an editor to your team.
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
@@ -85,7 +86,7 @@ const Conversation = () => {
                     <ConversationTextBoxPanji top="6%" left="27%">
                         <Parallax x={[-20,-10]}>
                             <ConversationTextBoxContent>
-                            Are you feeling exhausted and tired by spending time editing episodes?
+                            Are you feeling exhausted by spending time editing episodes?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
@@ -99,21 +100,22 @@ const Conversation = () => {
                     <ConversationTextBoxPanji top="40%" left="28%">
                         <Parallax x={[-5,5]}>
                             <ConversationTextBoxContent>
-                            Are you someone who just wants to enjoy recording and foget all worries of editing?
+                            Are you someone who just wants to enjoy recording and forget all worries of editing?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
                     <ConversationTextBoxVisitor top="62%" left="37%">
                         <Parallax x={[10,-15]}>
                             <ConversationTextBoxContent>
-                            Do you believe that your audience's time is precious which should not be wasted because of poor quality audio filled of umms?
+                            Do you believe that your audience's time is precious which should not be wasted because of poor quality audio filled with umms?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxVisitor>
                     <ConversationTextBoxPanji top="85%" left="30%">
                         <Parallax x={[-10,10]}>
                             <ConversationTextBoxContent>
-                            It is highly appreciable if you feel any one of the above questions apply to you and taking steps to bring in an editor in your team.
+                            {/* It is highly appreciable if you feel any one of the above questions apply to you and taking steps to bring in an editor in your team. */}
+                            If you correlate with any of the above questions, maybe it's time to bring an editor to your team.
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
@@ -130,7 +132,7 @@ const Conversation = () => {
                         <ConversationMobileImage src="/assets/images/bitmoji/1-resize.png"/>
                         </ScrollAnimation>
                         <Parallax x={[-5,5]}>
-                        <ConversationMobileTextBox visitor="0">Are you feeling exhausted and tired by spending time editing episodes?</ConversationMobileTextBox>
+                        <ConversationMobileTextBox visitor="0">Are you feeling exhausted by spending time editing episodes?</ConversationMobileTextBox>
                         </Parallax>
                     </ConversationMobileLeftContainer>
                     <ConversationMobileRightContainer>
@@ -146,12 +148,12 @@ const Conversation = () => {
                         <ConversationMobileImage src="/assets/images/bitmoji/3.png"/>
                         </ScrollAnimation>
                         <Parallax x={[-5,5]}>
-                        <ConversationMobileTextBox visitor="0">Are you someone who just wants to enjoy recording and foget all worries of editing?</ConversationMobileTextBox>
+                        <ConversationMobileTextBox visitor="0">Are you someone who just wants to enjoy recording and forget all worries of editing?</ConversationMobileTextBox>
                         </Parallax>
                     </ConversationMobileLeftContainer>
                     <ConversationMobileRightContainer>
                         <Parallax x={[15,5]}>
-                        <ConversationMobileTextBox visitor="1">Do you believe that your audience's time is precious which should not be wasted because of poor quality audio filled of umms?</ConversationMobileTextBox>
+                        <ConversationMobileTextBox visitor="1">Do you believe that your audience's time is precious which should not be wasted because of poor quality audio filled with umms?</ConversationMobileTextBox>
                         </Parallax>
                         <ScrollAnimation animateIn="animate__fadeInRight" duration="1.5" animateOnce="true" delay="300">
                         <ConversationMobileImage src="/assets/images/bitmoji/4.2.png"/>
@@ -162,7 +164,10 @@ const Conversation = () => {
                         <ConversationMobileImage src="/assets/images/bitmoji/5.png"/>
                         </ScrollAnimation>
                         <Parallax x={[-10,10]}>
-                        <ConversationMobileTextBox visitor="0">It is highly appreciable if you feel any one of the above questions apply to you and taking steps to bring in an editor in your team.</ConversationMobileTextBox>
+                        <ConversationMobileTextBox visitor="0">
+                            {/* It is highly appreciable if you feel any one of the above questions apply to you and taking steps to bring in an editor in your team. */}
+                            If you correlate with any of the above questions, maybe it's time to bring an editor to your team.
+                        </ConversationMobileTextBox>
                         </Parallax>
                     </ConversationMobileLeftContainer>
                 </ConversationContainer>
