@@ -698,3 +698,33 @@ export const BookFlipPageInfo = styled.div`
         font-size: 4.1vw;
     }
 `;
+
+export const ButtonService = styled.button`
+    outline:none;
+    background: #70D9B8;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: ease-in-out .3s;
+    font-size: 1.5rem;
+    &:hover{
+        transform:translateY(-1px);
+        color: #70D9B8;
+        background-color: #000;
+    }
+    @media screen and (max-width:1990px) {
+        font-size:1.5rem;
+    }
+    @media screen and (max-width:1366px) {
+        font-size:1.2rem;
+    }
+    @media screen and (max-width:1026px) {
+        font-size:1rem;
+    }
+    @media screen and (max-width:769px) {
+        font-size:1.3rem;
+    }
+    @media screen and (max-width:561px) {
+        font-size:.9rem;
+    }
+`;
