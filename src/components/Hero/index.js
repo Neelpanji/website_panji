@@ -47,10 +47,12 @@ const Home = () => {
             {/* <HeroImage ></HeroImage> */}
             <HeroHeading>
                 <ScrollAnimation animateIn="animate__fadeInLeft" duration="1.5" animateOnce="true" delay="500">
-                Let's Make That <br/> Podcast Dream Of Yours <br/> 
+                {/* Let's Make That <br/> Podcast Dream Of Yours <br/>  */}
+                Let's Make Time for You to Grow
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInLeft" duration='2' animateOnce="true" delay="500">
-                <HeroHeadingIn>A Reality</HeroHeadingIn>
+                {/* <HeroHeadingIn>A Reality</HeroHeadingIn> */}
+                <HeroHeadingIn>Your Show</HeroHeadingIn>
                 </ScrollAnimation>
             </HeroHeading>
 

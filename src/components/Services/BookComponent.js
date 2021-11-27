@@ -112,15 +112,17 @@ const Page2 = React.forwardRef((props,ref) =>{
         </BookPage2SubHeadingContainer>
         <BookPage2MainContainer id = {props.service.id + 1}>
           <BookPage2Features>
-                {features} 
-              </BookPage2Features>
-              <BookKnowMoreContainer2>
-                <KnowMoreLink />
-              </BookKnowMoreContainer2>
-              <BookInquireContainer2>
-                {/* <BookInquireLink to="/enquiry#top">Inquire</BookInquireLink> */}
-                <Link to="/enquiry#top"><ButtonService>Inquire</ButtonService></Link>
-              </BookInquireContainer2>
+            {features} 
+          </BookPage2Features>
+          <BookInquireContainer2>
+            Not satisfied? Ask for more - 
+            {/* <BookInquireLink to="/enquiry#top">Reach Me</BookInquireLink> */}
+            <Link to="/enquiry#top"><ButtonService>Reach Me</ButtonService></Link>
+          </BookInquireContainer2>
+          <BookKnowMoreContainer2>
+            <KnowMoreLink />
+          </BookKnowMoreContainer2>
+              
         </BookPage2MainContainer>
       </BookPage2Container>
       </div>
