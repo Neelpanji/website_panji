@@ -4,61 +4,70 @@
     {
         "id":0,
         "number":1,
-        "name":"Podcast Post Production Partner Support",
+        "name":"Podcast Post Production  ",
         "features":[],
         "link":""
     },
     {
         "id":1,
         "number":1,
-        "name":"Podcast Post Production Partner Support",
+        "name":"Podcast Post Production  ",
         "sub_name":"Editing Support",
         "image":"assets/images/services/podcast-01.png",
-        "features":["Removal of unwanted “ums”, pauses, etc","Audio matching to industry standards for quality listening (inclusive of standard processes  REMOVAL OF LOUD PLOSIVES, ROOM REVERB REDUCTION, NOISE REDUCTION, MASTERING FOR LOUDNESS )","Full ID3 Tagging","Distribution of podcast episode to your podcast host","Commercial/sponsor messages at specific timestamps","Add your intros and outros","Add your music"],
-        "link":""
+        "features":["Give your audience crisp content. a.k.a Removal of unwanted “ums”, pauses, etc","Sound best for your audience a.k.a Audio production to industry standards","Adding Music, Intro, Outro and Sponsor messages","Uploading to Podcast host"],
+        "link":"https://www.startingoverstronger.com/podcast"
     },
     {
         "id":2,
         "number":1,
-        "name":"Podcast Post Production Partner Support",
+        "name":"Podcast Post Production  ",
         "sub_name":"Marketing Support",
         "image":"assets/images/services/podcast-01.png",
         "features":["Audio trailers promoting podcast episodes (Audiograms)","SEO focused show notes","Instagram design thread (Connect to know more)","Create YouTube videos from episodes and more "],
-        "link":"https://www.youtube.com/"
+        "link":"https://www.instagram.com/p/CU9d4cRKCX-/"
     },
     {
         "id":3,
         "number":2,
-        "name":"Videocast Post Production Partner Support",
+        "name":"Videocast Post Production  ",
         "image":"assets/images/services/podcast-01.png",
         "features":[],
-        "link":"https://www.youtube.com/"
+        "link":""
     },
     {
         "id":4,
         "number":2,
-        "name":"Videocast Post Production Partner Support",
+        "name":"Videocast Post Production  ",
         "sub_name":"Editing Support",
         "image":"assets/images/services/podcast-01.png",
-        "features":["Cutting and mastering video sequence from multiple camera angles","Addition of intro and music","Addition of transitions and lower thirds ( guest names etc)","Removal of unwanted pauses to provide a smooth holistic experience to your audience","Audio matching to industry standards for quality listening","Uploading on youtube or any other website","Youtube management"],
-        "link":""
+        "features":["Building the story a.k.a Cutting and mastering raw files in sequence","Give your audience crisp content. a.k.a Removal of unwanted “ums”, pauses, etc","Sound best for your audience a.k.a Audio production to industry standards","Adding Lower Thirds, Transitions, Music, Intro, Outro etc","Uploading to youtube/other host and youtube management"],
+        "link":"https://www.youtube.com/watch?v=PkbHxmH-Cck"
     },
     {
         "id":5,
         "number":2,
-        "name":"Videocast Post Production Partner Support",
+        "name":"Videocast Post Production  ",
         "sub_name":"Marketing Support",
         "image":"assets/images/services/podcast-01.png",
         "features":["Video trailers promoting podcast episodes (Audiograms)","SEO focused show notes","Instagram design thread (Connect to know more) and more"],
-        "link":"https://www.youtube.com/"
+        "link":"https://www.instagram.com/p/CPz_QehA0Qp/"
     },
     {
         "id":6,
-        "number":2,
-        "name":"Videocast Post Production Partner Support",
+        "number":3,
+        "name":"Product/Service Marketing Video",
+        "sub_name":"Marketing Video Editing",
+        "image":"",
+        "features":[],
+        "link":""
+    },
+    {
+        "id":7,
+        "number":3,
+        "name":"Product/Service Marketing Video",
         "sub_name":"Marketing Video Editing",
         "image":"assets/images/services/podcast-01.png",
         "features":["Guidance for video shoot equipments and quality","Guidance for selection of stock videos and footages (need basis)","Joining clips and streamlining content to tell your product story","Voice over support and more"],
-        "link":"https://www.youtube.com/"
+        "link":"https://careologyinstitute.com/"
     }
 ]

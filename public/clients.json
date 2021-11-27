@@ -2,25 +2,25 @@
     {
         "id":0,
         "name":"Podcast Services",
-        "image":"assets/images/testimonial-img.jfif",
-        "link":"https://www.google.com/search?q=link+daal+be+!!&rlz=1C1ASVC_enIN956IN956&oq=link+daal+be+!!&aqs=chrome..69i57.4739j0j7&sourceid=chrome&ie=UTF-8"
+        "image":"assets/images/clients/AJVC.jpeg",
+        "link":"https://ajuniorvc.com/podcast/"
     },
     {
         "id":1,
         "name":"Podcast Services",
-        "image":"assets/images/magic-carpet-cast.jpg",
-        "link":"https://www.google.com/search?q=link+daal+be+!!&rlz=1C1ASVC_enIN956IN956&oq=link+daal+be+!!&aqs=chrome..69i57.4739j0j7&sourceid=chrome&ie=UTF-8"
+        "image":"assets/images/clients/SOS.jpeg",
+        "link":"https://www.startingoverstronger.com/podcast"
     },
     {
         "id":2,
         "name":"Podcast Services",
-        "image":"assets/images/Be-My-Neighbor.jpg",
-        "link":"https://www.google.com/search?q=link+daal+be+!!&rlz=1C1ASVC_enIN956IN956&oq=link+daal+be+!!&aqs=chrome..69i57.4739j0j7&sourceid=chrome&ie=UTF-8"
+        "image":"assets/images/clients/HF.jpeg",
+        "link":"https://www.hayleyfinch.com/"
     },
     {
         "id":3,
         "name":"Podcast Services",
-        "image":"assets/images/magic-carpet-cast.jpg",
-        "link":"https://www.google.com/search?q=link+daal+be+!!&rlz=1C1ASVC_enIN956IN956&oq=link+daal+be+!!&aqs=chrome..69i57.4739j0j7&sourceid=chrome&ie=UTF-8"
+        "image":"assets/images/clients/Court.jpeg",
+        "link":"https://www.listennotes.com/podcasts/out-of-the-courtroom-jason-m-ingber-Cb5Jse8ZGt2/"
     }
 ]

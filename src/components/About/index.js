@@ -58,7 +58,7 @@ const About = () => {
                     <Col lg='4'>
                         <AboutQuoteContainer>
                             <Parallax  y={[90, -90]}>
-                                <AboutQuoteContent>What makeup is to your face, Podcast Editing is to your sound!</AboutQuoteContent>
+                                <AboutQuoteContent>What Makeup is to Actors, Editing is to Podcasters!</AboutQuoteContent>
                             </Parallax>
                         </AboutQuoteContainer>
                     </Col>

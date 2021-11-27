@@ -642,13 +642,13 @@ export const BookPage2MainContainer = styled.div`
 
 export const BookPage2Features = styled.ul`
     position:absolute;
-    top:35%;
+    top:33%;
     left: 10%;
     width: 80%;
     text-align: left;
     color:black;
     font-weight: 600;
-    line-height: 1.6;
+    line-height: 1.5;
     @media screen and (max-width:1990px) {
         font-size:1.5rem;
     }
@@ -675,20 +675,40 @@ export const BookPage2FeatureLi = styled.li`
 
 export const BookInquireContainer2 = styled.div`
     position:absolute;
-    bottom:15%;
-    left:25%;
+    bottom:25%;
+    left:12%;
+    width:80%;
+    color: black;
+    text-align:left;
+    @media screen and (max-width:1990px) {
+        font-size:1.5rem;
+    }
+    @media screen and (max-width:1366px) {
+        font-size:1.2rem;
+    }
     @media screen and (max-width:1026px) {
-        bottom: 11%;
-        left:20%;
+        font-size:1rem;
+        bottom: 18%;
+        left:12%;
+    }
+    @media screen and (max-width:769px) {
+        font-size:1.3rem;
+    }
+    @media screen and (max-width:561px) {
+        font-size:.9rem;
+        bottom: 16%;
     }
 `;
 
 export const BookKnowMoreContainer2 = styled.div`
     position:absolute;
     bottom:15%;
-    left:55%;
+    left:12%;
     @media screen and (max-width:1026px) {
-        bottom: 11%;
+        bottom: 10%;
+    }
+    @media screen and (max-width:561px) {
+        bottom: 8%;
     }
 `;
 
@@ -707,6 +727,7 @@ export const ButtonService = styled.button`
     border-radius: 5px;
     transition: ease-in-out .3s;
     font-size: 1.5rem;
+    margin-left: 5px;
     &:hover{
         transform:translateY(-1px);
         color: #70D9B8;

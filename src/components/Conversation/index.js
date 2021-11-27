@@ -52,7 +52,7 @@ const Conversation = () => {
                     <ConversationTextBoxPanji top="44%" left="22%">
                         <Parallax x={[-5,5]}>
                             <ConversationTextBoxContent>
-                            Are you someone who just wants to enjoy recording and forget all worries of editing?
+                            Are you someone who wants to enjoy recording and forget all worries of editing?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
@@ -71,7 +71,7 @@ const Conversation = () => {
                         <Parallax x={[-5,5]}>
                             <ConversationTextBoxContent>
                             {/* It is highly appreciable if you feel any one of the above questions apply to you and taking steps to bring in an editor in your team. */}
-                            If you correlate with any of the above questions, maybe it's time to bring an editor to your team.
+                            If any of the above questions resonate with you, I would be happy to help you answer them with my services.
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
@@ -100,7 +100,7 @@ const Conversation = () => {
                     <ConversationTextBoxPanji top="40%" left="28%">
                         <Parallax x={[-5,5]}>
                             <ConversationTextBoxContent>
-                            Are you someone who just wants to enjoy recording and forget all worries of editing?
+                            Are you someone who wants to enjoy recording and forget all worries of editing?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
@@ -115,7 +115,7 @@ const Conversation = () => {
                         <Parallax x={[-10,10]}>
                             <ConversationTextBoxContent>
                             {/* It is highly appreciable if you feel any one of the above questions apply to you and taking steps to bring in an editor in your team. */}
-                            If you correlate with any of the above questions, maybe it's time to bring an editor to your team.
+                            If any of the above questions resonate with you, I would be happy to help you answer them with my services.
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
@@ -148,7 +148,7 @@ const Conversation = () => {
                         <ConversationMobileImage src="/assets/images/bitmoji/3.png"/>
                         </ScrollAnimation>
                         <Parallax x={[-5,5]}>
-                        <ConversationMobileTextBox visitor="0">Are you someone who just wants to enjoy recording and forget all worries of editing?</ConversationMobileTextBox>
+                        <ConversationMobileTextBox visitor="0">Are you someone who wants to enjoy recording and forget all worries of editing?</ConversationMobileTextBox>
                         </Parallax>
                     </ConversationMobileLeftContainer>
                     <ConversationMobileRightContainer>
@@ -166,7 +166,7 @@ const Conversation = () => {
                         <Parallax x={[-10,10]}>
                         <ConversationMobileTextBox visitor="0">
                             {/* It is highly appreciable if you feel any one of the above questions apply to you and taking steps to bring in an editor in your team. */}
-                            If you correlate with any of the above questions, maybe it's time to bring an editor to your team.
+                            If any of the above questions resonate with you, I would be happy to help you answer them with my services.
                         </ConversationMobileTextBox>
                         </Parallax>
                     </ConversationMobileLeftContainer>
