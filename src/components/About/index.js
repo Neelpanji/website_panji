@@ -65,16 +65,15 @@ const About = () => {
                     <Col lg='12'>
                         <AboutContentWrapper>
                             <AboutContent>
-                            Hi, I am Neel! A podcast editor and also a video editor.
-                            I am the makeup artist of podcasts, responsible to make the audio and video sound & look as flawless as you are.
-                            Having produced 69 (and counting)  episodes of podcasts like (AJVC, SOS, ONE MORE NAME) till date in a short span of 1 year has led to significant growth of my professional journey and satisfaction among my clients.
-                            Apart from my professional and personal milestones, with my editing expertise I intend to make the art of podcasting more consumable among masses by producing crisp and clean content along with my partners (clients).
+                            Hi, I am Neel! Being a podcaster can be tough in many ways. From scheduling guests for an interview, finding new guests, promoting the value you provide to the audience in various forms, getting creative to keep your audience engaged, and finally spending hours to ensure the quality of the audio is top-notch. Spending hours editing and still not getting the quality sound can have cascading effects on the creative aspects.
+                            Over my experience working and seeing podcasters, I have noticed that poor audio quality is a major reason affecting the confidence of the Podcasters in their art out of all of these activities.  
+                            With my editing finesse, I want to ensure that no Podcaster has the slightest doubt over their art because of the audio quality.   
                             </AboutContent>
                         </AboutContentWrapper>
                     </Col>
                     <Col lg='8'>
                         <AboutContactContainer>
-                            <AboutContactContent>Unlocking your Podcast's <HighlightGreen>True Potential </HighlightGreen> is Just a Click Away 😀</AboutContactContent>
+                            <AboutContactContent>Let's Get Your <HighlightGreen>Audience Hooked</HighlightGreen> To Your Sound 😀</AboutContactContent>
                         </AboutContactContainer>
                     </Col>
                     <Col lg='4'>
