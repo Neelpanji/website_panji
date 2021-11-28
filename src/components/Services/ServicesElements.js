@@ -663,7 +663,7 @@ export const BookPage2Features = styled.ul`
         font-size:1.3rem;
     }
     @media screen and (max-width:561px) {
-        font-size:.9rem;
+        font-size:.85rem;
         left: 6%;
         top: 26%;
         width: 88%;
