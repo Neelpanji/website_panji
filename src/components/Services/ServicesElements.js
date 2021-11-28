@@ -749,3 +749,67 @@ export const ButtonService = styled.button`
         font-size:.9rem;
     }
 `;
+
+export const FlipHintContainer = styled.div`
+    position:absolute;
+    left:0%;
+    top:0%;
+    width:100%;
+    height:100%;
+    opacity: 0.6;
+    background-color:black;
+    animation-fill-mode: forwards;
+    // display:block;
+    display: ${({ hintLoaded }) => hintLoaded ? 'none' : 'block'};
+
+    &:after {
+        content:"";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        border-left: 2px dashed #fff; /*change these values to suit your liking*/
+    }
+
+    @media screen and (min-width:769px) {
+        display:none;
+    }
+
+    @media screen and (max-width:769px) {
+        font-size:1.4rem;
+    }
+    @media screen and (max-width:561px) {
+        font-size:1rem;
+    }
+
+`;
+
+export const FlipHintLeftContainer = styled.div`
+    position:absolute;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height: 100%;
+    width:50%;
+    left:0%;
+
+    flex-direction:column;
+`;
+
+export const FlipHintRightContainer = styled.div`
+    position:absolute;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height: 100%;
+    width:50%;
+    left:50%;
+
+    flex-direction:column;
+`;
+
+export const FlipHintImage = styled.img`
+    width:35%;
+    // background-color: white;
+`;
