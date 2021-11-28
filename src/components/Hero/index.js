@@ -48,11 +48,11 @@ const Home = () => {
             <HeroHeading>
                 <ScrollAnimation animateIn="animate__fadeInLeft" duration="1.5" animateOnce="true" delay="500">
                 {/* Let's Make That <br/> Podcast Dream Of Yours <br/>  */}
-                Let's Make Time for You to Grow
+                Quality Sound For <br/> Your
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInLeft" duration='2' animateOnce="true" delay="500">
                 {/* <HeroHeadingIn>A Reality</HeroHeadingIn> */}
-                <HeroHeadingIn>Your Show</HeroHeadingIn>
+                <HeroHeadingIn>Podcast</HeroHeadingIn>
                 </ScrollAnimation>
             </HeroHeading>
 
