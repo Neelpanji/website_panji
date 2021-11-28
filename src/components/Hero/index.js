@@ -66,9 +66,9 @@ const Home = () => {
             </HeroImageWrapper>
 
             <HeroRectangleContainer>
-            <ScrollAnimation animateIn="animate__fadeInLeft" duration='4' animateOnce="true">
+            <ScrollAnimation animateIn="animate__fadeInLeft" duration='4' animateOnce="true" offset="0">
                 <HeroRectangle>
-                    <ScrollAnimation animateIn="animate__fadeIn" duration='3.5' animateOnce="true" delay="1000">
+                    <ScrollAnimation animateIn="animate__fadeIn" duration='3.5' animateOnce="true" delay="1000"  offset="0">
                     <HeroRectangleContent to="/#services" scroll={el => scrollWithOffset(el)}>
                     Jump To Services
                     </HeroRectangleContent>
