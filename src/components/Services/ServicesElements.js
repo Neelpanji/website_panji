@@ -90,6 +90,7 @@ export const BookCoverPageImg = styled.img`
     @media screen and (max-width:560px){
         // display:none;
         // width:110%;
+        content:url("/assets/images/service-cover-1-transparent-mobile.png");
     }
 `;
 
@@ -675,7 +676,7 @@ export const BookPage2FeatureLi = styled.li`
 
 export const BookInquireContainer2 = styled.div`
     position:absolute;
-    bottom:25%;
+    bottom:20%;
     left:12%;
     width:80%;
     color: black;
@@ -696,19 +697,19 @@ export const BookInquireContainer2 = styled.div`
     }
     @media screen and (max-width:561px) {
         font-size:.9rem;
-        bottom: 16%;
+        bottom: 14%;
     }
 `;
 
 export const BookKnowMoreContainer2 = styled.div`
     position:absolute;
-    bottom:15%;
+    bottom:12%;
     left:12%;
     @media screen and (max-width:1026px) {
         bottom: 10%;
     }
     @media screen and (max-width:561px) {
-        bottom: 8%;
+        bottom: 7%;
     }
 `;
 
@@ -750,7 +751,7 @@ export const ButtonService = styled.button`
     }
 `;
 
-export const FlipHintContainer = styled.div`
+export const FlipHintContainerMobile = styled.div`
     position:absolute;
     left:0%;
     top:0%;
@@ -760,7 +761,7 @@ export const FlipHintContainer = styled.div`
     background-color:black;
     animation-fill-mode: forwards;
     // display:block;
-    display: ${({ hintLoaded }) => hintLoaded ? 'none' : 'block'};
+    display: ${({ hintLoadedMobile }) => hintLoadedMobile ? 'none' : 'block'};
 
     &:after {
         content:"";
@@ -812,4 +813,46 @@ export const FlipHintRightContainer = styled.div`
 export const FlipHintImage = styled.img`
     width:35%;
     // background-color: white;
+`;
+
+export const FlipHintContainer = styled.div`
+    position:absolute;
+    left:0%;
+    top:0%;
+    width:100%;
+    height:100%;
+    opacity: 0.6;
+    background-color:black;
+    animation-fill-mode: forwards;
+    // display:block;
+    display: ${({ hintLoaded }) => hintLoaded ? 'none' : 'block'};
+
+    @media screen and (max-width:1990px) {
+        font-size:1.5rem;
+    }
+    @media screen and (max-width:1366px) {
+        font-size:1.2rem;
+    }
+    @media screen and (max-width:1026px) {
+        font-size:1rem;
+    }
+    @media screen and (max-width:769px) {
+        font-size:1.4rem;
+        display:none;
+    }
+    @media screen and (max-width:561px) {
+        font-size:1rem;
+    }
+`;
+
+export const FlipHintContentContainer = styled.div`
+    position:absolute;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height: 100%;
+    width:100%;
+    left:0%;
+
+    flex-direction:column;
 `;

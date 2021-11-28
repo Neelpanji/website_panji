@@ -2,7 +2,7 @@ import HTMLFlipBook from 'react-pageflip';
 import React,{useRef,useState} from 'react';
 import {  BookContainer, BookPageContainer, BookCoverPageContainer, BookPageLogoContainer, BookPageLogo, BookPageContentContainer, BookPageHeader, BookPageFeatures, BookCoverPageImg, BookInquireContainer, BookInquireLink, BookFlipContainer, BookCoverBackContainer, BookKnowMoreContainer, BookKnowMoreLink,
   BookPage2Number, BookPage2MainHeading, BookPage2NumberContainer,BookPage2Container, BookPage2MainHeadingContainer, BookPage2MainHeadingSmallContainer, BookPage2MainHeadingSmall, BookPage2SubHeadingContainer, BookPage2SubHeading, BookPage2MainContainer,
-  BookPage2Features,BookInquireContainer2,BookKnowMoreContainer2, BookContainerMobile,BookPage2FeatureLi,BookFlipPageInfo, ButtonService, FlipHintContainer, FlipHintLeftContainer, FlipHintRightContainer, FlipHintImage
+  BookPage2Features,BookInquireContainer2,BookKnowMoreContainer2, BookContainerMobile,BookPage2FeatureLi,BookFlipPageInfo, ButtonService, FlipHintContainerMobile, FlipHintLeftContainer, FlipHintRightContainer, FlipHintImage, FlipHintContainer, FlipHintContentContainer
 } from './ServicesElements';
 import {Row, Container, Col} from 'reactstrap';
 import { Link } from 'react-router-dom';
@@ -29,17 +29,19 @@ const PageCover = React.forwardRef((props, ref) => {
 const PageCoverBack = React.forwardRef((props, ref) => {
     
     
-    console.log(props.hintLoaded, "in page cover");
+    // console.log(props.hintLoadedMobile, "in page cover");
     return (
       // <div className="demoPage" ref={ref} data-density="hard">
       <div className="page page-cover" ref={ref}>
         <BookPageContainer id = {0}>
           <ScrollAnimation animateIn="animate__fadeOut" duration="2.5" initiallyVisible={true} animateOnce="false" delay="500" 
             afterAnimatedIn={function afterAnimatedIn(v) {
-	              props.setHintLoaded(1);
-                console.log(props.hintLoaded, "loaded");
+	              props.setHintLoadedMobile(1);
+                props.setHintLoaded(1);
+                // console.log(props.hintLoadedMobile, "loaded");
 	        }}>
-            <MobileFlipHint hintLoaded = {props.hintLoaded}/>
+            <MobileFlipHint hintLoadedMobile = {props.hintLoadedMobile}/>
+            <DesktopLeftFlipHint hintLoaded = {props.hintLoaded}/>
           </ScrollAnimation>
           <BookCoverBackContainer>
           <BookFlipPageInfo>
@@ -76,7 +78,7 @@ const EndPage = React.forwardRef((props, ref) => {
 
 const MobileFlipHint = React.forwardRef((props,ref) => {
   return(
-    <FlipHintContainer hintLoaded={props.hintLoaded}>
+    <FlipHintContainerMobile hintLoadedMobile={props.hintLoadedMobile}>
       
       <FlipHintLeftContainer>
         Previous <br/> Page
@@ -86,8 +88,38 @@ const MobileFlipHint = React.forwardRef((props,ref) => {
         Next <br/> Page
         <FlipHintImage src="assets\images\logos\clicking_r_w.png" alt="Click Here"/>
       </FlipHintRightContainer>
+    </FlipHintContainerMobile>
+  );
+});
+
+const DesktopLeftFlipHint = React.forwardRef((props,ref)=>{
+  return(
+    <FlipHintContainer hintLoaded={props.hintLoaded}>
+      <FlipHintContentContainer>
+        Previous <br/> Page
+        <FlipHintImage src="assets\images\logos\clicking_l_w.png" alt="Click Here"/>
+      </FlipHintContentContainer>
     </FlipHintContainer>
   );
+});
+const DesktopRightFlipHint = React.forwardRef((props,ref)=>{
+  
+  if(props.id !== 1){
+    return(
+      <span></span>
+    );
+  }
+  else {
+    return(
+      <FlipHintContainer hintLoaded={props.hintLoaded}>
+        <FlipHintContentContainer>
+          Next <br/> Page
+          <FlipHintImage src="assets\images\logos\clicking_r_w.png" alt="Click Here"/>
+        </FlipHintContentContainer>
+      </FlipHintContainer>
+    );
+  }
+  
 });
 
 const Page2 = React.forwardRef((props,ref) =>{
@@ -115,6 +147,13 @@ const Page2 = React.forwardRef((props,ref) =>{
     return(
       <div className="page-content" ref={ref} >
         <BookPage2Container id = {props.service.id + 1}>
+          <ScrollAnimation animateIn="animate__fadeOut" duration="2.5" initiallyVisible={true} animateOnce="false" delay="500" 
+              afterAnimatedIn={function afterAnimatedIn(v) {
+                  props.setHintLoaded(1);
+            }}>
+            <DesktopRightFlipHint hintLoaded = {props.hintLoaded} id = {props.service.id + 1}/>
+          </ScrollAnimation>
+
           <BookPage2NumberContainer id = {props.service.id + 1}>
             <BookPage2Number>{props.service.number}</BookPage2Number>
           </BookPage2NumberContainer>
@@ -154,60 +193,61 @@ const Page2 = React.forwardRef((props,ref) =>{
   }
 });
 
-const Page = React.forwardRef((props, ref) => {
-  // console.log(props.service.link);
+// const Page = React.forwardRef((props, ref) => {
+//   // console.log(props.service.link);
 
-  const KnowMoreLink = () => {
-    if(props.service.link === ""){
-      return(
-            <span></span>
+//   const KnowMoreLink = () => {
+//     if(props.service.link === ""){
+//       return(
+//             <span></span>
 
-      );
-    } else {
-      return(
-        <BookKnowMoreLink href={props.service.link}>Recent Projects</BookKnowMoreLink>
-      );
-    }
-  };
+//       );
+//     } else {
+//       return(
+//         <BookKnowMoreLink href={props.service.link}>Recent Projects</BookKnowMoreLink>
+//       );
+//     }
+//   };
 
-  const features = props.service.features.map((feature) => {
-    return(<li>{feature}</li>);
-  });
-    return (
-        <div className="page-content" ref={ref} >
-            <BookPageContainer id = {props.service.id + 1}>
-            <BookPageLogoContainer  id = {props.service.id + 1}>
-              <BookPageLogo src={props.service.image}/>
-            </BookPageLogoContainer>
-            <BookPageContentContainer id = {props.service.id + 1}>
-              <BookPageHeader>
-                {props.service.name}
-              </BookPageHeader>
-              <BookPageFeatures>
-                {features} 
-              </BookPageFeatures>
-              <BookKnowMoreContainer>
-                <KnowMoreLink />
-              </BookKnowMoreContainer>
-              <BookInquireContainer>
-                <BookInquireLink to="/enquiry#top">Inquire</BookInquireLink>
-              </BookInquireContainer>
-            </BookPageContentContainer>
-            {/* <h1>Page Header</h1>
-            <p>{props.children}</p>
-            <p>Page number: {props.number}</p> */}
-            </BookPageContainer>
-        </div>
-    );
-});
+//   const features = props.service.features.map((feature) => {
+//     return(<li>{feature}</li>);
+//   });
+//     return (
+//         <div className="page-content" ref={ref} >
+//             <BookPageContainer id = {props.service.id + 1}>
+//             <BookPageLogoContainer  id = {props.service.id + 1}>
+//               <BookPageLogo src={props.service.image}/>
+//             </BookPageLogoContainer>
+//             <BookPageContentContainer id = {props.service.id + 1}>
+//               <BookPageHeader>
+//                 {props.service.name}
+//               </BookPageHeader>
+//               <BookPageFeatures>
+//                 {features} 
+//               </BookPageFeatures>
+//               <BookKnowMoreContainer>
+//                 <KnowMoreLink />
+//               </BookKnowMoreContainer>
+//               <BookInquireContainer>
+//                 <BookInquireLink to="/enquiry#top">Inquire</BookInquireLink>
+//               </BookInquireContainer>
+//             </BookPageContentContainer>
+//             {/* <h1>Page Header</h1>
+//             <p>{props.children}</p>
+//             <p>Page number: {props.number}</p> */}
+//             </BookPageContainer>
+//         </div>
+//     );
+// });
 
 const Book = (props) => {
 
+  const [hintLoadedMobile, setHintLoadedMobile] = useState(0);
   const [hintLoaded, setHintLoaded] = useState(0);
   // console.log(Object.keys(props.services).length);
   const page = props.services.map((service)=>{
     
-    return(<Page2 service = {service}/>);
+    return(<Page2 service = {service} hintLoaded={hintLoaded} setHintLoaded={setHintLoaded}/>);
       // return(<div><img height='253px' width='253px' src={service.name}/></div>);
       
   });
@@ -219,7 +259,7 @@ const Book = (props) => {
       <span>
       <ScrollAnimation animateIn="animate__slideInRight" duration="2.5" animateOnce="true" delay="500"
       afterAnimatedIn={() =>
-        book.current.pageFlip().flipNext()}>
+        book.current.pageFlip().flipNext()} >
         <BookContainer>
         <HTMLFlipBook 
           width={550}
@@ -240,7 +280,9 @@ const Book = (props) => {
           ref={book}
         >
             <PageCover></PageCover>
-            <PageCoverBack  hintLoaded={hintLoaded} setHintLoaded={setHintLoaded}/>
+            <PageCoverBack  hintLoadedMobile={hintLoadedMobile} setHintLoadedMobile={setHintLoadedMobile}
+                hintLoaded={hintLoaded} setHintLoaded={setHintLoaded}
+              />
             {page}
             {/* <Page number="1">Page text</Page>
             <Page number="2">Page text</Page>
@@ -254,7 +296,7 @@ const Book = (props) => {
       </ScrollAnimation>
       <ScrollAnimation animateIn="animate__slideInRight" duration="2.5" animateOnce="true" delay="500"
       afterAnimatedIn={() =>
-        book2.current.pageFlip().flipNext()}>
+        book2.current.pageFlip().flipNext()} >
         <BookContainerMobile>
         <HTMLFlipBook 
           width={320}
@@ -275,7 +317,9 @@ const Book = (props) => {
           ref={book2}
         >
             <PageCover></PageCover>
-            <PageCoverBack hintLoaded={hintLoaded} setHintLoaded={setHintLoaded}/>
+            <PageCoverBack hintLoadedMobile={hintLoadedMobile} setHintLoadedMobile={setHintLoadedMobile}
+                hintLoaded={hintLoaded} setHintLoaded={setHintLoaded}
+              />
             {page}
             {/* <Page number="1">Page text</Page>
             <Page number="2">Page text</Page>
