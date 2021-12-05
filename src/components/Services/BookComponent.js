@@ -34,7 +34,7 @@ const PageCoverBack = React.forwardRef((props, ref) => {
       // <div className="demoPage" ref={ref} data-density="hard">
       <div className="page page-cover" ref={ref}>
         <BookPageContainer id = {0}>
-          <ScrollAnimation animateIn="animate__fadeOut" duration="2.5" initiallyVisible={true} animateOnce="false" delay="500" 
+          <ScrollAnimation animateIn="animate__fadeOut" duration="1.5" animatePreScroll={true} initiallyVisible={true} animateOnce="false" delay="1500" 
             afterAnimatedIn={function afterAnimatedIn(v) {
 	              props.setHintLoadedMobile(1);
                 props.setHintLoaded(1);
@@ -252,14 +252,23 @@ const Book = (props) => {
       
   });
 
+  function scroll (amountToScroll){
+    //amount to scroll is negative to scroll up
+    window.scrollBy(0 , amountToScroll);
+    console.log("scroll triggered",amountToScroll);
+  }
+
   const book = useRef();
   const book2 = useRef();
 
     return (
       <span>
       <ScrollAnimation animateIn="animate__slideInRight" duration="2.5" animateOnce="true" delay="500" animateOnce="true" 
-      afterAnimatedIn={() =>
-        book.current.pageFlip().flipNext()} >
+      afterAnimatedIn={() =>{
+        book.current.pageFlip().flipNext();
+        window.scrollBy(0 , 1);
+      }} 
+        >
         <BookContainer>
         <HTMLFlipBook 
           width={550}
@@ -295,9 +304,11 @@ const Book = (props) => {
         </BookContainer>
       </ScrollAnimation>
       <ScrollAnimation animateIn="animate__slideInRight" duration="2.5" animateOnce="true" delay="500" animateOnce="true"
-      afterAnimatedIn={() =>
-        book2.current.pageFlip().flipNext()} >
-        <BookContainerMobile>
+      afterAnimatedIn={() =>{
+        book2.current.pageFlip().flipNext();
+        window.scrollBy(0 , 1);
+        }}  >
+        <BookContainerMobile >
         <ScrollPreventFlip hintLoadedMobile={hintLoadedMobile}/>
         <HTMLFlipBook 
           width={320}
