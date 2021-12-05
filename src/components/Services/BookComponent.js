@@ -321,6 +321,7 @@ const Book = (props) => {
           maxShadowOpacity={0.6}
           showCover={true}
           mobileScrollSupport={true}
+          flippingTime={1500}
           // onFlip={this.onPage}
           // onChangeOrientation={this.onChangeOrientation}
           // onChangeState={this.onChangeState}
