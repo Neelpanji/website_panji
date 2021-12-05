@@ -6,6 +6,7 @@ export const ServicesContainer = styled.div`
     background-color: black;
     color: #fff;
     // height: 650px;
+    overflow: hidden;
 `;
 
 export const BookContainer = styled.div`
@@ -855,4 +856,16 @@ export const FlipHintContentContainer = styled.div`
     left:0%;
 
     flex-direction:column;
+`;
+
+
+// trying scroll flip prevent
+export const ScrollPreventFlip = styled.div`
+    position:absolute;
+    width:100%;
+    height: 100%;
+    left:0%;
+    opacity: 0;
+    z-index: 8;
+    display: ${({ hintLoadedMobile }) => hintLoadedMobile ? 'none' : 'block'};
 `;
