@@ -856,3 +856,15 @@ export const FlipHintContentContainer = styled.div`
 
     flex-direction:column;
 `;
+
+
+// trying scroll flip prevent
+export const ScrollPreventFlip = styled.div`
+    position:absolute;
+    width:100%;
+    height: 100%;
+    left:0%;
+    opacity: 0;
+    z-index: 10;
+    display: ${({ hintLoadedMobile }) => hintLoadedMobile ? 'none' : 'block'};
+`;

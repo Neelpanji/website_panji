@@ -2,7 +2,7 @@ import HTMLFlipBook from 'react-pageflip';
 import React,{useRef,useState} from 'react';
 import {  BookContainer, BookPageContainer, BookCoverPageContainer, BookPageLogoContainer, BookPageLogo, BookPageContentContainer, BookPageHeader, BookPageFeatures, BookCoverPageImg, BookInquireContainer, BookInquireLink, BookFlipContainer, BookCoverBackContainer, BookKnowMoreContainer, BookKnowMoreLink,
   BookPage2Number, BookPage2MainHeading, BookPage2NumberContainer,BookPage2Container, BookPage2MainHeadingContainer, BookPage2MainHeadingSmallContainer, BookPage2MainHeadingSmall, BookPage2SubHeadingContainer, BookPage2SubHeading, BookPage2MainContainer,
-  BookPage2Features,BookInquireContainer2,BookKnowMoreContainer2, BookContainerMobile,BookPage2FeatureLi,BookFlipPageInfo, ButtonService, FlipHintContainerMobile, FlipHintLeftContainer, FlipHintRightContainer, FlipHintImage, FlipHintContainer, FlipHintContentContainer
+  BookPage2Features,BookInquireContainer2,BookKnowMoreContainer2, BookContainerMobile,BookPage2FeatureLi,BookFlipPageInfo, ButtonService, FlipHintContainerMobile, FlipHintLeftContainer, FlipHintRightContainer, FlipHintImage, FlipHintContainer, FlipHintContentContainer, ScrollPreventFlip
 } from './ServicesElements';
 import {Row, Container, Col} from 'reactstrap';
 import { Link } from 'react-router-dom';
@@ -147,7 +147,7 @@ const Page2 = React.forwardRef((props,ref) =>{
     return(
       <div className="page-content" ref={ref} >
         <BookPage2Container id = {props.service.id + 1}>
-          <ScrollAnimation animateIn="animate__fadeOut" duration="2.5" initiallyVisible={true} animateOnce="false" delay="500" 
+          <ScrollAnimation animateIn="animate__fadeOut" duration="1.5" initiallyVisible={true} animateOnce="false" delay="1500" 
               afterAnimatedIn={function afterAnimatedIn(v) {
                   props.setHintLoaded(1);
             }}>
@@ -298,6 +298,7 @@ const Book = (props) => {
       afterAnimatedIn={() =>
         book2.current.pageFlip().flipNext()} >
         <BookContainerMobile>
+        <ScrollPreventFlip hintLoadedMobile={hintLoadedMobile}/>
         <HTMLFlipBook 
           width={320}
           height={480}
