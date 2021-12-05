@@ -257,7 +257,7 @@ const Book = (props) => {
 
     return (
       <span>
-      <ScrollAnimation animateIn="animate__slideInRight" duration="2.5" animateOnce="true" delay="500"
+      <ScrollAnimation animateIn="animate__slideInRight" duration="2.5" animateOnce="true" delay="500" animateOnce="true" 
       afterAnimatedIn={() =>
         book.current.pageFlip().flipNext()} >
         <BookContainer>
@@ -294,7 +294,7 @@ const Book = (props) => {
         </HTMLFlipBook>
         </BookContainer>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="animate__slideInRight" duration="2.5" animateOnce="true" delay="500"
+      <ScrollAnimation animateIn="animate__slideInRight" duration="2.5" animateOnce="true" delay="500" animateOnce="true"
       afterAnimatedIn={() =>
         book2.current.pageFlip().flipNext()} >
         <BookContainerMobile>
