@@ -14,11 +14,29 @@
     {
         "id":2,
         "name":"Podcast Services",
+        "image":"assets/images/clients/vikipod.jpeg",
+        "link":"https://vickibaird.com/podcast"
+    },
+    {
+        "id":3,
+        "name":"Podcast Services",
+        "image":"assets/images/clients/kylapod.jpeg",
+        "link":"https://www.kylacofer.com/leadershipschool"
+    },
+    {
+        "id":4,
+        "name":"Podcast Services",
+        "image":"assets/images/clients/ianapod.jpeg",
+        "link":"https://www.ianacare.com/i-am-not-alone-podcast"
+    },
+    {
+        "id":5,
+        "name":"Podcast Services",
         "image":"assets/images/clients/HF.jpeg",
         "link":"https://www.hayleyfinch.com/"
     },
     {
-        "id":3,
+        "id":6,
         "name":"Podcast Services",
         "image":"assets/images/clients/Court.jpeg",
         "link":"https://www.listennotes.com/podcasts/out-of-the-courtroom-jason-m-ingber-Cb5Jse8ZGt2/"
