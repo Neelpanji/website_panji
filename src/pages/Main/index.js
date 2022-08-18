@@ -84,9 +84,7 @@ class Main extends Component{
 
         const HomeComponent = () => {
             return(
-                <Home servicesProps={this.props.services}
-                    clientsProps= {this.props.clients}
-                />
+                <Home/>
             );
         }
 

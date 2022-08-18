@@ -21,27 +21,17 @@ import Conversation from '../Conversation';
 //   return null;
 // };
 
-const Home = (props) => {
+const Home = () => {
 
-    // console.log(props);
 
     const ServicesComponent = () => {
         return(
-            // <Services services={props.servicesProps.services}
-            // servicesLoading={props.servicesProps.isLoading}
-            // servicesErrMess={props.servicesProps.errMess}
-            // />
             <Services />
-            
         );
     }
 
     const ClientsComponent = () => {
         return(
-            // <Clients clients={props.clientsProps.clients}
-            // clientsLoading={props.clientsProps.isLoading}
-            // clientsErrMess={props.clientsProps.errMess}
-            // />
             <Clients />
         );
     }

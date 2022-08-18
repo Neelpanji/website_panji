@@ -22,8 +22,6 @@ const Services = () => {
 
     const servicesState = useSelector(state => state.services);
 
-    // console.log("inside services component ", servicesState);
-
     if(servicesState.isLoading)
     {
       return(
@@ -46,47 +44,6 @@ const Services = () => {
                     
                 </ServiceInfo>
                 
-                {/* <Container>
-                    <Row>
-                        <Col lg='3' md='6'>
-                            <ServiceWrapper>
-                                <ServiceCard>
-                                    <ServiceImage src='/pdcst_sample.svg' alt='serv-img'></ServiceImage>
-                                    <ServiceHeading>Service 1</ServiceHeading>
-                                    <SerivceContent>this is the content for the service provided. Lorem ipsum dolor sit amet, consectetur adipiscing elit </SerivceContent>
-                                </ServiceCard>
-                            </ServiceWrapper>
-                        </Col>
-                        <Col lg='3' md='6'>
-                            <ServiceWrapper>
-                                <ServiceCard>
-                                    <ServiceImage src='/pdcst_sample.svg' alt='serv-img'></ServiceImage>
-                                    <ServiceHeading>Service 1</ServiceHeading>
-                                    <SerivceContent>this is the content for the service provided. Lorem ipsum dolor sit amet, consectetur adipiscing elit </SerivceContent>
-                                </ServiceCard>
-                            </ServiceWrapper>
-                        </Col>
-                        <Col lg='3' md='6'>
-                            <ServiceWrapper>
-                                <ServiceCard>
-                                    <ServiceImage src='/pdcst_sample.svg' alt='serv-img'></ServiceImage>
-                                    <ServiceHeading>Service 1</ServiceHeading>
-                                    <SerivceContent>this is the content for the service provided. Lorem ipsum dolor sit amet, consectetur adipiscing elit </SerivceContent>
-                                </ServiceCard>
-                            </ServiceWrapper>
-                        </Col>
-                        <Col lg='3' md='6'>
-                            <ServiceWrapper>
-                                <ServiceCard>
-                                    <ServiceImage src='/pdcst_sample.svg' alt='serv-img'></ServiceImage>
-                                    <ServiceHeading>Service 1</ServiceHeading>
-                                    <SerivceContent>this is the content for the service provided. Lorem ipsum dolor sit amet, consectetur adipiscing elit </SerivceContent>
-                                </ServiceCard>
-                            </ServiceWrapper>
-                        </Col>
-    
-                    </Row>
-                </Container> */}
                 {/* <ScrollAnimation animateIn="animate__slideInRight" duration="1.5" animateOnce="true" delay="500"> */}
                 <Book services={servicesState.services}/>
                 {/* </ScrollAnimation> */}
