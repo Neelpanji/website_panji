@@ -2,9 +2,12 @@ import React ,{useRef} from 'react';
 import emailjs from 'emailjs-com';
 import { Container, Row,Col } from 'reactstrap';
 import { FormElement,ContcatHeading, LabelElement, InputElement, ContactContainer, InputTextArea, FormSubmitButton, SelectElement, OptionElement } from './EnquiryElements'
+import { useSelector } from 'react-redux';
 
-const Enquiry = (props) => {
-    console.log(props.servicesProps.services);
+const Enquiry = () => {
+
+    const servicesState = useSelector(state => state.services);
+
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
@@ -19,7 +22,7 @@ const Enquiry = (props) => {
             });
       };
 
-    const services = props.servicesProps.services.map((service) => {
+    const services = servicesState.services.map((service) => {
         if(service.features.length === 0){
             return(<OptionElement value={service.name}>{service.name}</OptionElement>);
         }      

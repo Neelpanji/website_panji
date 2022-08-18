@@ -16,19 +16,23 @@ import { Loading } from '../Loading/LoadingComponent';
 
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import { useSelector } from 'react-redux';
 
-const Services = (props) => {
+const Services = () => {
 
+    const servicesState = useSelector(state => state.services);
 
-    if(props.servicesLoading)
+    // console.log("inside services component ", servicesState);
+
+    if(servicesState.isLoading)
     {
       return(
         <Loading />
       );
     }
-    else if(props.servicesErrMess)
+    else if(servicesState.errMess)
     {
-      return(<h4>{props.servicesErrMess}</h4>);
+      return(<h4>{servicesState.errMess}</h4>);
     }
     else{
         return (
@@ -84,7 +88,7 @@ const Services = (props) => {
                     </Row>
                 </Container> */}
                 {/* <ScrollAnimation animateIn="animate__slideInRight" duration="1.5" animateOnce="true" delay="500"> */}
-                <Book services={props.services}/>
+                <Book services={servicesState.services}/>
                 {/* </ScrollAnimation> */}
             </ServicesContainer>
         )
