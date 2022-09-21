@@ -20,7 +20,7 @@ const responsive = {
 	},
 	tablet: {
 		breakpoint: { max: 1024, min: 560 },
-		items: 2,
+		items: 1,
 		slidesToSlide: 1 // optional, default to 1.
 	},
 	mobile: {
@@ -66,8 +66,8 @@ const Clients = () => {
 		return <i className="custom-right-arrow" onClick={() => onClick()} />;
 	};
 
-	const clients = clientsState.clients.map((client) => {
-		// console.log(client);
+	const clients = clientsState.clients.map((client,index) => {
+		// console.log(client, index);
 		return (<div><ClientImageLink target="_blank" rel="noopener noreferrer" href={client.link}><ClientImage src={client.image} /></ClientImageLink></div>);
 
 	});

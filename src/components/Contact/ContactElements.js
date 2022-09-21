@@ -69,3 +69,52 @@ export const FormSubmitButton = styled.button`
         transform:translateY(-3px);
     }
 `;
+
+export const SubmitConfirmation = styled.div`
+    text-align:center;
+    color:white;
+    padding: 10px 0;
+`;
+
+export const ConfirmationImageContainer = styled.div`
+    display:flex;
+    justify-content:right;
+`;
+
+export const ConfirmationImage = styled.img`
+    
+    @media screen and (max-width: 1990px){
+        max-height: 40vh;
+    }
+    @media screen and (max-width: 1366px){
+    }
+    @media screen and (max-width: 1025px){
+        
+    }
+    @media screen and (max-width: 560px){
+        max-height: 50vh;
+    }
+`;
+
+
+
+export const ConfirmationContainer = styled.div`
+    
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-top: 10px;
+    width: 50%;
+    font-size:1.1rem;
+    @media screen and (max-width: 1990px){
+    }
+    @media screen and (max-width: 1366px){
+    }
+    @media screen and (max-width: 1025px){
+        width: 70%;
+    }
+    @media screen and (max-width: 560px){
+        width: 90%;
+        display:block;
+    }
+`;
