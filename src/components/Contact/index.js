@@ -38,9 +38,9 @@ const Contact = () => {
         fetch('https://api.emailjs.com/api/v1.0/email/send', {
             method: 'POST',
             body: JSON.stringify({
-                "service_id": "service_sgr56di",
-                "template_id": "template_hghbgby",
-                "user_id": "user_H2i5PETnod5gp0FBBylNm",
+                "service_id": "service_hllzzpo",
+                "template_id": "template_rwenu6d",
+                "user_id": "user_nlsEMvuE69qao2t7h0SCS",
                 "template_params": {
                     "name": name,
                     "mail": email,
