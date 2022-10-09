@@ -69,6 +69,7 @@ class Main extends Component{
         parallaxController: PropTypes.object,
     }
     
+    // TODO- should remove this parallax stuff
     componentDidUpdate(prevProps) {
         // console.log(prevProps.location,this.props.location);
         if (prevProps.location !== this.props.location) {
@@ -83,9 +84,7 @@ class Main extends Component{
 
         const HomeComponent = () => {
             return(
-                <Home servicesProps={this.props.services}
-                    clientsProps= {this.props.clients}
-                />
+                <Home/>
             );
         }
 
@@ -104,7 +103,7 @@ class Main extends Component{
                         <Contact />
                     </Route>
                     <Route path="/enquiry">
-                        <Enquiry servicesProps={this.props.services}/>
+                        <Enquiry />
                     </Route>
                 </Switch>
                 <FloatingContact />
