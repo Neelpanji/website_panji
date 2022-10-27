@@ -101,7 +101,9 @@ const Navbar = ({ open, toggle}) => {
                                 activeClass="active"
                                 >Contact</NavLink>
                             </NavItem>
+                            
                         </NavMenu>
+                        <NavButtonLink to="/">Book a Free Call</NavButtonLink>
                         <Burger open={open} toggle={toggle}/>
                     </NavbarContainer>
 
