@@ -22,6 +22,7 @@ import Enquiry from '../../components/Inquiry';
 
 import { withController } from "react-scroll-parallax";
 import PropTypes from 'prop-types'; 
+import PopupModal from '../../components/PopupModal';
 
 const mapStateToProps = state => {
     return {
@@ -46,11 +47,13 @@ class Main extends Component{
           // width: window.innerWidth
        };
        this.setOpen= this.setOpen.bind(this);
-      }
+    }
 
-      setOpen(opn){
+    setOpen(opn){
         this.setState({open : !opn});
     }
+
+    
     
     componentDidMount(){
         this.props.fetchServices();
@@ -92,7 +95,7 @@ class Main extends Component{
             <div >
                 <Sidebar open={this.state.open} toggle={this.setOpen}/>
                 <Navbar open={this.state.open} toggle={this.setOpen}/>
-                
+                <PopupModal />
                 <Switch>
                     <Route exact path="/" component={HomeComponent}>
                     </Route>
