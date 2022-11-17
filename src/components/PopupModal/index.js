@@ -78,7 +78,6 @@ const PopupModal = () => {
                                 !formSubmited &&
                                 <FormSubmitButton>Submit</FormSubmitButton>
                             }
-
                             {
                                 formSubmited &&
                                 <LabelElement> Thank You </LabelElement>

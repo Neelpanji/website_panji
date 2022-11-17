@@ -287,6 +287,7 @@ const Book = (props) => {
           className="demo-book"
           // ref={(el) => (this.flipBook = el)}
           ref={book}
+          autoSize={true}
         >
             <PageCover></PageCover>
             <PageCoverBack  hintLoadedMobile={hintLoadedMobile} setHintLoadedMobile={setHintLoadedMobile}

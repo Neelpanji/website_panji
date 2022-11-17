@@ -36,6 +36,7 @@ export const CloseContainer = styled.div`
 
 export const Close = styled.div`
     margin: 0.5rem;
+    cursor: pointer;
 `;
 
 export const CloseIcon = styled.img`
@@ -80,6 +81,7 @@ export const FormSubmitButton = styled.button`
     transition: ease-in-out .3s;
     margin: 1rem 0 0 0;
     &:hover{
-        transform:translateY(-3px);
+        color: black;
+        background: #70D9B8;
     }
 `;
