@@ -13,7 +13,7 @@ import {
     withRouter
   } from "react-router-dom";
 import Home from '../../components/Home';
-import { fetchClients, fetchServices } from '../../redux/ActionCreators';
+import { fetchClients, fetchServices, fetchTestimonials } from '../../redux/ActionCreators';
 import { connect } from 'react-redux';
 import FloatingContact from '../../components/FloatingContact';
 import Contact from '../../components/Contact';
@@ -27,13 +27,15 @@ import PopupModal from '../../components/PopupModal';
 const mapStateToProps = state => {
     return {
         services: state.services,
-        clients: state.clients
+        clients: state.clients,
+        testimonials: state.testimonials
     }
 }
 
 const mapDispatchToProps = (dispatch) => ({
     fetchServices : () => {dispatch(fetchServices())},
     fetchClients : () => {dispatch(fetchClients())},
+    fetchTestimonials: () => {dispatch(fetchTestimonials())}
   
 });
 
@@ -58,6 +60,7 @@ class Main extends Component{
     componentDidMount(){
         this.props.fetchServices();
         this.props.fetchClients();
+        this.props.fetchTestimonials();
         // window.addEventListener("resize",this.handleResize);
         this.props.parallaxController.update();
     }
