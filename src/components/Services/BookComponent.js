@@ -181,7 +181,7 @@ const Page2 = React.forwardRef((props,ref) =>{
           <BookInquireContainer2>
             Not satisfied? Ask for more - 
             {/* <BookInquireLink to="/enquiry#top">Reach Me</BookInquireLink> */}
-            <Link to="/enquiry#top"><ButtonService>Reach Me</ButtonService></Link>
+            <Link to="/contact#top"><ButtonService>Reach Me</ButtonService></Link>
           </BookInquireContainer2>
           <BookKnowMoreContainer2>
             <KnowMoreLink />
@@ -263,7 +263,7 @@ const Book = (props) => {
 
     return (
       <span>
-      <ScrollAnimation animateIn="animate__slideInRight" duration="2.5" animateOnce="true" delay="500" animateOnce="true" 
+      <ScrollAnimation animateIn="animate__slideInRight" duration="2.5" animateOnce="true" delay="500"  
       afterAnimatedIn={() =>{
         book.current.pageFlip().flipNext();
         window.scrollBy(0 , 1);
@@ -287,6 +287,7 @@ const Book = (props) => {
           className="demo-book"
           // ref={(el) => (this.flipBook = el)}
           ref={book}
+          autoSize={true}
         >
             <PageCover></PageCover>
             <PageCoverBack  hintLoadedMobile={hintLoadedMobile} setHintLoadedMobile={setHintLoadedMobile}
@@ -303,7 +304,7 @@ const Book = (props) => {
         </HTMLFlipBook>
         </BookContainer>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="animate__slideInRight" duration="2.5" animateOnce="true" delay="500" animateOnce="true"
+      <ScrollAnimation animateIn="animate__slideInRight" duration="2.5" animateOnce="true" delay="500" 
       afterAnimatedIn={() =>{
         book2.current.pageFlip().flipNext();
         window.scrollBy(0 , 1);

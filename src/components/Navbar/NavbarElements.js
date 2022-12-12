@@ -228,20 +228,33 @@ export const NavButton = styled.nav`
 `;
 
 export const NavButtonLink = styled(NavHashLink)`
-  border-radius: 25px;
-  background: white;
-  white-space: nowrap;
-  padding: 10px 22px;
-  color: #777;
-  font-size: 16px;
-  outline: none;
-  border:none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
+
+  display:flex;
+  align-items:center;
+  outline:none;
+  background: black;
+  color: #70D9B8;
+  border: 2px solid #70D9B8;
+  border-radius: 5px;
+  transition: ease-in-out .4s;
+  text-decoration:none;
+  padding: 0.2rem;
+  margin:1.2rem 0.5rem;
+  
+  @media screen and (max-width:1026px) {
+    font-size: 1.7vw;
+    font-weight: 600;
+  }
+  @media screen and (max-width:560px){
+    font-size:3vw;
+  }
+  @media screen and (max-width:450px){
+    font-size:3.5vw;
+  }
 
   &:hover {
-    color: #777;
+    color: #111;
+    background: #70D9B8;
   }
 
 `;

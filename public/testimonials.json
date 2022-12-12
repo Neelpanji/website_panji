@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Podcast  Name",
+        "image-url": "assets/images/clients/AJVC.jpeg",
+        "testimonial": "This is sample testimonial, which appreciates panji, and tries to convince us, everything will be fine. it will be alright.",
+        "video-embedded-link": "https://www.youtube.com/embed/o5F8MOz_IDw"
+    },
+    {
+        "id": 2,
+        "name": "Podcast  Name2",
+        "image-url": "assets/images/clients/AJVC.jpeg",
+        "testimonial": "This is sample testimonial, which appreciates panji, and tries to convince us, everything will be fine. it will be alright.",
+        "video-embedded-link": "https://www.youtube.com/embed/o5F8MOz_IDw"
+    }
+]

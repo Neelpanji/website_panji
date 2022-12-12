@@ -657,11 +657,24 @@ export const BookPage2Features = styled.ul`
     @media screen and (max-width:1366px) {
         font-size:1.05rem;
     }
+    @media screen and (max-width:1236px) {
+        font-size:.9rem;
+    }
     @media screen and (max-width:1026px) {
         font-size:.8rem;
     }
+    @media screen and (max-width:850px) {
+        
+        top: 29%;
+        left: 6%;
+        top: 26%;
+        width: 88%;
+    }
     @media screen and (max-width:769px) {
         font-size:1.3rem;
+        top:33%;
+        left: 10%;
+        width: 80%;
     }
     @media screen and (max-width:561px) {
         font-size:.85rem;
@@ -688,13 +701,17 @@ export const BookInquireContainer2 = styled.div`
     @media screen and (max-width:1366px) {
         font-size:1.2rem;
     }
-    @media screen and (max-width:1026px) {
+    @media screen and (max-width:1236px) {
         font-size:1rem;
-        bottom: 18%;
+    }
+    @media screen and (max-width:1026px) {
+        font-size:.9rem;
+        bottom: 5%;
         left:12%;
     }
     @media screen and (max-width:769px) {
         font-size:1.3rem;
+        bottom: 15%;
     }
     @media screen and (max-width:561px) {
         font-size:.9rem;
@@ -707,7 +724,11 @@ export const BookKnowMoreContainer2 = styled.div`
     bottom:12%;
     left:12%;
     @media screen and (max-width:1026px) {
-        bottom: 10%;
+        bottom: 9%;
+        display:none;
+    }
+    @media screen and (max-width: 769px){
+        display: block;
     }
     @media screen and (max-width:561px) {
         bottom: 7%;
@@ -741,8 +762,11 @@ export const ButtonService = styled.button`
     @media screen and (max-width:1366px) {
         font-size:1.2rem;
     }
-    @media screen and (max-width:1026px) {
+    @media screen and (max-width:1236px) {
         font-size:1rem;
+    }
+    @media screen and (max-width:1026px) {
+        font-size:.9rem;
     }
     @media screen and (max-width:769px) {
         font-size:1.3rem;
