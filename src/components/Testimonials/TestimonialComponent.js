@@ -1,11 +1,18 @@
 import React from 'react';
-import { TestimonialContent, TestimonialContentContainer, TestimonialContentHeading, TestimonialHeading, TestimonialHr, TestimonialImage, TestimonialImageContainer,  TestimonialVideo,  TestimonialVideoContainer, TestimonialVideoEmbed, TestimonialWholeContentContainer } from './TestimonialsElements';
+import { TestimonialContent, TestimonialContentContainer, TestimonialContentHeading, TestimonialHeading, TestimonialHr, TestimonialImage, TestimonialImageContainer, TestimonialVideo, TestimonialVideoContainer, TestimonialVideoEmbed, TestimonialWholeContentContainer } from './TestimonialsElements';
 
 
-const TestimonialComponent = ({testimonial}) => {
-  return (
-    <>
+const TestimonialComponent = ({ testimonial }) => {
+    return (
+        <>
             <TestimonialHr />
+
+            <TestimonialVideoContainer>
+                <TestimonialVideo >
+                    <TestimonialVideoEmbed width="560" height="315" src={testimonial['video-embedded-link']} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+                </TestimonialVideo>
+            </TestimonialVideoContainer>
+
             <TestimonialWholeContentContainer>
                 <TestimonialImageContainer >
                     <TestimonialImage >
@@ -17,16 +24,10 @@ const TestimonialComponent = ({testimonial}) => {
                     <TestimonialContent>{testimonial.testimonial}</TestimonialContent>
                 </TestimonialContentContainer>
             </TestimonialWholeContentContainer>
-            <TestimonialVideoContainer>
 
-
-                <TestimonialVideo >
-                    <TestimonialVideoEmbed width="560" height="315"  src={testimonial['video-embedded-link']} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
-                </TestimonialVideo>
-            </TestimonialVideoContainer>
             <TestimonialHr />
         </>
-  )
+    )
 }
 
 export default TestimonialComponent

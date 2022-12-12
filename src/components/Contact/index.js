@@ -82,7 +82,7 @@ const Contact = () => {
 
                 <CalendlyContentContainer>
                     <CalendlyContent>Book a 15 min call (it's free) </CalendlyContent>
-                    <a href='/'><CalendlyButton>Calendar</CalendlyButton></a>
+                    <a href="https://calendly.com/neelpanji/30min" target={"_blank"}><CalendlyButton>Calendar</CalendlyButton></a>
                 </CalendlyContentContainer>
                 
             }
