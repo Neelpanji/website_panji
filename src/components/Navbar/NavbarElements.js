@@ -227,7 +227,7 @@ export const NavButton = styled.nav`
     }
 `;
 
-export const NavButtonLink = styled(NavHashLink)`
+export const NavButtonLink = styled.a`
 
   display:flex;
   align-items:center;
