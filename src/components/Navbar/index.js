@@ -101,7 +101,9 @@ const Navbar = ({ open, toggle}) => {
                                 activeClass="active"
                                 >Contact</NavLink>
                             </NavItem>
+                            
                         </NavMenu>
+                        <NavButtonLink href="https://calendly.com/neelpanji/30min" target={"_blank"}>Book a Free Call</NavButtonLink>
                         <Burger open={open} toggle={toggle}/>
                     </NavbarContainer>
 

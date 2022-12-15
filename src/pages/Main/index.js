@@ -13,7 +13,7 @@ import {
     withRouter
   } from "react-router-dom";
 import Home from '../../components/Home';
-import { fetchClients, fetchServices } from '../../redux/ActionCreators';
+import { fetchClients, fetchServices, fetchTestimonials } from '../../redux/ActionCreators';
 import { connect } from 'react-redux';
 import FloatingContact from '../../components/FloatingContact';
 import Contact from '../../components/Contact';
@@ -22,17 +22,20 @@ import Enquiry from '../../components/Inquiry';
 
 import { withController } from "react-scroll-parallax";
 import PropTypes from 'prop-types'; 
+import PopupModal from '../../components/PopupModal';
 
 const mapStateToProps = state => {
     return {
         services: state.services,
-        clients: state.clients
+        clients: state.clients,
+        testimonials: state.testimonials
     }
 }
 
 const mapDispatchToProps = (dispatch) => ({
     fetchServices : () => {dispatch(fetchServices())},
     fetchClients : () => {dispatch(fetchClients())},
+    fetchTestimonials: () => {dispatch(fetchTestimonials())}
   
 });
 
@@ -46,15 +49,18 @@ class Main extends Component{
           // width: window.innerWidth
        };
        this.setOpen= this.setOpen.bind(this);
-      }
+    }
 
-      setOpen(opn){
+    setOpen(opn){
         this.setState({open : !opn});
     }
+
+    
     
     componentDidMount(){
         this.props.fetchServices();
         this.props.fetchClients();
+        this.props.fetchTestimonials();
         // window.addEventListener("resize",this.handleResize);
         this.props.parallaxController.update();
     }
@@ -92,7 +98,7 @@ class Main extends Component{
             <div >
                 <Sidebar open={this.state.open} toggle={this.setOpen}/>
                 <Navbar open={this.state.open} toggle={this.setOpen}/>
-                
+                <PopupModal />
                 <Switch>
                     <Route exact path="/" component={HomeComponent}>
                     </Route>

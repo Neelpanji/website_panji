@@ -79,3 +79,43 @@ export const fetchClients = () => (dispatch) =>{
         .catch(error => dispatch(clientsFailed(error.message)));
 }
 
+
+// for testimonials
+
+export const testimonialsLoading = () => ({
+    type: ActionTypes.TESTIMONIALS_LOADING
+});
+
+export const addTestimonials = (testimonials) => ({
+    type: ActionTypes.ADD_TESTIMONIALS,
+    payload: testimonials
+}); 
+
+export const testimonialsFailed = (errMess) => ({
+    type: ActionTypes.TESTIMONIALS_FAILED,
+    payload:errMess
+});
+
+export const fetchTestimonials = () => (dispatch) => {
+    dispatch(testimonialsLoading(true))
+
+    return fetch(baseUrl+'testimonials.json')
+        .then(
+            response =>{
+                if(response.ok){
+                    return response;
+                }else{
+                    var error = new Error('Error '+response.status+" : "+response.statusText);
+                    error.response = response;
+                    throw error;
+                }
+            },
+            error => {
+                var errmess = new Error(error.message);
+                throw errmess;
+            }
+        )
+        .then(response=> response.json())
+        .then(testimonials => dispatch(addTestimonials(testimonials)))
+        .catch(error => dispatch(testimonialsFailed(error.message)));
+}

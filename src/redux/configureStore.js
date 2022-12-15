@@ -3,6 +3,7 @@ import logger from "redux-logger";
 import thunk from "redux-thunk";
 import { Clients } from "./clients";
 import { Services } from "./services";
+import { Testimonials } from "./testimonials";
 // import { InitialFeedback } from "./forms";   
 
 export const ConfigureStore = () => {
@@ -10,7 +11,7 @@ export const ConfigureStore = () => {
         combineReducers({
             services: Services,
             clients: Clients,
-            
+            testimonials: Testimonials
         }),
         compose(
             applyMiddleware(thunk, logger),

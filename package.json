@@ -31,6 +31,9 @@
     "use-sound": "^4.0.1",
     "web-vitals": "^1.0.1"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "CI= react-scripts build",
