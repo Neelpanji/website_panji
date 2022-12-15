@@ -45,7 +45,7 @@ const Home = () => {
                 <Hero id='hero'/>
             </Element>
             </section>
-            <EmailCollection></EmailCollection>
+            {/* <EmailCollection></EmailCollection> */}
             <section id="conversation">
                 <Conversation />
             </section>
