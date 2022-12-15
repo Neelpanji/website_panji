@@ -1,6 +1,6 @@
 import React from 'react'
 import TestimonialComponent from './TestimonialComponent'
-import {  TestimonialHeading } from './TestimonialsElements'
+import { TestimonialHeading, TestimonialLeftArrow, TestimonialRightArrow } from './TestimonialsElements'
 import Carousel from "react-multi-carousel";
 import { useSelector } from 'react-redux';
 import { Loading } from '../Loading/LoadingComponent';
@@ -23,6 +23,13 @@ const responsive = {
     }
 };
 
+const CustomLeftArrow = ({ onClick }) => (
+    <i onClick={() => onClick()} className="custom-left-arrow" ><TestimonialLeftArrow/></i>
+  );
+  const CustomRightArrow = ({ onClick }) => {
+    return <i className="custom-right-arrow" onClick={() => onClick()} ><TestimonialRightArrow/></i>;
+  };
+
 const Testimonials = () => {
 
     const testimonialsState = useSelector(state => state.testimonials);
@@ -34,41 +41,43 @@ const Testimonials = () => {
     });
 
     if (testimonialsState.isLoading) {
-		return (
-			<Loading />
-		);
-	}
-	else if (testimonialsState.errMess) {
-		return (<h4>{testimonialsState.errMess}</h4>);
-	}
-	else {
-    return (
-        <>
-            <TestimonialHeading>Testimonials</TestimonialHeading>
-            <Carousel
-                swipeable={true}
-                draggable={true}
-                showDots={false}
-                responsive={responsive}
-                ssr={true} // means to render carousel on server-side.
-                infinite={true}
-                autoPlay={false}
-                autoPlaySpeed={3500}
-                keyBoardControl={true}
-                customTransition="all .7s"
-                transitionDuration={700}
-                containerClass="carousel-container"
-                // deviceType={this.props.deviceType}
-                dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px"
-            >
+        return (
+            <Loading />
+        );
+    }
+    else if (testimonialsState.errMess) {
+        return (<h4>{testimonialsState.errMess}</h4>);
+    }
+    else {
+        return (
+            <>
+                <TestimonialHeading>Testimonials</TestimonialHeading>
+                <Carousel
+                    swipeable={true}
+                    draggable={true}
+                    showDots={false}
+                    responsive={responsive}
+                    ssr={true} // means to render carousel on server-side.
+                    infinite={true}
+                    autoPlay={false}
+                    autoPlaySpeed={3500}
+                    keyBoardControl={true}
+                    customTransition="all .7s"
+                    transitionDuration={700}
+                    containerClass="carousel-container"
+                    // deviceType={this.props.deviceType}
+                    dotListClass="custom-dot-list-style"
+                    itemClass="carousel-item-padding-40-px"
+                    customLeftArrow={<CustomLeftArrow/>}
+                    customRightArrow={<CustomRightArrow/>}
+                >
 
-                {testimonials_section}
-            </Carousel>
-        </>
+                    {testimonials_section}
+                </Carousel>
+            </>
 
 
-    )
+        )
     }
 }
 

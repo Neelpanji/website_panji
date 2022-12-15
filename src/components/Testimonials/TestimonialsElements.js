@@ -78,7 +78,7 @@ export const TestimonialVideoContainer = styled.div`
 
     width:85%;
     @media screen and (min-width:768px){
-        width:70%;
+        width:50%;
     }
     padding: 2rem;
     margin: auto;
@@ -101,3 +101,35 @@ left: 0;
   position: absolute;
 `;
 
+export const TestimonialLeftArrow = styled.div`
+    position: absolute !important;
+    left: 40px;
+    z-index: 1;
+    border: 1px solid white;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 7px;
+    opacity: 0.8;
+    cursor: pointer;
+    transform: rotate(135deg);
+    opacity: 1;
+    color: white;
+`;
+
+export const TestimonialRightArrow = styled.div`
+    position: absolute !important;
+    right: 40px;
+    z-index: 1;
+    border: 1px solid white;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 7px;
+    opacity: 0.8;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    opacity: 1;
+`;
+
+// .custom-right-arrow {
+
+//   }
