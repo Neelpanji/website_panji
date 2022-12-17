@@ -103,31 +103,57 @@ left: 0;
 
 export const TestimonialLeftArrow = styled.div`
     position: absolute !important;
-    left: 40px;
+    left: 70px;
     z-index: 1;
     border: 1px solid white;
     border-width: 0 4px 4px 0;
     display: inline-block;
-    padding: 7px;
+    padding: 12px;
     opacity: 0.8;
     cursor: pointer;
     transform: rotate(135deg);
     opacity: 1;
     color: white;
+
+    @media screen and (max-width:1366px) {
+        left: 60px;
+        padding: 9px;
+    }
+    @media screen and (max-width:991px) {
+        left: 60px;
+        padding: 8px;
+    }
+    @media screen and (max-width:767px) {
+        left: 40px;
+        padding: 8px;
+    }
 `;
 
 export const TestimonialRightArrow = styled.div`
     position: absolute !important;
-    right: 40px;
+    right: 70px;
     z-index: 1;
     border: 1px solid white;
     border-width: 0 4px 4px 0;
     display: inline-block;
-    padding: 7px;
+    padding: 12px;
     opacity: 0.8;
     cursor: pointer;
     transform: rotate(-45deg);
     opacity: 1;
+
+    @media screen and (max-width:1366px) {
+        right: 60px;
+        padding: 9px;
+    }
+    @media screen and (max-width:991px) {
+        right: 60px;
+        padding: 8px;
+    }
+    @media screen and (max-width:767px) {
+        right: 40px;
+        padding: 8px;
+    }
 `;
 
 // .custom-right-arrow {
