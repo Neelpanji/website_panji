@@ -34,5 +34,11 @@
         "name":"Podcast Services",
         "image":"assets/images/clients/HF.jpeg",
         "link":"https://www.hayleyfinch.com/"
+    },
+    {
+        "id":6,
+        "name":"Podcast Services",
+        "image":"assets/images/clients/manyapod.jpeg",
+        "link":"https://manyachylinski.com/podcast/"
     }
 ]
