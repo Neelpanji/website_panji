@@ -87,7 +87,7 @@ const Navbar = ({ open, toggle}) => {
                                 >About</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink smooth  to="/#services" 
+                                <NavLink smooth  to="/services#top" 
                                 scroll={el => scrollWithOffset(el)}
                                 >Services</NavLink>
                             </NavItem>

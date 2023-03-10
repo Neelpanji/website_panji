@@ -23,6 +23,7 @@ import Enquiry from '../../components/Inquiry';
 import { withController } from "react-scroll-parallax";
 import PropTypes from 'prop-types'; 
 import PopupModal from '../../components/PopupModal';
+import Services from '../../components/ServicesPage';
 
 const mapStateToProps = state => {
     return {
@@ -110,6 +111,9 @@ class Main extends Component{
                     </Route>
                     <Route path="/enquiry">
                         <Enquiry />
+                    </Route>
+                    <Route path="/services">
+                        <Services />
                     </Route>
                 </Switch>
                 <FloatingContact />
