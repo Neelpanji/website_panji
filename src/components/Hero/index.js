@@ -11,7 +11,8 @@ import {
     HeroImageWrapper,
     ButtonHero,
     HeroButtonContainer,
-    HeroRectangleContent
+    HeroRectangleContent,
+    CustomBr
 } from './HeroElements';
 
 import "animate.css/animate.min.css";
@@ -39,6 +40,7 @@ const scrollWithOffset = (el) => {
 // };
 
 const Home = () => {
+    //Crafting your story into a compelling audio experience
     return (
         // <div style={{ background:'#fff'}}>
         //     <img src='/assets/images/mic-v-big-gradiented-green.png' width='100%'></img>
@@ -46,14 +48,17 @@ const Home = () => {
         <HeroContainer>
             {/* <HeroImage ></HeroImage> */}
             <HeroHeading>
-                <ScrollAnimation animateIn="animate__fadeInLeft" duration="1.5" animateOnce="true" delay="500">
+                <ScrollAnimation animateIn="animate__fadeInLeft" duration={1.5} animateOnce="true" delay="500">
                 {/* Let's Make That <br/> Podcast Dream Of Yours <br/>  */}
-                Quality Sound For <br/> Your
+                Crafting Your <HeroHeadingIn>Story</HeroHeadingIn>
                 </ScrollAnimation>
-                <ScrollAnimation animateIn="animate__fadeInLeft" duration='2' animateOnce="true" delay="500">
-                {/* <HeroHeadingIn>A Reality</HeroHeadingIn> */}
+                <ScrollAnimation animateIn="animate__fadeInLeft" duration={2} animateOnce="true" delay="500">
+                {/* Let's Make That <br/> Podcast Dream Of Yours <br/>  */}
+                Into A Compelling <HeroHeadingIn>Audio <CustomBr/> Experience</HeroHeadingIn>
+                </ScrollAnimation>
+                {/* <ScrollAnimation animateIn="animate__fadeInLeft" duration='2' animateOnce="true" delay="500">
                 <HeroHeadingIn>Podcast</HeroHeadingIn>
-                </ScrollAnimation>
+                </ScrollAnimation> */}
             </HeroHeading>
 
             <HeroImageWrapper>

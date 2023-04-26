@@ -1,10 +1,27 @@
 import React, { useEffect, useState } from 'react'
-import servicesJson from '../../shared/newServices.json';
 import { ServiceDropdownContainer, ServiceDropdownOption, ServiceDropdownSelect } from './ServicePageElements';
-import Select from 'react-select';
+import { useSelector } from 'react-redux';
 
+const getOptions = (servicesJson) => {
+	
+	const navbarElements = [];
+	navbarElements.push(servicesJson.main_service.name);
+	navbarElements.push.apply(navbarElements, servicesJson.main_service.sub_services.map((sub_service) => {
+		return (
+			sub_service.name
+		);
+	}))
+	const options = navbarElements.map((subService, index) => {
+		return ({ value: `${index}`, label: `${subService}` });
+	});
+
+	return { options, navbarElements };
+};
 
 const ServicesDropdown = (props) => {
+
+	const servicesState = useSelector(state => state.services);
+	const servicesJson = servicesState.services;
 
 	const customStyles = {
 		option: (defaultStyles, state) => ({
@@ -12,10 +29,11 @@ const ServicesDropdown = (props) => {
 			color: state.isSelected ? "#70D9B8" : "#fff",
 			backgroundColor: "black",
 			fontSize: "1.3rem",
-			border: state.isFocused ?"4px solid #70D9B8":"2px solid white",
-			padding:"2px",
-			borderRadius:"0.5rem",
+			border: state.isSelected ? "4px solid #70D9B8" : "2px solid white",
+			padding: "4px",
+			borderRadius: "0.5rem",
 			animation: "fadeIn .7s",
+			marginTop: "5px"
 		}),
 
 		control: (defaultStyles, state) => ({
@@ -27,7 +45,7 @@ const ServicesDropdown = (props) => {
 			margin: "0",
 			border: "4px solid white",
 			boxShadow: "none",
-			borderRadius:"0.5rem",
+			borderRadius: "0.5rem",
 
 		}),
 		singleValue: (defaultStyles) => ({
@@ -35,7 +53,8 @@ const ServicesDropdown = (props) => {
 		}),
 		menu: (defaultStyles) => ({
 			...defaultStyles,
-			background:"black",
+			background: "black",
+
 		}),
 		menuList: (defaultStyles) => ({
 			...defaultStyles,
@@ -43,25 +62,35 @@ const ServicesDropdown = (props) => {
 		}),
 	};
 
-	const options = servicesJson.main_services.map((mainService, index) => {
-		return ({ value: `${index}`, label: `${mainService.name}` });
-	});
+	let { options, navbarElements} = getOptions(servicesJson);
 
-	const [selectedOption, setSelectedOption] = useState(options[props.mainServiceId])
 
+
+	// console.log(navbarElements.length);
+
+	const [selectedOption, setSelectedOption] = useState(options[0])
 
 	useEffect(() => {
-		props.selectMainServiceId(selectedOption.value)
+		// console.log(selectedOption.value);
+		let correction = -120;
+		const elem = document.getElementById(`service${selectedOption.value}`);
+		const rect = elem.getBoundingClientRect();
+		window.scrollTo({ top: window.pageYOffset+ rect.y + correction, behavior: 'smooth' });
 	}, [selectedOption]);
+
+	useEffect(()=>{
+		window.scrollTo({top:0, behavior:'smooth'});
+	},[]);
 
 	return (
 		<>
 			<ServiceDropdownContainer>
-				<Select
+				<ServiceDropdownSelect
 					defaultValue={selectedOption}
 					onChange={setSelectedOption}
 					options={options}
 					styles={customStyles}
+					isSearchable={false}
 				/>
 			</ServiceDropdownContainer>
 		</>

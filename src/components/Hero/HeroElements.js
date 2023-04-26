@@ -8,7 +8,7 @@ export const HeroContainer = styled.div`
     background-color: black;
     // overflow:hidden;
     overflow: hidden;
-    @media screen and (max-width:1990px) {
+    @media screen and (max-width:2020px) {
         height:850px;
     }
     @media screen and (max-width:1366px) {
@@ -24,7 +24,7 @@ export const HeroContainer = styled.div`
 
 export const HeroImageWrapper = styled.div`
 position: absolute;
-@media screen and (max-width:1990px) {
+@media screen and (max-width:2020px) {
     width: 35%;
     left: 60%;
     top: 5%;
@@ -114,8 +114,8 @@ export const HeroHeadingIn = styled.div`
         font-size: 6vw;
     }
     @media screen and (max-width:560px) {
-        font-size: 9vw;
-        padding-top:80px;
+        font-size: 7vw;
+        padding:30px 0;
     }
 `;
 
@@ -131,34 +131,34 @@ export const HeroHeading = styled.div`
 
     z-index:5;
 
-    @media screen and (max-width:1990px) {
+    @media screen and (max-width:2020px) {
         left: 15%;
         width: 60%;
-        top: 25%;
+        top: 23%;
         font-size: 4vw;
     }
     @media screen and (max-width:1366px) {
         left: 10%;
         width: 55%;
-        top: 25%;
+        top: 23%;
         // font-size: 6rem;
     }
     @media screen and (max-width:1026px) {
         left: 10%;
-        top: 25%;
+        top: 23%;
         // font-size: 6rem;
         width: 50%;
     }
     @media screen and (max-width:769px) {
         left: 10%;
-        top: 30%;
+        top: 25%;
         font-size: 5vw;
         width: 60%;
     }
     @media screen and (max-width:561px) {
         left: 10%;
-        top: 12%;
-        font-size: 7vw;
+        top: 13%;
+        font-size: 5vw;
         width: 60%;
     }
 `;
@@ -187,7 +187,7 @@ export const HeroRectangleContent = styled(NavHashLink)`
         color: white;
     }
 
-    @media screen and (max-width:1990px) {
+    @media screen and (max-width:2020px) {
         font-size: 3.5vw;
         display:none;
         
@@ -216,15 +216,15 @@ export const HeroRectangleContainer = styled.div`
     // left:0;
     // background-color: #70D9B8;
     // z-index:2;
-    @media screen and (max-width:1990px) {
-        top: 70%;
+    @media screen and (max-width:2020px) {
+        top: 85%;
         // margin-top: 50%;
         width: 60%;
         height: 10%;
     }
     @media screen and (max-width:1366px) {
         // left: 0%;
-        top: 65%;
+        top: 80%;
         // margin-top: 55%;
         width: 60%;
         height: 10%;
@@ -263,7 +263,7 @@ export const HeroButtonContainer = styled.div`
     left: 0%;
     top:85%;
     width: 100%;
-    @media screen and (max-width:1990px) {
+    @media screen and (max-width:2020px) {
         // left: 15%;
         // width: 60%;
         // top: 25%;
@@ -307,7 +307,7 @@ export const ButtonHero = styled.button`
         color: #70D9B8;
         background-color: #000;
     }
-    @media screen and (max-width:1990px) {
+    @media screen and (max-width:2020px) {
         // font-size:1.5rem;
     }
     @media screen and (max-width:1366px) {
@@ -322,4 +322,13 @@ export const ButtonHero = styled.button`
     @media screen and (max-width:561px) {
         // font-size:.9rem;
     }
+`;
+
+export const CustomBr = styled.br`
+
+    
+    @media screen and (min-width:1026px) {
+        display:none;    
+    }
+    
 `;

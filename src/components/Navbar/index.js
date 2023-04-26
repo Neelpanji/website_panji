@@ -83,7 +83,6 @@ const Navbar = ({ open, toggle}) => {
                         <NavMenu>
                             <NavItem>
                                 <NavLink to="/about#top"
-                                activeClass="active"
                                 >About</NavLink>
                             </NavItem>
                             <NavItem>
@@ -98,7 +97,6 @@ const Navbar = ({ open, toggle}) => {
                             </NavItem>
                             <NavItem>
                                 <NavLink to="/contact#top"
-                                activeClass="active"
                                 >Contact</NavLink>
                             </NavItem>
                             
