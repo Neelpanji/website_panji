@@ -34,7 +34,7 @@ const Conversation = () => {
                     <ConversationTextBoxPanji top="6%" left="22%">
                         <Parallax x={[-5,5]}>
                         <ConversationTextBoxContent>
-                        Are you feeling exhausted by spending time editing episodes?
+                        Are you looking to launch a podcast from 0to1?
                         </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
@@ -44,7 +44,7 @@ const Conversation = () => {
                         <Parallax x={[5,-5]}>
                             {/* 20,-10 */}
                             <ConversationTextBoxContent>
-                            Do you think you are unable to find enough time to promote your show because of editing?
+                            Maybe you just want your podcast edited professionally due to lack of time & skill?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxVisitor>
@@ -52,7 +52,7 @@ const Conversation = () => {
                     <ConversationTextBoxPanji top="44%" left="22%">
                         <Parallax x={[-5,5]}>
                             <ConversationTextBoxContent>
-                            Are you someone who wants to enjoy recording and forget all worries of editing?
+                            Probably you are looking for someone to guide and brainstorm your podcast idea with?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
@@ -62,7 +62,7 @@ const Conversation = () => {
                         <Parallax x={[5,-5]}>
                             {/* 5,-15 */}
                             <ConversationTextBoxContent>
-                            Do you believe that your audience's time is precious which should not be wasted because of poor quality audio filled with umms?
+                            Yes, you think you need a podcast marketing plan and are willing to set up one, right?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxVisitor>
@@ -86,28 +86,28 @@ const Conversation = () => {
                     <ConversationTextBoxPanji top="6%" left="27%">
                         <Parallax x={[-20,-10]}>
                             <ConversationTextBoxContent>
-                            Are you feeling exhausted by spending time editing episodes?
+                            Are you looking to launch a podcast from 0to1?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
-                    <ConversationTextBoxVisitor top="23%" left="50%">
+                    <ConversationTextBoxVisitor top="23%" left="42%">
                         <Parallax x={[-20,-30]}>
                             <ConversationTextBoxContent>
-                            Do you think you are unable to find enough time to promote your show because of editing?
+                            Maybe you just want your podcast edited professionally due to lack of time & skill?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxVisitor>
                     <ConversationTextBoxPanji top="40%" left="28%">
                         <Parallax x={[-5,5]}>
                             <ConversationTextBoxContent>
-                            Are you someone who wants to enjoy recording and forget all worries of editing?
+                            Probably you are looking for someone to guide and brainstorm your podcast idea with?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxPanji>
                     <ConversationTextBoxVisitor top="62%" left="37%">
                         <Parallax x={[10,-15]}>
                             <ConversationTextBoxContent>
-                            Do you believe that your audience's time is precious which should not be wasted because of poor quality audio filled with umms?
+                            Yes, you think you need a podcast marketing plan and are willing to set up one, right?
                             </ConversationTextBoxContent>
                         </Parallax>
                     </ConversationTextBoxVisitor>
@@ -132,12 +132,12 @@ const Conversation = () => {
                         <ConversationMobileImage src="/assets/images/bitmoji/1-resize.png"/>
                         </ScrollAnimation>
                         <Parallax x={[-5,5]}>
-                        <ConversationMobileTextBox visitor="0">Are you feeling exhausted by spending time editing episodes?</ConversationMobileTextBox>
+                        <ConversationMobileTextBox visitor="0">Are you looking to launch a podcast from 0to1?</ConversationMobileTextBox>
                         </Parallax>
                     </ConversationMobileLeftContainer>
                     <ConversationMobileRightContainer>
                         <Parallax x={[20,5]}>
-                        <ConversationMobileTextBox visitor="1">Do you think you are unable to find enough time to promote your show because of editing?</ConversationMobileTextBox>
+                        <ConversationMobileTextBox visitor="1">Maybe you just want your podcast edited professionally due to lack of time & skill?</ConversationMobileTextBox>
                         </Parallax>
                         <ScrollAnimation animateIn="animate__fadeInRight" duration="1.5" animateOnce="true" delay="300">
                         <ConversationMobileImage src="/assets/images/bitmoji/2.2.png"/>
@@ -148,12 +148,12 @@ const Conversation = () => {
                         <ConversationMobileImage src="/assets/images/bitmoji/3.png"/>
                         </ScrollAnimation>
                         <Parallax x={[-5,5]}>
-                        <ConversationMobileTextBox visitor="0">Are you someone who wants to enjoy recording and forget all worries of editing?</ConversationMobileTextBox>
+                        <ConversationMobileTextBox visitor="0">Probably you are looking for someone to guide and brainstorm your podcast idea with?</ConversationMobileTextBox>
                         </Parallax>
                     </ConversationMobileLeftContainer>
                     <ConversationMobileRightContainer>
                         <Parallax x={[15,5]}>
-                        <ConversationMobileTextBox visitor="1">Do you believe that your audience's time is precious which should not be wasted because of poor quality audio filled with umms?</ConversationMobileTextBox>
+                        <ConversationMobileTextBox visitor="1">Yes, you think you need a podcast marketing plan and are willing to set up one, right?</ConversationMobileTextBox>
                         </Parallax>
                         <ScrollAnimation animateIn="animate__fadeInRight" duration="1.5" animateOnce="true" delay="300">
                         <ConversationMobileImage src="/assets/images/bitmoji/4.2.png"/>
