@@ -48,7 +48,7 @@ const Services = () => {
             <ServicesMainContainer>
                 <SelectService scrollPercentage={scrollPercentage} mobileView={mobileView}/>
                 <ServiceMainHeading>Services</ServiceMainHeading>
-                <ServiceContent setScrollPercentage={setScrollPercentage}/>
+                <ServiceContent setScrollPercentage={setScrollPercentage} mobileView={mobileView}/>
 
             </ServicesMainContainer>
             

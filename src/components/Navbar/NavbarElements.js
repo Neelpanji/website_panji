@@ -26,6 +26,9 @@ export const Nav = styled.div`
     @media screen and (max-width:1026px) {
       font-size: 2vw;
     }
+    @media screen and (max-width:1366px) {
+      font-size: 1.4vw;
+    }
 `;
 
 export const NavbarContainer = styled.div`
@@ -175,7 +178,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLink = styled(NavHashLink)`
-  color: #888;
+  color:${({isGold})=>isGold?'gold':'#888'};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -183,10 +186,11 @@ export const NavLink = styled(NavHashLink)`
   height: 100%;
   cursor: pointer;
 
+
   &.active {
     border-bottom: 5px solid white;
     transition: all 0.2s ease-in-out;
-    color:#70D9B8;
+    color:${({isGold})=>isGold?'gold':'#70D9B8'};
   }
   &:hover{
     color:#70D9B8;

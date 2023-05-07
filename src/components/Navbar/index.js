@@ -99,6 +99,10 @@ const Navbar = ({ open, toggle}) => {
                                 <NavLink to="/contact#top"
                                 >Contact</NavLink>
                             </NavItem>
+                            <NavItem>
+                                <NavLink to="/faqs#top" isGold={1}
+                                >FAQs</NavLink>
+                            </NavItem>                            
                             
                         </NavMenu>
                         <NavButtonLink href="https://calendly.com/neelpanji/30min" target={"_blank"}>Book a Free Call</NavButtonLink>

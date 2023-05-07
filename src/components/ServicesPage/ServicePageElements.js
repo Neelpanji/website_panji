@@ -90,7 +90,7 @@ export const ServiceNavbarButtonContainer = styled.div`
     // position:fixed;
     // background:black;
     width:100%;
-    padding:1.4rem 0;
+    padding:0.5rem 0 1rem 0;
     // z-index:10;
 `;
 
@@ -100,7 +100,7 @@ export const ServiceNavbarButton = styled.div`
 
 export const ServiceNavbarButtonLink = styled(NavHashLink)`
     color: white;
-    font-size:1.1rem;
+    font-size:1rem;
     text-decoration:none;
 
     display: flex;
@@ -219,7 +219,7 @@ export const ServiceInternalContainerContent = styled.div`
     display:flex;
     flex-direction:column;
     justify-content:space-around;
-    align-items: center;
+    align-items: left;
     width:50%;
     @media screen and (max-width:767px) {
         width:100%;
@@ -236,7 +236,18 @@ export const ServiceImage = styled.img`
 `;
 
 export const ServiceDescription = styled.div`
-
+@media screen and (max-width:1990px) {
+    font-size:1.3rem;
+}
+@media screen and (max-width:1366px) {
+    font-size:1.2rem;
+}
+@media screen and (max-width:991px) {
+    font-size:1.1rem;
+}
+@media screen and (max-width:767px) {
+    font-size:1.2rem;
+}
 `;
 
 export const ServicePoints = styled.div`
@@ -252,13 +263,26 @@ export const ServicePoints = styled.div`
 
     border-radius:5px;
     // width:90%;
-    margin: 1rem;
-    margin-left:${({rand})=>`${rand}rem`};
+    
     padding: 1rem;
     z-index:5;
+    font-size:1.1rem;
+
+    @media screen and (max-width:1990px) {
+        margin: 1rem;
+        margin-left:0;
+    }
+    @media screen and (max-width:1366px) {
+        margin:0.5rem;
+        margin-left:0;
+        font-size:1rem;
+    }
+    @media screen and (max-width:991px) {
+        margin:0.8rem 0;
+    }
     @media screen and (max-width:767px) {
         width:100%;
-        margin:1rem 0;
+        margin:0.8rem 0;
         padding: 0.5rem;
     }
 `;
@@ -281,6 +305,19 @@ export const KnowMoreButton  = styled.button`
         border:${({right})=>right?'2px solid white':'2px solid white'};
         color:${({right})=>right?'black':'white'};
         background:${({right})=>right?'#70D9B8':'black'};
+    }
+
+    @media screen and (max-width:1990px) {
+        font-size:1.2rem;
+    }
+    @media screen and (max-width:1366px) {
+        font-size:1.1rem;
+    }
+    @media screen and (max-width:991px) {
+        font-size:1.1rem;
+    }
+    @media screen and (max-width:767px) {
+        font-size:1.3rem;
     }
 
 `;
