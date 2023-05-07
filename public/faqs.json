@@ -1,14 +1,61 @@
 [
     {
-        "question":"What should be the ideal length of a podcast ?",
-        "answer":"I would like to say NONE, but the definition of ideal in our world is the most preferred or commonly followed; keeping that in mind it is - 40 to 60 mins. You can decide it keeping in mind your Content, your Audience and your Capacity. So, analyze the three factors mentioned above to decide the length, and if you still need to ask, let me know."
+        "title": "Neel Panji Productions",
+        "faqs": [
+            {
+                "question": "Why work with Neel Panji Productions ?",
+                "answer": "At Neel Panji Productions, we're not just another vendor trying to make a quick buck off businesses and people. We're more like partners, here to support you in your growth and stand by you through thick and thin. Our founder, Neel, took a leap of faith when he left his comfy corporate job to help people share their voices with the world. And that's what we're all about - using our production skills to help you share your message with the world. When you work with us, you're partnering with someone who truly understands the value of faith and commitment. We're dedicated to staying true to our word and doing everything we can to support our partners (that's you, our clients). So let's work together and make something great!"
+            },
+            {
+                "question": "Are you a good fit for me ?",
+                "answer": "Let's be real for a sec - if you're always in a rush and need things done ASAP, we might not be the best fit for you. We're a premium production company and we take pride in our work, which means we like to take the time to do it right. We're all about quality over quantity, and we want to work with people and businesses who appreciate that. So if you value expertise, attention to detail, and know that good things take time, then we're the team for you. Let's create something amazing together!"
+            },
+            {
+                "question": "What are your qaulifications ?",
+                "answer": "Our qualifications are our client trust and our clientele and their testimonials and awesome words which keep us going. Do stop by to check some of them."
+            },
+            {
+                "question": "How can I begin working with you ? What’s the first step ?",
+                "answer": "Do get on a discovery call as a first step if you are absolutelty new to this. If you have some idea of what you want maybe go to our service page section and see if any of the packages seem good to you."
+            },
+            {
+                "question": "You have not mentioned prices anywhere, if I wish to know a price then?",
+                "answer": "We have not mentioned prices in order to make it tailor made for each project and requirement. But, yes our prices do start from $1000 for podcast launch and $70or editing episodes. Please not this is just a rough idea of what to expect. Please get in touch with Neel, to know better."
+            }
+        ]
     },
     {
-        "question":"What is the best method to be consistent in podcasting ?",
-        "answer":"The simple answer to this problem is BATCH RECORD; this is the First Part of the solution. The 2nd Part of the solution the FREQUENCY of BATCH RECORD; This is the most important part in case of Interview based podcast. Third & Final Part of the solution - SHOW-UP."
+        "title": "Neel Panji Productions",
+        "faqs": [
+            {
+                "question": "What should be the ideal length of a podcast ?",
+                "answer": "I would like to say NONE, but the definition of ideal in our world is the most preferred or commonly followed; keeping that in mind it is - 40 to 60 mins. You can decide it keeping in mind your Content, your Audience and your Capacity. So, analyze the three factors mentioned above to decide the length, and if you still need to ask, let me know."
+            },
+            {
+                "question": "What is the best method to be consistent in podcasting ?",
+                "answer": "The simple answer to this problem is BATCH RECORD; this is the First Part of the solution. The 2nd Part of the solution the FREQUENCY of BATCH RECORD; This is the most important part in case of Interview based podcast. Third & Final Part of the solution - SHOW-UP."
+            },
+            {
+                "question": "How to easily source podcast guests ?",
+                "answer": "A simple yet very effective method I learned from a podcast I work with - SIMPLY ASK THE GUEST! Every time you interview a guest, after the recording ask them - “3 PEOPLE THEY WOULD RECOMMEND AS A GUEST ON THE PODCAST” "
+            }
+        ]
     },
     {
-        "question":"How to easily source podcast guests ?",
-        "answer":"A simple yet very effective method I learned from a podcast I work with - SIMPLY ASK THE GUEST! Every time you interview a guest, after the recording ask them - “3 PEOPLE THEY WOULD RECOMMEND AS A GUEST ON THE PODCAST” "
+        "title": "Neel Panji Productions",
+        "faqs": [
+            {
+                "question": "What should be the ideal length of a podcast ?",
+                "answer": "I would like to say NONE, but the definition of ideal in our world is the most preferred or commonly followed; keeping that in mind it is - 40 to 60 mins. You can decide it keeping in mind your Content, your Audience and your Capacity. So, analyze the three factors mentioned above to decide the length, and if you still need to ask, let me know."
+            },
+            {
+                "question": "What is the best method to be consistent in podcasting ?",
+                "answer": "The simple answer to this problem is BATCH RECORD; this is the First Part of the solution. The 2nd Part of the solution the FREQUENCY of BATCH RECORD; This is the most important part in case of Interview based podcast. Third & Final Part of the solution - SHOW-UP."
+            },
+            {
+                "question": "How to easily source podcast guests ?",
+                "answer": "A simple yet very effective method I learned from a podcast I work with - SIMPLY ASK THE GUEST! Every time you interview a guest, after the recording ask them - “3 PEOPLE THEY WOULD RECOMMEND AS A GUEST ON THE PODCAST” "
+            }
+        ]
     }
 ]

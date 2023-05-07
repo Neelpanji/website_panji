@@ -24,6 +24,7 @@ import { withController } from "react-scroll-parallax";
 import PropTypes from 'prop-types'; 
 import PopupModal from '../../components/PopupModal';
 import Services from '../../components/ServicesPage';
+import Faq from '../../components/Faq';
 
 const mapStateToProps = state => {
     return {
@@ -117,6 +118,9 @@ class Main extends Component{
                     </Route>
                     <Route path="/services">
                         <Services />
+                    </Route>
+                    <Route path="/faqs">
+                        <Faq></Faq>
                     </Route>
                 </Switch>
                 <FloatingContact />

@@ -4,7 +4,7 @@ import { HashLink, NavHashLink } from 'react-router-hash-link';
 
 export const SidebarContainer = styled.aside`
     position:fixed;
-    z-index:10;
+    z-index:21;
     width:100%;
     height:100%;
     background: #111;
@@ -49,16 +49,16 @@ export const SidebarLink = styled(NavHashLink)`
     list-style: none;
     transition: 0.2 ease-in-out;
     text-decoration: none;
-    color: #fff;
+    color:${({isGold})=>isGold?'gold':'#fff'};
     cursor: pointer;
 
     &.active{
-        color:#70D9B8;
+        // color:#70D9B8;
         transition: .3s ease-in-out;
     }
 
     &:hover{
-        color:#777;
+        color:${({isGold})=>isGold?'gold':'#777'};
         transition: .3s ease-in-out;
     }
 

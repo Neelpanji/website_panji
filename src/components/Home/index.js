@@ -4,9 +4,7 @@ import Hero from '../Hero';
 import Services from '../Services';
 import Clients from '../Clients';
 import Conversation from '../Conversation';
-import { EmailCollection } from '../EmailCollectionSection';
 import Testimonials from '../Testimonials';
-import Faq from '../Faq';
 
 // import { useController } from 'react-scroll-parallax';
 // import { useLayoutEffect } from 'react';
@@ -63,7 +61,6 @@ const Home = () => {
             <Element name="clients" className="element">
                 <ClientsComponent />
             </Element>
-            <Faq/>
             </section>
         </div>
     )

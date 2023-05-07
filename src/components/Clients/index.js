@@ -4,7 +4,7 @@ import {
 	ClientsCarouselContainer,
 	ClientsContainer, ClientsHeading,
 	ClientsBgImage, ClientsBgImage2,
-	ClientImage, ClientImageLink
+	ClientImage, ClientImageLink, ClientsContent
 } from './ClientsElements';
 import useSound from 'use-sound';
 import Carousel from "react-multi-carousel";
@@ -85,6 +85,7 @@ const Clients = () => {
 		return (
 			<ClientsContainer>
 				<ClientsHeading>Clients</ClientsHeading>
+				<ClientsContent>Click on the images to checkout the podcasts.</ClientsContent>
 				<ClientsBgImage src='assets/images/clients_pattern_2_crop.png' />
 				<ClientsBgImage2 src='assets/images/clients_pattern_1_crop2.png' />
 				<ClientsCarouselContainer>

@@ -76,6 +76,8 @@ const ServicesDropdown = (props) => {
 		const elem = document.getElementById(`service${selectedOption.value}`);
 		const rect = elem.getBoundingClientRect();
 		window.scrollTo({ top: window.pageYOffset+ rect.y + correction, behavior: 'smooth' });
+		console.log("selected option detected is ",selectedOption);
+		console.log("scrolling to ",window.pageYOffset+ rect.y + correction);
 	}, [selectedOption]);
 
 	useEffect(()=>{

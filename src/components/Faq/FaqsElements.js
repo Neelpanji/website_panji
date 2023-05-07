@@ -10,6 +10,7 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 import { keyframes } from 'styled-components';
 
 export const FaqsContainer = styled.div`
+    background:black;
     color: white;
     padding: 3rem 4rem;
     @media screen and (max-width:769px) {
@@ -19,6 +20,11 @@ export const FaqsContainer = styled.div`
 
 export const FaqHeading = styled.h1`
     text-align:center;
+`;
+
+export const FaqSubHeading = styled.h2`
+    text-align:center;
+    margin: 2rem 0 2rem 0;
 `;
 
 export const FaqAccordion = styled(Accordion)`

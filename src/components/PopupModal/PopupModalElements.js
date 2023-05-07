@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const RelativePosContainer = styled.div`
     position: fixed;
     top: 30%;
-    z-index: 10; 
+    z-index: 20; 
     display: flex;
     justify-content:center;
     align-items: center;

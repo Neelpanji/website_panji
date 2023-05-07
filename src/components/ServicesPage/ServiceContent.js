@@ -11,13 +11,9 @@ const MainService = (props) => {
 
 	const subServices = props.servicesJson.main_service.sub_services.map((subServices, index) => {
 
-		// var min = -3;
-		// var max = 5;
-		// var rand = min + (Math.random() * (max - min));
-		var rand=index*0.5;
 		return (
-			<ScrollAnimation offset={100} animateIn="animate__fadeInLeft" duration="1.5" animateOnce="true" delay={`${(index + 1) * 200}`}>
-				<ServicePoints right={1} rand={rand}>
+			<ScrollAnimation key={index} offset={100} animateIn="animate__fadeInLeft" duration="1" animateOnce={true} delay={`${(index + 1) * 200}`}>
+				<ServicePoints right={1} >
 					{subServices.name.toLocaleUpperCase()} - {subServices.description}
 				</ServicePoints>
 			</ScrollAnimation>
@@ -25,7 +21,7 @@ const MainService = (props) => {
 	});
 	return (
 		<>
-			<ServiceHeading style={{ 'padding-top': '40px' }}>{props.servicesJson.main_service.name}</ServiceHeading>
+			<ServiceHeading style={{ 'paddingTop': '40px' }}>{props.servicesJson.main_service.name}</ServiceHeading>
 			<ServiceContentConatiner>
 				<ServiceInternalContainerContent>
 					<ServiceDescription>{props.servicesJson.main_service.description}</ServiceDescription>
@@ -47,18 +43,27 @@ const ServiceContent = (props) => {
 	const ref = useRef(null);
 
 	const handleScroll = () =>{
-		const offset = document.body.clientHeight - ref.current.clientHeight;
-		const pos = window.pageYOffset;
-		const height = ref.current.clientHeight - window.innerHeight+offset;
-		props.setScrollPercentage(pos/height*100);
+		const docHeight = document?.body?.clientHeight;
+		const clientHeight = ref?.current?.clientHeight;
+		if(docHeight && clientHeight){
+			const offset = docHeight - clientHeight;
+			const pos = window.pageYOffset;
+			const height = clientHeight - window.innerHeight+offset;
+			props.setScrollPercentage(pos/height*100);
+		}
+		// console.log("scrolling done in desktop");
+		
 	}
 
 	useEffect(() => {
-		window.addEventListener('scroll', handleScroll, { passive: true });
+		if(!props.mobileView){
+			window.addEventListener('scroll', handleScroll, { passive: true });
 	
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
+			return () => {
+				window.removeEventListener('scroll', handleScroll);
+			};
+		}
+
 	}, []);
 	
 
@@ -69,20 +74,17 @@ const ServiceContent = (props) => {
 	const services = servicesJson.main_service.sub_services.map((subService, index) => {
 		const imgRight = index % 2;
 		const features = subService.features.map((feature, index) => {
-			// var min = -4;
-			// var max = 5;
-			// var rand = min + (Math.random() * (max - min));
-			var rand=index;
-			return (<>
-				<ScrollAnimation offset={100} animateIn={`animate__fadeIn${imgRight?'Left':'Right'}`} duration="1.5" animateOnce="true" delay={`${(index + 1) * 200}`}>
-					<ServicePoints right={imgRight} rand={rand}>
+			
+			return (<div  key={index}>
+				<ScrollAnimation offset={100} animateIn={`animate__fadeIn${imgRight?'Left':'Right'}`} duration="1" animateOnce={true} delay={`${(index + 1) * 200}`}>
+					<ServicePoints right={imgRight} >
 						{feature}
 					</ServicePoints>
 				</ScrollAnimation>
-			</>);
+			</div>);
 		});
 		return (
-			<>
+			<div key={index}>
 				{imgRight === 0 &&
 					<ServiceSection right={imgRight} id={`service${index + 1}`}>
 						<WavesTop right={imgRight}>
@@ -128,7 +130,7 @@ const ServiceContent = (props) => {
 					</ServiceSection >
 				}
 
-			</>
+			</div>
 		);
 	});
 

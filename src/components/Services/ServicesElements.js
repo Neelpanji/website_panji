@@ -481,7 +481,8 @@ export const BookPage2Number = styled.div`
 export const BookPage2MainHeadingContainer = styled.div`
     align-items:center;
     display:flex;
-    justify-content: center;
+    flex-direction:column;
+    justify-content: space-evenly;
     background-color: #70D9B8;
     height: 60%;
     width:100%;
@@ -512,19 +513,19 @@ export const BookPage2MainHeading = styled.div`
     
     color:black;
     @media screen and (max-width:1990px) {
-        font-size:4rem;
-    }
-    @media screen and (max-width:1366px) {
-        font-size:3.2rem;
-    }
-    @media screen and (max-width:1026px) {
-        font-size:2.5rem;
-    }
-    @media screen and (max-width:769px) {
         font-size:3.6rem;
     }
+    @media screen and (max-width:1366px) {
+        font-size:2.4rem;
+    }
+    @media screen and (max-width:1026px) {
+        font-size:2rem;
+    }
+    @media screen and (max-width:769px) {
+        font-size:3.2rem;
+    }
     @media screen and (max-width:561px) {
-        font-size:2.2rem;
+        font-size:2rem;
     }
 `;
 
@@ -895,12 +896,11 @@ export const ScrollPreventFlip = styled.div`
     display: ${({ hintLoadedMobile }) => hintLoadedMobile ? 'none' : 'block'};
 `;
 
-export const KnowMoreServiceButton = styled(NavHashLink)`
+export const KnowMoreServiceButton = styled.div`
     color: black;
     background: #70D9B8;
-    transition: all 0.2s linear;
-    font-size:1.4rem;
-    text-decoration:none;
+    transition: all 0.1s linear;
+    font-size:1.2rem;
     box-shadow : ${({ id }) => (id%2===0) ? 'rgba(0, 0, 0, 0.35) -50px 0px 36px -28px inset' : 'rgba(0, 0, 0, 0.35) 50px 0px 36px -28px inset'};
     
 
@@ -920,12 +920,52 @@ export const KnowMoreServiceButton = styled(NavHashLink)`
 
     :hover{
         // border: 3px white solid;
-        color: black;
-        font-size:1.5rem;
+        // color: black;
+        // font-size:1.3rem;
 
     }
     
     @media screen and (max-width:561px) {
         height: 15%;
+    }
+`;
+
+export const KnowMorecontent = styled(NavHashLink)`
+    padding:0.4rem;
+    border:2px solid black;
+    color:black;
+    background:#70D9B8;
+    border-radius:5px;
+
+    transition: all 0.1s linear;
+
+    text-decoration:none;
+
+    :hover{
+        border:2px solid white;
+        color:white;
+        background:black;
+        font-size:1.3rem;
+    }
+`;
+
+export const ServiceBookContent = styled.div`
+
+    color:black;
+
+    @media screen and (max-width:1990px) {
+        font-size:1.3rem;
+    }
+    @media screen and (max-width:1366px) {
+        font-size:1rem;
+    }
+    @media screen and (max-width:1026px) {
+        font-size:0.7rem;
+    }
+    @media screen and (max-width:769px) {
+        font-size:1.3rem;
+    }
+    @media screen and (max-width:561px) {
+        font-size:1rem;
     }
 `;

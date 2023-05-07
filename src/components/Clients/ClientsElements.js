@@ -14,6 +14,10 @@ export const ClientsHeading = styled.h1`
     
 `;
 
+export const ClientsContent = styled.h4`
+
+`;
+
 export const ClientsCarouselContainer = styled.div`
     padding: 10% 0 10% 0;
     

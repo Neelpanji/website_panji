@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react';
 import {
 	BookContainer, BookPageContainer, BookCoverPageContainer, BookPageLogoContainer, BookPageLogo, BookPageContentContainer, BookPageHeader, BookPageFeatures, BookCoverPageImg, BookInquireContainer, BookInquireLink, BookFlipContainer, BookCoverBackContainer, BookKnowMoreContainer, BookKnowMoreLink,
 	BookPage2Number, BookPage2MainHeading, BookPage2NumberContainer, BookPage2Container, BookPage2MainHeadingContainer, BookPage2MainHeadingSmallContainer, BookPage2MainHeadingSmall, BookPage2SubHeadingContainer, BookPage2SubHeading, BookPage2MainContainer,
-	BookPage2Features, BookInquireContainer2, BookKnowMoreContainer2, BookContainerMobile, BookPage2FeatureLi, BookFlipPageInfo, ButtonService, ScrollPreventFlip, KnowMoreServiceButton
+	BookPage2Features, BookInquireContainer2, BookKnowMoreContainer2, BookContainerMobile, BookPage2FeatureLi, BookFlipPageInfo, ButtonService, ScrollPreventFlip, KnowMoreServiceButton, KnowMorecontent, ServiceBookContent
 } from './ServicesElements';
 import { Row, Container, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
@@ -15,8 +15,8 @@ import { DesktopLeftFlipHint, DesktopRightFlipHint, MobileFlipHint } from './hel
 
 const scrollWithOffset = (el) => {
 	const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-	let yOffset = (window.innerWidth>1500)?220:-220;
-	
+	let yOffset = (window.innerWidth > 1500) ? 220 : -220;
+
 	// console.log(el.getBoundingClientRect().top, window.pageYOffset, yCoordinate);
 	window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
 }
@@ -105,10 +105,12 @@ const Page3 = React.forwardRef((props, ref) => {
 				</BookPage2NumberContainer>
 				<BookPage2MainHeadingContainer id={props.index + 1}>
 					<BookPage2MainHeading>{props.service}</BookPage2MainHeading>
+					<ServiceBookContent>{props.serviceDesc}</ServiceBookContent>
 				</BookPage2MainHeadingContainer>
-				<KnowMoreServiceButton id={props.index + 1}
-					to={`/services#service${props.index}`}
-					scroll={el => scrollWithOffset(el)}>Know More</KnowMoreServiceButton>
+				<KnowMoreServiceButton id={props.index + 1}	>
+					<KnowMorecontent to={`/services#service${props.index}`}
+						scroll={el => scrollWithOffset(el)}>Know More</KnowMorecontent>
+				</KnowMoreServiceButton>
 
 			</BookPage2Container>
 		</div>
@@ -198,18 +200,26 @@ const Book = (props) => {
 
 
 	const serviceElements = [];
+	const serviceElementDisc = [];
 	serviceElements.push(services.main_service.name);
+	serviceElementDisc.push(services.main_service.description);
 
 	serviceElements.push.apply(serviceElements, services.main_service.sub_services.map((sub_service) => {
 		return (
 			sub_service.name
 		);
-	}))
+	}));
+
+	serviceElementDisc.push.apply(serviceElementDisc, services.main_service.sub_services.map((sub_service) => {
+		return (
+			sub_service.description
+		);
+	}));
 
 	// console.log(Object.keys(props.services).length);
 	const page = serviceElements.map((service, index) => {
 
-		return (<Page3 service={service} index={index} hintLoaded={hintLoaded} setHintLoaded={setHintLoaded} />);
+		return (<Page3 service={service} serviceDesc={serviceElementDisc[index]} index={index} hintLoaded={hintLoaded} setHintLoaded={setHintLoaded} />);
 		// return(<div><img height='253px' width='253px' src={service.name}/></div>);
 
 	});
@@ -225,7 +235,7 @@ const Book = (props) => {
 
 	return (
 		<span>
-			<ScrollAnimation animateIn="animate__slideInRight" duration="2.5" animateOnce="true" delay="500"
+			<ScrollAnimation animateIn="animate__slideInRight" duration="2" animateOnce="true" delay="500"
 				afterAnimatedIn={() => {
 					book.current.pageFlip().flipNext();
 					window.scrollBy(0, 1);
