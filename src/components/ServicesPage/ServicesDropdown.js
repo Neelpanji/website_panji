@@ -75,7 +75,7 @@ const ServicesDropdown = (props) => {
 		let correction = -120;
 		const elem = document.getElementById(`service${selectedOption.value}`);
 		const rect = elem.getBoundingClientRect();
-		setTimeout(function() {window.scrollTo({ top: window.pageYOffset+ rect.y + correction, behavior: 'smooth' });},1)
+		setTimeout(function() {window.scrollTo({ top: window.pageYOffset+ rect.y + correction, behavior: 'smooth' });},50)
 		// window.scrollTo({ top: window.pageYOffset+ rect.y + correction, behavior: 'smooth' });
 		console.log("selected option detected is ",selectedOption);
 		console.log("scrolling to ",window.pageYOffset+ rect.y + correction);
