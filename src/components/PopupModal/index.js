@@ -13,8 +13,6 @@ const PopupModal = () => {
 
         const timer = setTimeout(() => {
             setIsPopupOpen(!isPopupOpen);
-            // setIsPopupOpen(0);
-            // console.log("modal");
         }, 4500);
         return () => clearTimeout(timer);
     }, [])

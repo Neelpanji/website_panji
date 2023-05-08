@@ -17,7 +17,7 @@ export const Nav = styled.div`
     position: sticky;
     top:0;
     // margin-bottom:20px;
-    z-index:11;
+    z-index:21;
 
     @media screen and (max-width: 992px) {
         transition: 0.8 all ease;
