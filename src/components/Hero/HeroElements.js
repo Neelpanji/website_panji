@@ -109,13 +109,15 @@ export const HeroImage2 = styled.img`
 export const HeroHeadingIn = styled.div`
     color: #70D9B8;
     font-size: 5vw;
+    line-height:1.6;
+    // text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
     
     @media screen and (max-width:769px) {
         font-size: 6vw;
     }
     @media screen and (max-width:560px) {
         font-size: 7vw;
-        padding:30px 0;
+        padding:0px 0;
     }
 `;
 
@@ -153,13 +155,13 @@ export const HeroHeading = styled.div`
         left: 10%;
         top: 25%;
         font-size: 5vw;
-        width: 60%;
+        width: 50%;
     }
     @media screen and (max-width:561px) {
         left: 10%;
         top: 13%;
         font-size: 5vw;
-        width: 60%;
+        width: 50%;
     }
 `;
 

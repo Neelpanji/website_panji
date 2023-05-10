@@ -159,3 +159,8 @@ export const fetchFaqs = () => (dispatch) => {
         .then(faqs => dispatch(addFaqs(faqs)))
         .catch(error => dispatch(faqsFailed(error.message)));
 }
+
+export const updateSelectedService = (selectedService) => ({
+    type: ActionTypes.UPDATE_SELECTED_SERVICES,
+    payload: selectedService
+});

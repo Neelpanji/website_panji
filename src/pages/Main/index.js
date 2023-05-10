@@ -13,7 +13,7 @@ import {
     withRouter
   } from "react-router-dom";
 import Home from '../../components/Home';
-import { fetchClients, fetchServices, fetchTestimonials, fetchFaqs } from '../../redux/ActionCreators';
+import { fetchClients, fetchServices, fetchTestimonials, fetchFaqs, updateSelectedService } from '../../redux/ActionCreators';
 import { connect } from 'react-redux';
 import FloatingContact from '../../components/FloatingContact';
 import Contact from '../../components/Contact';
@@ -31,7 +31,7 @@ const mapStateToProps = state => {
         services: state.services,
         clients: state.clients,
         testimonials: state.testimonials,
-        faqs: state.faqs,
+        faqs: state.faqs
     }
 }
 
@@ -40,7 +40,7 @@ const mapDispatchToProps = (dispatch) => ({
     fetchClients : () => {dispatch(fetchClients())},
     fetchTestimonials: () => {dispatch(fetchTestimonials())},
     fetchFaqs: () => {dispatch(fetchFaqs())},
-  
+    updateSelectedService: (idx) => {dispatch(updateSelectedService(idx))}
 });
 
 class Main extends Component{
@@ -66,6 +66,7 @@ class Main extends Component{
         this.props.fetchClients();
         this.props.fetchTestimonials();
         this.props.fetchFaqs();
+        this.props.updateSelectedService(0);
         // window.addEventListener("resize",this.handleResize);
         this.props.parallaxController.update();
     }

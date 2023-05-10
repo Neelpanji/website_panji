@@ -50,11 +50,15 @@ const Home = () => {
             <HeroHeading>
                 <ScrollAnimation animateIn="animate__fadeInLeft" duration={1} animateOnce="true" delay="500">
                 {/* Let's Make That <br/> Podcast Dream Of Yours <br/>  */}
-                Crafting Your <HeroHeadingIn>Story</HeroHeadingIn>
+                <HeroHeadingIn>Crafting Your Story</HeroHeadingIn>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInLeft" duration={1.5} animateOnce="true" delay="500">
                 {/* Let's Make That <br/> Podcast Dream Of Yours <br/>  */}
-                Into A Compelling <HeroHeadingIn>Audio <CustomBr/> Experience</HeroHeadingIn>
+                <HeroHeadingIn>Into A Compelling</HeroHeadingIn>
+                </ScrollAnimation>
+                <ScrollAnimation animateIn="animate__fadeInLeft" duration={1.8} animateOnce="true" delay="500">
+                {/* Let's Make That <br/> Podcast Dream Of Yours <br/>  */}
+                <HeroHeadingIn>Audio Experience</HeroHeadingIn>
                 </ScrollAnimation>
                 {/* <ScrollAnimation animateIn="animate__fadeInLeft" duration='2' animateOnce="true" delay="500">
                 <HeroHeadingIn>Podcast</HeroHeadingIn>
@@ -65,15 +69,15 @@ const Home = () => {
             {/* <ScrollAnimation animateIn="animate__fadeInRight" duration="2" animateOnce="true" delay="500">
             <HeroImage1 />
             </ScrollAnimation> */}
-            <ScrollAnimation animateIn="animate__fadeInRight" duration="1.5" animateOnce="true" delay="500">
+            <ScrollAnimation animateIn="animate__fadeIn" duration={1} animateOnce="true" delay="500">
             <HeroImage2 />
             </ScrollAnimation>
             </HeroImageWrapper>
 
             <HeroRectangleContainer>
-            <ScrollAnimation animateIn="animate__fadeInLeft" duration='2.5' animateOnce="true" offset="0">
+            <ScrollAnimation animateIn="animate__fadeIn" duration='2.5' animateOnce="true" offset="0">
                 <HeroRectangle>
-                    <ScrollAnimation animateIn="animate__fadeIn" duration='3' animateOnce="true" delay="1000"  offset="0">
+                    <ScrollAnimation animateIn="animate__fadeIn" duration='2.5' animateOnce="true" delay="700"  offset="0">
                     <HeroRectangleContent to="/#services" scroll={el => scrollWithOffset(el)}>
                     Jump To Services
                     </HeroRectangleContent>
@@ -95,4 +99,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default React.memo(Home)

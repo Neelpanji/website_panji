@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 import {ConversationImage, ConversationContainer, ConversationTextBoxVisitor, ConversationTextBoxPanji, ConversationMobileLeftContainer, ConversationMobileRightContainer, ConversationMobileImage, ConversationMobileTextBox
     ,ConversationTextBoxContent
 } from './ConversationElements';
@@ -131,14 +131,14 @@ const Conversation = () => {
                         <ScrollAnimation animateIn="animate__fadeInLeft" duration="1.5" animateOnce="true" delay="100">
                         <ConversationMobileImage src="/assets/images/bitmoji/1-resize.png"/>
                         </ScrollAnimation>
-                        <Parallax x={[-5,5]}>
+                        {/* <Parallax x={[-5,5]}> */}
                         <ConversationMobileTextBox visitor="0">Are you looking to launch a podcast from 0to1?</ConversationMobileTextBox>
-                        </Parallax>
+                        {/* </Parallax> */}
                     </ConversationMobileLeftContainer>
                     <ConversationMobileRightContainer>
-                        <Parallax x={[20,5]}>
+                        {/* <Parallax x={[20,5]}> */}
                         <ConversationMobileTextBox visitor="1">Maybe you just want your podcast edited professionally due to lack of time & skill?</ConversationMobileTextBox>
-                        </Parallax>
+                        {/* </Parallax> */}
                         <ScrollAnimation animateIn="animate__fadeInRight" duration="1.5" animateOnce="true" delay="300">
                         <ConversationMobileImage src="/assets/images/bitmoji/2.2.png"/>
                         </ScrollAnimation>
@@ -147,14 +147,14 @@ const Conversation = () => {
                         <ScrollAnimation animateIn="animate__fadeInLeft" duration="1.5" animateOnce="true" delay="300">
                         <ConversationMobileImage src="/assets/images/bitmoji/3.png"/>
                         </ScrollAnimation>
-                        <Parallax x={[-5,5]}>
+                        {/* <Parallax x={[-5,5]}> */}
                         <ConversationMobileTextBox visitor="0">Probably you are looking for someone to guide and brainstorm your podcast idea with?</ConversationMobileTextBox>
-                        </Parallax>
+                        {/* </Parallax> */}
                     </ConversationMobileLeftContainer>
                     <ConversationMobileRightContainer>
-                        <Parallax x={[15,5]}>
+                        {/* <Parallax x={[15,5]}> */}
                         <ConversationMobileTextBox visitor="1">Yes, you think you need a podcast marketing plan and are willing to set up one, right?</ConversationMobileTextBox>
-                        </Parallax>
+                        {/* </Parallax> */}
                         <ScrollAnimation animateIn="animate__fadeInRight" duration="1.5" animateOnce="true" delay="300">
                         <ConversationMobileImage src="/assets/images/bitmoji/4.2.png"/>
                         </ScrollAnimation>
@@ -163,12 +163,12 @@ const Conversation = () => {
                         <ScrollAnimation animateIn="animate__fadeInLeft" duration="1.5" animateOnce="true" delay="300">
                         <ConversationMobileImage src="/assets/images/bitmoji/5.png"/>
                         </ScrollAnimation>
-                        <Parallax x={[-10,10]}>
+                        {/* <Parallax x={[-10,10]}> */}
                         <ConversationMobileTextBox visitor="0">
                             {/* It is highly appreciable if you feel any one of the above questions apply to you and taking steps to bring in an editor in your team. */}
                             If any of the above questions resonate with you, I would be happy to help you answer them with my services.
                         </ConversationMobileTextBox>
-                        </Parallax>
+                        {/* </Parallax> */}
                     </ConversationMobileLeftContainer>
                 </ConversationContainer>
             </div>
