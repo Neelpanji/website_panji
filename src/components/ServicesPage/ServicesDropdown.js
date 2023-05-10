@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ServiceDropdownContainer, ServiceDropdownOption, ServiceDropdownSelect } from './ServicePageElements';
-import { useSelector } from 'react-redux';
+import { connect, useDispatch, useSelector } from 'react-redux';
+import { updateSelectedService } from '../../redux/ActionCreators';
 
 const getOptions = (servicesJson) => {
 	
@@ -20,7 +21,10 @@ const getOptions = (servicesJson) => {
 
 const ServicesDropdown = (props) => {
 
+	const dispatch = useDispatch();
+
 	const servicesState = useSelector(state => state.services);
+	const selectedServiceGlobal = useSelector(state => state.ui.selectedService);
 	const servicesJson = servicesState.services;
 
 	const customStyles = {
@@ -68,18 +72,20 @@ const ServicesDropdown = (props) => {
 
 	// console.log(navbarElements.length);
 
-	const [selectedOption, setSelectedOption] = useState(options[0])
+	const [selectedOptionLocal, setSelectedOptionLocal] = useState(options[selectedServiceGlobal])
 
 	useEffect(() => {
 		// console.log(selectedOption.value);
+		dispatch(updateSelectedService(parseInt(selectedOptionLocal.value)));
+
 		let correction = -120;
-		const elem = document.getElementById(`service${selectedOption.value}`);
+		const elem = document.getElementById(`service${selectedOptionLocal.value}`);
 		const rect = elem.getBoundingClientRect();
 		setTimeout(function() {window.scrollTo({ top: window.pageYOffset+ rect.y + correction, behavior: 'smooth' });},50)
 		// window.scrollTo({ top: window.pageYOffset+ rect.y + correction, behavior: 'smooth' });
-		console.log("selected option detected is ",selectedOption);
-		console.log("scrolling to ",window.pageYOffset+ rect.y + correction);
-	}, [selectedOption]);
+		// console.log("selected option detected is ",selectedOption);
+		// console.log("scrolling to ",window.pageYOffset+ rect.y + correction);
+	}, [selectedOptionLocal]);
 
 	useEffect(()=>{
 		window.scrollTo({top:0, behavior:'smooth'});
@@ -89,8 +95,8 @@ const ServicesDropdown = (props) => {
 		<>
 			<ServiceDropdownContainer>
 				<ServiceDropdownSelect
-					defaultValue={selectedOption}
-					onChange={setSelectedOption}
+					defaultValue={selectedOptionLocal}
+					onChange={setSelectedOptionLocal}
 					options={options}
 					styles={customStyles}
 					isSearchable={false}
@@ -100,4 +106,4 @@ const ServicesDropdown = (props) => {
 	)
 }
 
-export default ServicesDropdown
+export default ServicesDropdown;

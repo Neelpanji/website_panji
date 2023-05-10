@@ -1,5 +1,4 @@
 import React from 'react'
-import { Container, Row, Col } from 'reactstrap';
 import {
 	ClientsCarouselContainer,
 	ClientsContainer, ClientsHeading,
@@ -30,13 +29,6 @@ const responsive = {
 	}
 };
 
-
-// import boopSfx from '/assets/sounds/mixkit-dog-barking-twice-1.wav';
-const SoundButton = () => {
-	const boopSfx = '/assets/sounds/mixkit-dog-barking-twice-1.wav';
-	const [play] = useSound(boopSfx);
-	return <button onClick={play}>Sound</button>;
-};
 
 const Clients = () => {
 

@@ -11,6 +11,8 @@ import { Link } from 'react-router-dom';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import { DesktopLeftFlipHint, DesktopRightFlipHint, MobileFlipHint } from './helper';
+import { useDispatch } from 'react-redux';
+import { updateSelectedService } from '../../redux/ActionCreators';
 
 
 const scrollWithOffset = (el) => {
@@ -109,7 +111,7 @@ const Page3 = React.forwardRef((props, ref) => {
 				</BookPage2MainHeadingContainer>
 				<KnowMoreServiceButton id={props.index + 1}	>
 					<KnowMorecontent to={`/services#service${props.index}`}
-						scroll={el => scrollWithOffset(el)}>Know More</KnowMorecontent>
+						scroll={el => scrollWithOffset(el)} onClick={()=>props.setSelectedServiceGlobal(props.index)}>Know More</KnowMorecontent>
 				</KnowMoreServiceButton>
 
 			</BookPage2Container>
@@ -193,6 +195,12 @@ const Book = (props) => {
 
 	const services = props.services;
 
+	const dispatch = useDispatch();
+
+	const setSelectedServiceGlobal = (idx) => {
+		dispatch(updateSelectedService(idx));
+	}
+
 	// console.log(services,"in book");
 
 	const [hintLoadedMobile, setHintLoadedMobile] = useState(0);
@@ -219,7 +227,7 @@ const Book = (props) => {
 	// console.log(Object.keys(props.services).length);
 	const page = serviceElements.map((service, index) => {
 
-		return (<Page3 service={service} serviceDesc={serviceElementDisc[index]} index={index} hintLoaded={hintLoaded} setHintLoaded={setHintLoaded} />);
+		return (<Page3 service={service} serviceDesc={serviceElementDisc[index]} index={index} hintLoaded={hintLoaded} setHintLoaded={setHintLoaded} setSelectedServiceGlobal={setSelectedServiceGlobal}/>);
 		// return(<div><img height='253px' width='253px' src={service.name}/></div>);
 
 	});
@@ -235,7 +243,7 @@ const Book = (props) => {
 
 	return (
 		<span>
-			<ScrollAnimation animateIn="animate__slideInRight" duration="2" animateOnce="true" delay="500"
+			<ScrollAnimation animateIn="animate__slideInRight" duration={2} animateOnce="true" delay="300"
 				afterAnimatedIn={() => {
 					book.current.pageFlip().flipNext();
 					window.scrollBy(0, 1);
@@ -270,7 +278,7 @@ const Book = (props) => {
 					</HTMLFlipBook>
 				</BookContainer>
 			</ScrollAnimation>
-			<ScrollAnimation animateIn="animate__slideInRight" duration="2.5" animateOnce="true" delay="500"
+			<ScrollAnimation animateIn="animate__slideInRight" duration={2} animateOnce="true" delay="300"
 				afterAnimatedIn={() => {
 					book2.current.pageFlip().flipNext();
 					window.scrollBy(0, 1);

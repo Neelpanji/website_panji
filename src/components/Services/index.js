@@ -38,9 +38,9 @@ const Services = () => {
                 <ServicesHeading>Services</ServicesHeading>
                 
                 <ServiceInfo>
-                    <ScrollAnimation animateIn="animate__fadeIn" duration="1.5" animateOnce="true" delay="500">
+                    {/* <ScrollAnimation animateIn="animate__fadeIn" duration="1.5" animateOnce="true" delay="500"> */}
                     <HighlightGreen>Flip</HighlightGreen> through my <HighlightGreen>Service Booklet</HighlightGreen> to know more!
-                    </ScrollAnimation>
+                    {/* </ScrollAnimation> */}
                     
                 </ServiceInfo>
                 
