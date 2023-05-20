@@ -50,15 +50,15 @@ const Home = () => {
             <HeroHeading>
                 <ScrollAnimation animateIn="animate__fadeInLeft" duration={1} animateOnce="true" delay="500">
                 {/* Let's Make That <br/> Podcast Dream Of Yours <br/>  */}
-                <HeroHeadingIn>Crafting Your Story</HeroHeadingIn>
+                <HeroHeadingIn color="#70D9B8"><span style={{color:'white'}}>Crafting Your </span> Story</HeroHeadingIn>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInLeft" duration={1.5} animateOnce="true" delay="500">
                 {/* Let's Make That <br/> Podcast Dream Of Yours <br/>  */}
-                <HeroHeadingIn>Into A Compelling</HeroHeadingIn>
+                <HeroHeadingIn color="white">Into A Compelling</HeroHeadingIn>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInLeft" duration={1.8} animateOnce="true" delay="500">
                 {/* Let's Make That <br/> Podcast Dream Of Yours <br/>  */}
-                <HeroHeadingIn>Audio Experience</HeroHeadingIn>
+                <HeroHeadingIn color="#70D9B8">Audio Experience</HeroHeadingIn>
                 </ScrollAnimation>
                 {/* <ScrollAnimation animateIn="animate__fadeInLeft" duration='2' animateOnce="true" delay="500">
                 <HeroHeadingIn>Podcast</HeroHeadingIn>
