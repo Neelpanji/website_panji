@@ -237,16 +237,16 @@ export const ServiceImage = styled.img`
 
 export const ServiceDescription = styled.div`
 @media screen and (max-width:1990px) {
-    font-size:1.3rem;
+    font-size:1.4rem;
 }
 @media screen and (max-width:1366px) {
     font-size:1.2rem;
 }
 @media screen and (max-width:991px) {
-    font-size:1.1rem;
+    font-size:1.2rem;
 }
 @media screen and (max-width:767px) {
-    font-size:1.2rem;
+    font-size:1.3rem;
 }
 `;
 
@@ -266,7 +266,7 @@ export const ServicePoints = styled.div`
     
     padding: 1rem;
     z-index:5;
-    font-size:1.1rem;
+    font-size:1.2rem;
 
     @media screen and (max-width:1990px) {
         margin: 1rem;

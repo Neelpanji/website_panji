@@ -107,7 +107,7 @@ export const HeroImage2 = styled.img`
 `;
 
 export const HeroHeadingIn = styled.div`
-    color: #70D9B8;
+    color: ${({color})=>color};
     font-size: 5vw;
     line-height:1.6;
     // text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
@@ -219,14 +219,14 @@ export const HeroRectangleContainer = styled.div`
     // background-color: #70D9B8;
     // z-index:2;
     @media screen and (max-width:2020px) {
-        top: 85%;
+        top: 90%;
         // margin-top: 50%;
         width: 60%;
         height: 10%;
     }
     @media screen and (max-width:1366px) {
         // left: 0%;
-        top: 80%;
+        top: 85%;
         // margin-top: 55%;
         width: 60%;
         height: 10%;
