@@ -4,7 +4,6 @@ import Hero from '../Hero';
 import Services from '../Services';
 import Clients from '../Clients';
 import Conversation from '../Conversation';
-import { EmailCollection } from '../EmailCollectionSection';
 import Testimonials from '../Testimonials';
 
 // import { useController } from 'react-scroll-parallax';

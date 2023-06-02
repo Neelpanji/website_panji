@@ -11,7 +11,8 @@ import {
     HeroImageWrapper,
     ButtonHero,
     HeroButtonContainer,
-    HeroRectangleContent
+    HeroRectangleContent,
+    CustomBr
 } from './HeroElements';
 
 import "animate.css/animate.min.css";
@@ -39,6 +40,7 @@ const scrollWithOffset = (el) => {
 // };
 
 const Home = () => {
+    //Crafting your story into a compelling audio experience
     return (
         // <div style={{ background:'#fff'}}>
         //     <img src='/assets/images/mic-v-big-gradiented-green.png' width='100%'></img>
@@ -46,29 +48,36 @@ const Home = () => {
         <HeroContainer>
             {/* <HeroImage ></HeroImage> */}
             <HeroHeading>
-                <ScrollAnimation animateIn="animate__fadeInLeft" duration="1.5" animateOnce="true" delay="500">
+                <ScrollAnimation animateIn="animate__fadeInLeft" duration={1} animateOnce="true" delay="500">
                 {/* Let's Make That <br/> Podcast Dream Of Yours <br/>  */}
-                Quality Sound For <br/> Your
+                <HeroHeadingIn color="#70D9B8"><span style={{color:'white'}}>Crafting Your </span> Story</HeroHeadingIn>
                 </ScrollAnimation>
-                <ScrollAnimation animateIn="animate__fadeInLeft" duration='2' animateOnce="true" delay="500">
-                {/* <HeroHeadingIn>A Reality</HeroHeadingIn> */}
+                <ScrollAnimation animateIn="animate__fadeInLeft" duration={1.5} animateOnce="true" delay="500">
+                {/* Let's Make That <br/> Podcast Dream Of Yours <br/>  */}
+                <HeroHeadingIn color="white">Into A Compelling</HeroHeadingIn>
+                </ScrollAnimation>
+                <ScrollAnimation animateIn="animate__fadeInLeft" duration={1.8} animateOnce="true" delay="500">
+                {/* Let's Make That <br/> Podcast Dream Of Yours <br/>  */}
+                <HeroHeadingIn color="#70D9B8">Audio Experience</HeroHeadingIn>
+                </ScrollAnimation>
+                {/* <ScrollAnimation animateIn="animate__fadeInLeft" duration='2' animateOnce="true" delay="500">
                 <HeroHeadingIn>Podcast</HeroHeadingIn>
-                </ScrollAnimation>
+                </ScrollAnimation> */}
             </HeroHeading>
 
             <HeroImageWrapper>
             {/* <ScrollAnimation animateIn="animate__fadeInRight" duration="2" animateOnce="true" delay="500">
             <HeroImage1 />
             </ScrollAnimation> */}
-            <ScrollAnimation animateIn="animate__fadeInRight" duration="2" animateOnce="true" delay="500">
+            <ScrollAnimation animateIn="animate__fadeIn" duration={1} animateOnce="true" delay="500">
             <HeroImage2 />
             </ScrollAnimation>
             </HeroImageWrapper>
 
             <HeroRectangleContainer>
-            <ScrollAnimation animateIn="animate__fadeInLeft" duration='4' animateOnce="true" offset="0">
+            <ScrollAnimation animateIn="animate__fadeIn" duration='2.5' animateOnce="true" offset="0">
                 <HeroRectangle>
-                    <ScrollAnimation animateIn="animate__fadeIn" duration='3.5' animateOnce="true" delay="1000"  offset="0">
+                    <ScrollAnimation animateIn="animate__fadeIn" duration='2.5' animateOnce="true" delay="700"  offset="0">
                     <HeroRectangleContent to="/#services" scroll={el => scrollWithOffset(el)}>
                     Jump To Services
                     </HeroRectangleContent>
@@ -90,4 +99,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default React.memo(Home)

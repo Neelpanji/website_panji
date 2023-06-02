@@ -1,8 +1,8 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 import {Container, Row, Col} from 'reactstrap';
 import { AboutContainer, AboutHeading,AboutRectangle1, AboutImageWrapper, AboutImageDesktop, AboutImageMobile, AboutContentWrapper, AboutContent,
     AboutContactContainer,AboutContactContent, AboutContactButton,
-    AboutQuoteContainer, AboutQuoteContent, AboutRectangle2, HighlightGreen, AboutContactLink } from './AboutElements';
+    AboutQuoteContainer, AboutQuoteContent,  HighlightGreen, AboutContactLink } from './AboutElements';
 import { Parallax } from 'react-scroll-parallax';
 
 import { useController } from 'react-scroll-parallax';
@@ -37,7 +37,6 @@ const useViewport = () => {
 
 const About = () => {
 
-    const { width } = useViewport();
 
     return (
         <AboutContainer>

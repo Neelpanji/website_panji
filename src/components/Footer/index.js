@@ -28,7 +28,7 @@ const Footer = () => {
                     <FooterRow>
                         <Col md='3' xs='12'><FooterLink to="/#hero" >Home</FooterLink></Col>
                         <Col md='3' xs='12'><FooterLink to="/about#top" >About Us</FooterLink></Col>
-                        <Col md='3' xs='12'><FooterLink to="/#services" >Services</FooterLink></Col>
+                        <Col md='3' xs='12'><FooterLink to="/services#top" >Services</FooterLink></Col>
                         <Col md='3' xs='12'><FooterLink to="/contact#top" >Contact</FooterLink></Col>
                         
                     </FooterRow>

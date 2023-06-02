@@ -86,7 +86,7 @@ export const ConversationMobileImage = styled.img`
 
 export const ConversationMobileTextBox = styled.div`
     width: 75%;
-    margin: 0px 10px;
+    margin: 0px 15px;
     color:${props => (props.visitor === "1")?"#70D9B8":"white"};
     font-size: 3.5vw;
 `;

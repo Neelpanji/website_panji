@@ -1,0 +1,56 @@
+{
+	"main_service":{
+		"name":"The 0 To 1 Plan",
+		"description":"We have services to cater all your Podcasting needs.",
+		"sub_services":[
+			{
+				"portion":"0.0 to 0.4",
+				"name":"Structuring The Thoughts",
+				"description":"We together plan what you want to say and how you want to say it. It's like making a roadmap for your podcast episode, so you can be organized and clear when you talk. By doing this, your listeners will be able to follow along and enjoy your podcast better.",
+				"features":[
+					"Brainstorming the podcast idea",
+					"Researching the idea and its feasibility",
+					"Help in deciding podcast name as per target audience/brand vision",
+					"Create a script/guiding points",
+					"Decide on the type of the show - such as an interview, roundtable discussion, storytelling, or solo monologue"
+				]
+
+			},
+			{
+				"portion":"0.4 to 0.6",
+				"name":"Taking The First Step",
+				"description":"We will take the steps to set up your podcast online and together we work on the brand image (cover art) of your podcast and record your first podcast!",
+				"features":[
+					"Choose a podcast hosting platform",
+					"Help create Podcast Covert art and episode titles",
+					"Choose the recording equipment",
+					"Record the first episodes and record the intro, outro, and other elements"
+				]
+
+			},
+			{
+				"portion":"0.6 to 0.7",
+				"name":"The Tech And Technique",
+				"description":"We provide pre-production guidance for the best hosting tips based on the first recording and the best post-production activities (editing, mixing, and mastering audio) for you.",
+				"features":[
+					"Produce a finished podcast after editing, mixing, and mastering all the elements",
+					"Guidance for best hosting tips based on initial recordings",
+					"Guidance for basic editing for DIYers"
+				]
+
+			},
+			{
+				"portion":"0.7 to 1.0",
+				"name":"Getting The Word Out",
+				"description":"Yay! The podcast is ready to let us publish it and start telling people - Hey! there I have an awesome podcast perfectly suited to help you. Do check it out.",
+				"features":[
+					"Uploading the podcast to the hosting platform and publishing the podcast on popular directories",
+					"Proper marketing plan and strategy to follow",
+					"Preparation of marketing content",
+					"Performance analysis of the podcast quarterly and suggestions to improve"
+				]
+
+			}
+		]
+	}
+}
