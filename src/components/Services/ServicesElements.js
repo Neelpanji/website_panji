@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
 
 export const ServicesContainer = styled.div`
     width: 100%;
@@ -454,7 +455,7 @@ export const BookPage2NumberContainer = styled.div`
     // }
 
     @media screen and (max-width:561px) {
-        height: 22.2%;
+        height: 23%;
     }
     
 `;
@@ -480,9 +481,10 @@ export const BookPage2Number = styled.div`
 export const BookPage2MainHeadingContainer = styled.div`
     align-items:center;
     display:flex;
-    justify-content: center;
+    flex-direction:column;
+    justify-content: space-evenly;
     background-color: #70D9B8;
-    height: 75%;
+    height: 60%;
     width:100%;
     padding: 0px 20px;
     box-shadow : ${({ id }) => (id%2===0) ? 'rgba(0, 0, 0, 0.35) -50px 0px 36px -28px inset' : 'rgba(0, 0, 0, 0.35) 50px 0px 36px -28px inset'};
@@ -492,18 +494,18 @@ export const BookPage2MainHeadingContainer = styled.div`
 
     border-top-right-radius: ${({ id }) => (id%2===0) ? '90px 7px' : '0px'};
     border-top-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 7px'};
-    border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
-    border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
+    // border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
+    // border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
     overflow: hidden;
     @media screen and (max-width:768px) {
         border-top-right-radius: ${({ id }) => (id%2===0) ? '90px 5px' : '0px'};
         border-top-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 5px'};
-        border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
-        border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
+        // border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
+        // border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
     }
 
     @media screen and (max-width:561px) {
-        height: 78%;
+        height: 62%;
     }
 `;
 
@@ -511,19 +513,19 @@ export const BookPage2MainHeading = styled.div`
     
     color:black;
     @media screen and (max-width:1990px) {
-        font-size:4rem;
-    }
-    @media screen and (max-width:1366px) {
-        font-size:3.2rem;
-    }
-    @media screen and (max-width:1026px) {
-        font-size:2.5rem;
-    }
-    @media screen and (max-width:769px) {
         font-size:3.6rem;
     }
+    @media screen and (max-width:1366px) {
+        font-size:2.4rem;
+    }
+    @media screen and (max-width:1026px) {
+        font-size:2rem;
+    }
+    @media screen and (max-width:769px) {
+        font-size:3.2rem;
+    }
     @media screen and (max-width:561px) {
-        font-size:2.2rem;
+        font-size:2rem;
     }
 `;
 
@@ -892,4 +894,78 @@ export const ScrollPreventFlip = styled.div`
     opacity: 0;
     z-index: 8;
     display: ${({ hintLoadedMobile }) => hintLoadedMobile ? 'none' : 'block'};
+`;
+
+export const KnowMoreServiceButton = styled.div`
+    color: black;
+    background: #70D9B8;
+    transition: all 0.1s linear;
+    font-size:1.2rem;
+    box-shadow : ${({ id }) => (id%2===0) ? 'rgba(0, 0, 0, 0.35) -50px 0px 36px -28px inset' : 'rgba(0, 0, 0, 0.35) 50px 0px 36px -28px inset'};
+    
+
+    border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
+    border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
+
+    @media screen and (max-width:768px) {
+        border-bottom-right-radius: ${({ id }) => (id%2===0) ? '90px 3px' : '0px'};
+        border-bottom-left-radius:  ${({ id }) => (id%2===0) ? '0px' : '90px 3px'};
+    }
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:15%;
+
+    :hover{
+        // border: 3px white solid;
+        // color: black;
+        // font-size:1.3rem;
+
+    }
+    
+    @media screen and (max-width:561px) {
+        height: 15%;
+    }
+`;
+
+export const KnowMorecontent = styled(NavHashLink)`
+    padding:0.4rem;
+    border:2px solid black;
+    color:black;
+    background:#70D9B8;
+    border-radius:5px;
+
+    transition: all 0.1s linear;
+
+    text-decoration:none;
+
+    :hover{
+        border:2px solid white;
+        color:white;
+        background:black;
+        font-size:1.3rem;
+    }
+`;
+
+export const ServiceBookContent = styled.div`
+
+    color:black;
+
+    @media screen and (max-width:1990px) {
+        font-size:1.3rem;
+    }
+    @media screen and (max-width:1366px) {
+        font-size:1rem;
+    }
+    @media screen and (max-width:1026px) {
+        font-size:0.7rem;
+    }
+    @media screen and (max-width:769px) {
+        font-size:1.3rem;
+    }
+    @media screen and (max-width:561px) {
+        font-size:1rem;
+    }
 `;

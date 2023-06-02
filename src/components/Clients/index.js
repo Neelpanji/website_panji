@@ -1,10 +1,9 @@
 import React from 'react'
-import { Container, Row, Col } from 'reactstrap';
 import {
 	ClientsCarouselContainer,
 	ClientsContainer, ClientsHeading,
 	ClientsBgImage, ClientsBgImage2,
-	ClientImage, ClientImageLink
+	ClientImage, ClientImageLink, ClientsContent
 } from './ClientsElements';
 import useSound from 'use-sound';
 import Carousel from "react-multi-carousel";
@@ -30,13 +29,6 @@ const responsive = {
 	}
 };
 
-
-// import boopSfx from '/assets/sounds/mixkit-dog-barking-twice-1.wav';
-const SoundButton = () => {
-	const boopSfx = '/assets/sounds/mixkit-dog-barking-twice-1.wav';
-	const [play] = useSound(boopSfx);
-	return <button onClick={play}>Sound</button>;
-};
 
 const Clients = () => {
 
@@ -85,6 +77,7 @@ const Clients = () => {
 		return (
 			<ClientsContainer>
 				<ClientsHeading>Clients</ClientsHeading>
+				<ClientsContent>Click on the images to checkout the podcasts.</ClientsContent>
 				<ClientsBgImage src='assets/images/clients_pattern_2_crop.png' />
 				<ClientsBgImage2 src='assets/images/clients_pattern_1_crop2.png' />
 				<ClientsCarouselContainer>

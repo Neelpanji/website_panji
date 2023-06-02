@@ -21,7 +21,7 @@ export const servicesFailed = (errmess) =>({
 export const fetchServices = () => (dispatch) =>{
     dispatch(servicesLoading(true));
 
-    return fetch(baseUrl+'services.json')
+    return fetch(baseUrl+'newServices.json')
         .then(response => {
             if(response.ok){
                 return response;
@@ -119,3 +119,48 @@ export const fetchTestimonials = () => (dispatch) => {
         .then(testimonials => dispatch(addTestimonials(testimonials)))
         .catch(error => dispatch(testimonialsFailed(error.message)));
 }
+
+// for faqs
+
+export const faqsLoading = () => ({
+    type: ActionTypes.FAQS_LOADING
+});
+
+export const addFaqs = (faqs) => ({
+    type: ActionTypes.ADD_FAQS,
+    payload: faqs
+}); 
+
+export const faqsFailed = (errMess) => ({
+    type: ActionTypes.FAQS_FAILED,
+    payload:errMess
+});
+
+export const fetchFaqs = () => (dispatch) => {
+    dispatch(faqsLoading(true))
+
+    return fetch(baseUrl+'faqs.json')
+        .then(
+            response =>{
+                if(response.ok){
+                    return response;
+                }else{
+                    var error = new Error('Error '+response.status+" : "+response.statusText);
+                    error.response = response;
+                    throw error;
+                }
+            },
+            error => {
+                var errmess = new Error(error.message);
+                throw errmess;
+            }
+        )
+        .then(response=> response.json())
+        .then(faqs => dispatch(addFaqs(faqs)))
+        .catch(error => dispatch(faqsFailed(error.message)));
+}
+
+export const updateSelectedService = (selectedService) => ({
+    type: ActionTypes.UPDATE_SELECTED_SERVICES,
+    payload: selectedService
+});

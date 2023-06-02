@@ -57,8 +57,8 @@ const Sidebar = ({open,toggle}) => {
                     scroll={el => scrollWithOffset(el)}
                     onClick={toggle}
                     >About</SidebarLink>
-                    <SidebarLink to="/#services" 
-                    scroll={el => scrollWithOffset(el)}
+                    <SidebarLink to="/services#top" 
+                    // scroll={el => scrollWithOffset(el)}
                     onClick={toggle}
                     >Services</SidebarLink>
                     <SidebarLink to="/#clients" 
@@ -69,12 +69,17 @@ const Sidebar = ({open,toggle}) => {
                     scroll={el => scrollWithOffset(el)}
                     onClick={toggle}
                     >Contact</SidebarLink>
+                    <SidebarLink to="/faqs#top" 
+                    scroll={el => scrollWithOffset(el)}
+                    onClick={toggle}
+                    isGold={1}
+                    >FAQs</SidebarLink>
                 </SidebarMenu>
 
                 <SocialMedia>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/neelpanji/"><SocialMediaIcon src="/assets/images/logos/instagram.png"/></a>
+                    {/* <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/neelpanji/"><SocialMediaIcon src="/assets/images/logos/instagram.png"/></a> */}
                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/neelpanji/"><SocialMediaIcon src="/assets/images/logos/linkedin-3-48.png"/></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/neel.panji"><SocialMediaIcon src="/assets/images/logos/facebook-3-48.png"/></a>
+                    {/* <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/neel.panji"><SocialMediaIcon src="/assets/images/logos/facebook-3-48.png"/></a> */}
                     <a target="_blank" rel="noopener noreferrer" href="https://m.me/neel.panji"><SocialMediaIcon src="/assets/images/logos/messenger (1).png"/></a>
                     <a target="_blank" rel="noopener noreferrer" href="mailto: neelpanji@gmail.com"><SocialMediaIcon src="/assets/images/logos/email (1).png"/></a>
                 </SocialMedia>

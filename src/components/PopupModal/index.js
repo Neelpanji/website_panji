@@ -12,9 +12,7 @@ const PopupModal = () => {
     useEffect(() => {
 
         const timer = setTimeout(() => {
-            // setIsPopupOpen(!isPopupOpen);
-            setIsPopupOpen(0);
-            console.log("modal");
+            setIsPopupOpen(!isPopupOpen);
         }, 4500);
         return () => clearTimeout(timer);
     }, [])
@@ -27,9 +25,9 @@ const PopupModal = () => {
         fetch('https://api.emailjs.com/api/v1.0/email/send', {
             method: 'POST',
             body: JSON.stringify({
-                "service_id": "service_9pezary",
-                "template_id": "template_oa0jgdj",
-                "user_id": "user_H2i5PETnod5gp0FBBylNm",
+                "service_id": "service_hllzzpo",
+                "template_id": "template_6qbrr2s",
+                "user_id": "user_nlsEMvuE69qao2t7h0SCS",
                 "template_params": {
                     "email": email
                 }
@@ -64,7 +62,9 @@ const PopupModal = () => {
                     <FormContainer>
                         <FormElement onSubmit={sendEmail}>
                             <LabelElement>
-                                Please give me your email, and we will NOT COLD MAIL YOU .....
+                            Get Your <span style={{color:'#70D9B8'}}>FREE GUIDE - THE ULTIMATE CHECKLIST T0  STARTING A PODCAST THE RIGHT WAY! </span>
+                            <br></br>
+                            This guide will help you start ahead of 95% of all podcasters.
                             </LabelElement>
                             <InputElement
                                 type="email"

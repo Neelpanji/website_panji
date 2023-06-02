@@ -1,0 +1,82 @@
+[
+    {
+        "title": "Neel Panji Productions",
+        "faqs": [
+            {
+                "question": "Why work with Neel Panji Productions ?",
+                "answer": "At Neel Panji Productions, we're not just another vendor trying to make a quick buck off businesses and people. We're more like partners, here to support you in your growth and stand by you through thick and thin. Our founder, Neel, took a leap of faith when he left his comfy corporate job to help people share their voices with the world. And that's what we're all about - using our production skills to help you share your message with the world. When you work with us, you're partnering with someone who truly understands the value of faith and commitment. We're dedicated to staying true to our word and doing everything we can to support our partners (that's you, our clients). So let's work together and make something great!"
+            },
+            {
+                "question": "Are you a good fit for me ?",
+                "answer": "Let's be real for a sec - if you're always in a rush and need things done ASAP, we might not be the best fit for you. We're a premium production company and we take pride in our work, which means we like to take the time to do it right. We're all about quality over quantity, and we want to work with people and businesses who appreciate that. So if you value expertise, attention to detail, and know that good things take time, then we're the team for you. Let's create something amazing together!"
+            },
+            {
+                "question": "What are your qaulifications ?",
+                "answer": "Our qualifications are our client trust and our clientele and their testimonials and awesome words which keep us going. Do stop by to check some of them."
+            },
+            {
+                "question": "How can I begin working with you ? What’s the first step ?",
+                "answer": "Do get on a discovery call as a first step if you are absolutelty new to this. If you have some idea of what you want maybe go to our service page section and see if any of the packages seem good to you."
+            },
+            {
+                "question": "You have not mentioned prices anywhere, if I wish to know a price then?",
+                "answer": "We have not mentioned prices in order to make it tailor made for each project and requirement. But, yes our prices do start from $1000 for podcast launch and $70or editing episodes. Please not this is just a rough idea of what to expect. Please get in touch with Neel, to know better."
+            }
+        ]
+    },
+    {
+        "title": "Services",
+        "faqs": [
+            {
+                "question": "What if I want only a select few services ?",
+                "answer": "We are most happy to help you with any service you want be it individual or a package we provide. Do contact Neel and he can take guide you through."
+            },
+            {
+                "question": "Do you have an agreement requirement ?",
+                "answer": "Yes, we do have an agreement with all our clients. It helps keep us accountable to our word and value we provide."
+            },
+            {
+                "question": "What is the turnaround time ?",
+                "answer": "We guarantee to return the work in 3-4 working days time. In case you wish to have a faster turnaround, you can request so at a higher cost. The higher cost to compensate for our schedule of working for other clients."
+            },
+            {
+                "question": "Do you provide work sample ?",
+                "answer": "We do that on request basis. Please contact Neel to know more."
+            },
+            {
+                "question": "Can I access the project files anytime ?",
+                "answer": "We keep the project files upto 30 days from publishing of the episode. You can request the project files within this time limit. Files will be deleted from our systems after that."
+            },
+            {
+                "question": "Do you do video podcast as well ?",
+                "answer": "Yes, we do."
+            }
+        ]
+    },
+    {
+        "title": "Invoicing & Payment",
+        "faqs": [
+            {
+                "question": "What payment methods are accepted ?",
+                "answer": "For Indian clients I accept bank to bank transfer (wire transfer). For International clients currently Paypal is the preferred payment partner."
+            },
+            {
+                "question": "When is the work invoiced ?",
+                "answer": "For monthly retainer clients, a monthly invoice is generated at the end of the month. Invoice is expected to be cleared within 7 days after invoice date."
+            }
+        ]
+    },
+    {
+        "title": "Equipment & Software",
+        "faqs": [
+            {
+                "question": "What tools/softwares do you use ?",
+                "answer": "The tools and softwares we use depend on project requirements. But major one's we use - Audacity, Izotope RX8 plugins, Adobe Audition, Adobe Premier Pro."
+            },
+            {
+                "question": "What equipment do you recommend ?",
+                "answer": "Equipment requirement is totally based on recording condtion and whay budget allows. Equipment can be bought with a budget of $100 USD (Rs 8000 approx) to $1000 USD (Rs 80000)."
+            }
+        ]
+    }
+]

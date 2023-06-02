@@ -21,6 +21,7 @@ export const FloatingContactContainer = styled.div`
     justify-content : space-around;
     align-items: center;
     border-radius: 4px;
+    z-index:20;
 
     @media screen and (max-width:1990px) {
         bottom:35%;
