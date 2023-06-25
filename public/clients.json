@@ -2,14 +2,14 @@
     {
         "id":0,
         "name":"Podcast Services",
-        "image":"assets/images/clients/AJVC.jpeg",
-        "link":"https://ajuniorvc.com/podcast/"
+        "image":"assets/images/clients/LBSB.jpg",
+        "link":"https://podcasts.apple.com/us/podcast/live-better-sell-better/id1518419694"
     },
     {
         "id":1,
         "name":"Podcast Services",
-        "image":"assets/images/clients/SOS.jpeg",
-        "link":"https://www.startingoverstronger.com/podcast"
+        "image":"assets/images/clients/AJVC.jpeg",
+        "link":"https://ajuniorvc.com/podcast/"
     },
     {
         "id":2,
@@ -20,29 +20,35 @@
     {
         "id":3,
         "name":"Podcast Services",
-        "image":"assets/images/clients/kylapod.jpeg",
-        "link":"https://www.kylacofer.com/leadershipschool"
+        "image":"assets/images/clients/SOS.jpeg",
+        "link":"https://www.startingoverstronger.com/podcast"
     },
     {
         "id":4,
         "name":"Podcast Services",
-        "image":"assets/images/clients/ianapod.jpeg",
-        "link":"https://www.ianacare.com/i-am-not-alone-podcast"
+        "image":"assets/images/clients/kylapod.jpeg",
+        "link":"https://www.kylacofer.com/leadershipschool"
     },
     {
         "id":5,
-        "name":"Podcast Services",
-        "image":"assets/images/clients/HF.jpeg",
-        "link":"https://www.hayleyfinch.com/"
-    },
-    {
-        "id":6,
         "name":"Podcast Services",
         "image":"assets/images/clients/manyapod.jpeg",
         "link":"https://manyachylinski.com/podcast/"
     },
     {
+        "id":6,
+        "name":"Podcast Services",
+        "image":"assets/images/clients/HF.jpeg",
+        "link":"https://www.hayleyfinch.com/"
+    },
+    {
         "id":7,
+        "name":"Podcast Services",
+        "image":"assets/images/clients/ianapod.jpeg",
+        "link":"https://www.ianacare.com/i-am-not-alone-podcast"
+    },
+    {
+        "id":8,
         "name":"Podcast Services",
         "image":"assets/images/clients/the-jason-ingber-podcast-jason-m-ingber-6uLDRlJbVYw-Cb5Jse8ZGt2.1400x1400.jpg",
         "link":"https://www.youtube.com/@jasonyitzie"
