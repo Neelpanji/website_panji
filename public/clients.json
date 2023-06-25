@@ -2,14 +2,14 @@
     {
         "id":0,
         "name":"Podcast Services",
-        "image":"assets/images/clients/LBSB.jpeg",
-        "link":"https://podcasts.apple.com/us/podcast/live-better-sell-better/id1518419694"
+        "image":"assets/images/clients/AJVC.jpeg",
+        "link":"https://ajuniorvc.com/podcast/"
     },
     {
         "id":1,
         "name":"Podcast Services",
-        "image":"assets/images/clients/AJVC.jpeg",
-        "link":"https://ajuniorvc.com/podcast/"
+        "image":"assets/images/clients/LBSB.jpeg",
+        "link":"https://podcasts.apple.com/us/podcast/live-better-sell-better/id1518419694"
     },
     {
         "id":2,
