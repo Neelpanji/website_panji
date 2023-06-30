@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "name": "Annie Allen, Host of Starting Over Stronger Podcast",
-        "image-url": "assets/images/clients/SOS.jpeg",
-        "testimonial": "Neel Panji has been everything I have needed and wanted in a podcast editor for well over a year. He's intuitive, easy to work with, and affordable, and willing to go above and beyond in his services. He always produces quality content, so much so that I don't even have to check his work anymore. I couldn't ask for anything more in a podcast editor.",
-        "video-embedded-link": "https://www.youtube-nocookie.com/embed/yo91m_r6LAM"
+        "name": "Manya Chylinski, Host of Notes on Resilience Podcast",
+        "image-url": "assets/images/clients/manyapod.jpeg",
+        "testimonial": "I love working with Neel on my podcast. When we first met before I had ever published an episode,it was clear to me that he was going to be a strategic partner. He asked me such detailed questions about why was I starting a podcast? And what did I want it to do? He really is a strategic partner who helps me think about analytics and socialand marketing and making sure that my podcast does what I want it to do. I couldn't do it without him.",
+        "video-embedded-link": "https://www.youtube-nocookie.com/embed/Rs433fbAvbw"
     },
     {
         "id": 2,
@@ -15,6 +15,13 @@
     },
     {
         "id": 3,
+        "name": "Annie Allen, Host of Starting Over Stronger Podcast",
+        "image-url": "assets/images/clients/SOS.jpeg",
+        "testimonial": "Neel Panji has been everything I have needed and wanted in a podcast editor for well over a year. He's intuitive, easy to work with, and affordable, and willing to go above and beyond in his services. He always produces quality content, so much so that I don't even have to check his work anymore. I couldn't ask for anything more in a podcast editor.",
+        "video-embedded-link": "https://www.youtube-nocookie.com/embed/yo91m_r6LAM"
+    },
+    {
+        "id": 4,
         "name": "Vicki Baird, Host of Intuition: Your First Sense",
         "image-url": "assets/images/clients/vikipod.jpeg",
         "testimonial": " I would highly recommend working with Neel because as a life coach and business consultant, I understand the value of having someone who already has the skills that are needed in your business because you cannot be, everything to everyone. Working with Neel has helped me to grow as a business owner and as a podcast host. So I would highly recommend hiring him to work with you, to build your own following and to have that product that is edited to your highest liking.",
