@@ -71,7 +71,7 @@ const Navbar = ({ open, toggle}) => {
                     <NavbarContainer>
                         <NavLogo  to={process.env.PUBLIC_URL+"/#hero"} onClick={() => closeSidebar(open)} scroll={el => scrollWithOffset(el)}>
                         {/* <img src={baseUrl+'assets/images/logo.png'} className='nav-logo' alt="ABC Power" /> */}
-                        <div>PodLeaF Productions</div>
+                        <div>PodLeaF</div>
                         </NavLogo>
                         {/* <SocialMedia>
                             <a href="#"><SocialMediaIcon src="/assets/images/logos/instagram.png"/></a>
