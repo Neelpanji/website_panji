@@ -39,7 +39,7 @@ const Footer = () => {
                     <br/>
                     <a className='link-footer' href="tel:+91-9825029182"> <FaMobile/> +91 9825029182</a>
                     <br/> */}
-                    <FooterMail className='link-footer' href="mailto: neelpanji@gmail.com"><FaEnvelope /><div style={{paddingLeft: "5px"}}/> neelpanji@gmail.com</FooterMail> 
+                    <FooterMail className='link-footer' href="mailto: neel@podleafproductions.com"><FaEnvelope /><div style={{paddingLeft: "5px"}}/> neel@podleafproductions.com</FooterMail> 
                 </Col>
                 
                 <Col>
