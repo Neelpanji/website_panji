@@ -64,8 +64,8 @@ const About = () => {
                     <Col lg='12'>
                         <AboutContentWrapper>
                             <AboutContent>
-                            Hi, I am Neel Panji - Founder of PodLeaF Poductions! Being a podcaster can be tough in many ways. From scheduling guests for an interview, finding new guests, promoting the value you provide to the audience in various forms, getting creative to keep your audience engaged, and finally spending hours to ensure the quality of the audio is top-notch. 
-                            Hence culminating over 3 years of my experience woorking with different podcasters into this production company. I started out as a mechanical engineer but soon my passion for podcasts pulled me out of my job to start PodLeaF Productions. We are a team of enthusiasts who with out diverse experience bring the best for your podcast.  
+                            Hi, I am Neel Panji - Founder of PodLeaF Productions! Being a podcaster can be tough in many ways. From scheduling guests for an interview, finding new guests, promoting the value you provide to the audience in various forms, getting creative to keep your audience engaged, and finally spending hours to ensure the quality of the audio is top-notch. 
+                            Hence culminating over 3 years of my experience working with different podcasters in this production company. I started out as a mechanical engineer but soon my passion for podcasts pulled me out of my job to start PodLeaF Productions. We are a team of enthusiasts who with our diverse experience bring the best for your podcast.  
                             </AboutContent>
                         </AboutContentWrapper>
                     </Col>
