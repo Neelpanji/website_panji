@@ -6,11 +6,11 @@ import { ServiceContainer, ServiceContentConatiner, ServiceDescription, ServiceH
 import ScrollAnimation from 'react-animate-on-scroll';
 import { useSelector } from 'react-redux';
 
-const tempPricing = ['- $1400 Onwards',
-		     '- $500 Onwards',
-		     '- $500 Onwards',
-		     '- $300/Month Onwards',
-		     '- $300/Month Onwards'];
+const tempPricing = ['- $1000 Onwards',
+		     '- $350 Onwards',
+		     '- $350 Onwards',
+		     '- $250/Month Onwards',
+		     '- $250/Month Onwards'];
 
 const MainService = (props) => {
 
