@@ -71,7 +71,7 @@ const Navbar = ({ open, toggle}) => {
                     <NavbarContainer>
                         <NavLogo  to={process.env.PUBLIC_URL+"/#hero"} onClick={() => closeSidebar(open)} scroll={el => scrollWithOffset(el)}>
                         {/* <img src={baseUrl+'assets/images/logo.png'} className='nav-logo' alt="ABC Power" /> */}
-                        <div>Neel Panji</div>
+                        <div>PodLeaF</div>
                         </NavLogo>
                         {/* <SocialMedia>
                             <a href="#"><SocialMediaIcon src="/assets/images/logos/instagram.png"/></a>
@@ -88,7 +88,7 @@ const Navbar = ({ open, toggle}) => {
                             <NavItem>
                                 <NavLink smooth  to="/services#top" 
                                 scroll={el => scrollWithOffset(el)}
-                                >Services</NavLink>
+                                >Pricing</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink smooth  to="/#clients" 
@@ -115,5 +115,4 @@ const Navbar = ({ open, toggle}) => {
 }
 
 export default Navbar;
-
 

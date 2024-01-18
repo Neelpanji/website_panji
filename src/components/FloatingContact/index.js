@@ -8,7 +8,7 @@ const FloatingContact = () => {
             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/neelpanji/"><FloatingIcon src="/assets/images/logos/linkedin-3-48.png"></FloatingIcon></a>
             {/* <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/neel.panji"><FloatingIcon src="/assets/images/logos/facebook-3-48.png"></FloatingIcon></a> */}
             <a target="_blank" rel="noopener noreferrer" href="https://m.me/neel.panji"><FloatingIcon src="/assets/images/logos/messenger (1).png"></FloatingIcon></a>
-            <a target="_blank" rel="noopener noreferrer" href="mailto: neelpanji@gmail.com"><FloatingIcon src="/assets/images/logos/black-back-closed-envelope-shape.png"></FloatingIcon></a>
+            <a target="_blank" rel="noopener noreferrer" href="mailto: neel@podleafproductions.com"><FloatingIcon src="/assets/images/logos/black-back-closed-envelope-shape.png"></FloatingIcon></a>
         </FloatingContactContainer>
         // </FloatingContactLink>
     )
