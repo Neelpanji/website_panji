@@ -74,7 +74,7 @@ export const FooterMail = styled.a`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-
+    overflow-wrap: anywhere;
 
     &:hover{
         color:#70D9B8;

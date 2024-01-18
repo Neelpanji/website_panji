@@ -116,4 +116,3 @@ const Navbar = ({ open, toggle}) => {
 
 export default Navbar;
 
-
