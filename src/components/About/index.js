@@ -64,9 +64,8 @@ const About = () => {
                     <Col lg='12'>
                         <AboutContentWrapper>
                             <AboutContent>
-                            Hi, I am Neel! Being a podcaster can be tough in many ways. From scheduling guests for an interview, finding new guests, promoting the value you provide to the audience in various forms, getting creative to keep your audience engaged, and finally spending hours to ensure the quality of the audio is top-notch. Spending hours editing and still not getting the quality sound can have cascading effects on the creative aspects.
-                            Over my experience working and seeing podcasters, I have noticed that poor audio quality is a major reason affecting the confidence of the Podcasters in their art out of all of these activities.  
-                            With my editing finesse, I want to ensure that no Podcaster has the slightest doubt over their art because of the audio quality.   
+                            Hi, I am Neel Panji - Founder of PodLeaF Productions! Being a podcaster can be tough in many ways. From scheduling guests for an interview, finding new guests, promoting the value you provide to the audience in various forms, getting creative to keep your audience engaged, and finally spending hours to ensure the quality of the audio is top-notch. 
+                            Hence culminating over 3 years of my experience working with different podcasters in this production company. I started out as a mechanical engineer but soon my passion for podcasts pulled me out of my job to start PodLeaF Productions. We are a team of enthusiasts who with our diverse experience bring the best for your podcast.  
                             </AboutContent>
                         </AboutContentWrapper>
                     </Col>

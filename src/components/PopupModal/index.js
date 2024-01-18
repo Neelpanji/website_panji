@@ -62,9 +62,9 @@ const PopupModal = () => {
                     <FormContainer>
                         <FormElement onSubmit={sendEmail}>
                             <LabelElement>
-                            Get Your <span style={{color:'#70D9B8'}}>FREE GUIDE - THE ULTIMATE CHECKLIST T0  STARTING A PODCAST THE RIGHT WAY! </span>
+                            Read <span style={{color:'#70D9B8'}}>FREE CASE STUDY OF OUR CLIENT - RESULTS OF PODCASTING WHEN DONE WITH THE RIGHT TEAM </span>
                             <br></br>
-                            This guide will help you start ahead of 95% of all podcasters.
+                            We ensure your privacy by following a NO-SPAM policy.
                             </LabelElement>
                             <InputElement
                                 type="email"
