@@ -78,8 +78,8 @@ const Home = () => {
             <ScrollAnimation animateIn="animate__fadeIn" duration='2.5' animateOnce="true" offset="0">
                 <HeroRectangle>
                     <ScrollAnimation animateIn="animate__fadeIn" duration='2.5' animateOnce="true" delay="700"  offset="0">
-                    <HeroRectangleContent to="/#services" scroll={el => scrollWithOffset(el)}>
-                    Jump To Services
+                    <HeroRectangleContent to="/#pricing" scroll={el => scrollWithOffset(el)}>
+                    Jump To Pricing
                     </HeroRectangleContent>
                     </ScrollAnimation>
                 </HeroRectangle>

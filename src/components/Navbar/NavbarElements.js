@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import { Link as LinkS} from 'react-scroll';
-import {
-  Link as LinkR
-} from "react-router-dom";
-import { HashLink, NavHashLink } from 'react-router-hash-link';
+import { NavHashLink } from 'react-router-hash-link';
 
 export const Nav = styled.div`
     background: #000;

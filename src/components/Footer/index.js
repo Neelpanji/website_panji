@@ -9,18 +9,6 @@ const Footer = () => {
         <div>
         <FooterRectangle/>
         <FooterContainer>
-        
-        {/* <FooterLinks>
-            <FooterLink to={process.env.PUBLIC_URL+'/'} >Home</FooterLink>
-            <FooterLink to={process.env.PUBLIC_URL+'/aboutus'} >About Us</FooterLink>
-            <FooterLink to={process.env.PUBLIC_URL+'/products'} >Products</FooterLink>
-            <FooterLink to={process.env.PUBLIC_URL+'/contact'} >Contact Us</FooterLink>
-            <FooterMail href="mailto: panjiKaMal@gmail.com"><FaEnvelope /> <div style={{paddingLeft: "5px"}}/>sarthi_abc@yahoo.com</FooterMail>
-        </FooterLinks>
-        <FooterCopyright>
-            © Copyright 2021. ABC Power Systems. All Rights Reserved.
-        </FooterCopyright>
-    </FooterContainer> */}
         <Container>
             <FooterRow>
                 <Col md='8' xs='6'>
@@ -44,7 +32,7 @@ const Footer = () => {
                 
                 <Col>
                     <FooterCopyright>
-                    © Copyright {new Date().getFullYear()}. Neel Panji. All Rights Reserved.
+                    © Copyright {new Date().getFullYear()}. PodLeaf Productions. All Rights Reserved.
                     </FooterCopyright>
                     <FooterCopyright>
                         <FooterMail target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mohitgidwani13">Made by Mohit</FooterMail>
