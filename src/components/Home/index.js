@@ -1,7 +1,8 @@
-import React,{useState} from 'react';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import React from 'react';
+import { Element } from 'react-scroll'
 import Hero from '../Hero';
-import Services from '../Services';
+// import Services from '../Services';
+import PricingComponent from '../Pricing';
 import Clients from '../Clients';
 import Conversation from '../Conversation';
 import Testimonials from '../Testimonials';
@@ -24,13 +25,6 @@ import Testimonials from '../Testimonials';
 
 const Home = () => {
 
-
-    const ServicesComponent = () => {
-        return(
-            <Services />
-        );
-    }
-
     const ClientsComponent = () => {
         return(
             <Clients />
@@ -48,10 +42,9 @@ const Home = () => {
             <section id="conversation">
                 <Conversation />
             </section>
-            <section id="services">
-            <Element name="services" className="element">
-                {/* <Services /> */}
-                <ServicesComponent />
+            <section id="pricing">
+            <Element name="pricing" className="element">
+                <PricingComponent />
             </Element>
             </section>
             <Element>

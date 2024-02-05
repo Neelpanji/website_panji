@@ -18,11 +18,6 @@ export const ClientsContent = styled.h4`
 
 `;
 
-export const ClientsCarouselContainer = styled.div`
-    padding: 10% 0 10% 0;
-    
-`;
-
 export const ClientsBgImage = styled.img`
     position:absolute;
     width:100%;
@@ -47,13 +42,23 @@ export const ClientsBgImage2 = styled.img`
 export const ClientImage = styled.img`
     height: 250px;
     width:250px;
+    margin: 1rem;
+    z-index: 10;
+    box-shadow: rgba(170, 140, 190, 0.3) 0px 7px 29px 0px;
 
     @media screen and (max-width:560px){
-        height: 200px;
-        width: 200px;
+        height: 160px;
+        width: 160px;
     }
 `;
 
 export const ClientImageLink = styled.a`
+`;
 
+export const ClientsCarouselContainer = styled.div`
+    padding: 2rem 0;
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
 `;

@@ -2,7 +2,7 @@ import * as ActionTypes from './ActionTypes';
 import {baseUrl} from '../shared/baseUrl';
 
 
-// for products
+// for pricing
 
 export const servicesLoading = () =>({
     type: ActionTypes.SERVICES_LOADING
@@ -21,7 +21,7 @@ export const servicesFailed = (errmess) =>({
 export const fetchServices = () => (dispatch) =>{
     dispatch(servicesLoading(true));
 
-    return fetch(baseUrl+'newServices.json')
+    return fetch(baseUrl+'pricing.json')
         .then(response => {
             if(response.ok){
                 return response;
