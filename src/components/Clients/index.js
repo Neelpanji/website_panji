@@ -5,8 +5,7 @@ import {
 	ClientsBgImage, ClientsBgImage2,
 	ClientImage, ClientImageLink, ClientsContent
 } from './ClientsElements';
-import useSound from 'use-sound';
-import Carousel from "react-multi-carousel";
+// import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Loading } from '../Loading/LoadingComponent';
 import { useSelector } from 'react-redux';
@@ -34,33 +33,16 @@ const Clients = () => {
 
 	const clientsState = useSelector(state => state.clients);
 
-	// function Demo() {
-	//     const soundUrl = '/assets/sounds/mixkit-dog-barking-twice-1.wav';
+	// const CustomLeftArrow = ({ onClick }) => (
+	// 	<i onClick={() => onClick()} className="custom-left-arrow" />
+	// );
+	// const CustomRightArrow = ({ onClick }) => {
+	// 	return <i className="custom-right-arrow" onClick={() => onClick()} />;
+	// };
 
-	//     const [play, { stop, isPlaying }] = useSound(soundUrl);
-
-	//     return (
-	//       <PlayButton
-	//         active={isPlaying}
-	//         size={60}
-	//         iconColor="var(--color-background)"
-	//         idleBackgroundColor="var(--color-text)"
-	//         activeBackgroundColor="var(--color-primary)"
-	//         play={play}
-	//         stop={stop}
-	//       />
-	//     );
-	//   }
-	const CustomLeftArrow = ({ onClick }) => (
-		<i onClick={() => onClick()} className="custom-left-arrow" />
-	);
-	const CustomRightArrow = ({ onClick }) => {
-		return <i className="custom-right-arrow" onClick={() => onClick()} />;
-	};
-
-	const clients = clientsState.clients.map((client,index) => {
+	const clients = clientsState.clients.map((client, index) => {
 		// console.log(client, index);
-		return (<div><ClientImageLink target="_blank" rel="noopener noreferrer" href={client.link}><ClientImage src={client.image} /></ClientImageLink></div>);
+		return (<div style={{ zIndex: "10" }}><ClientImageLink target="_blank" rel="noopener noreferrer" href={client.link}><ClientImage src={client.image} /></ClientImageLink></div>);
 
 	});
 
@@ -78,10 +60,12 @@ const Clients = () => {
 			<ClientsContainer>
 				<ClientsHeading>Clients</ClientsHeading>
 				<ClientsContent>Click on the images to checkout the podcasts.</ClientsContent>
-				<ClientsBgImage src='assets/images/clients_pattern_2_crop.png' />
-				<ClientsBgImage2 src='assets/images/clients_pattern_1_crop2.png' />
+				{/* <ClientsBgImage src='assets/images/clients_pattern_2_crop.png' /> */}
+				{/* <ClientsBgImage2 src='assets/images/clients_pattern_1_crop2.png' /> */}
+
 				<ClientsCarouselContainer>
-					<Carousel
+					{clients}
+					{/* <Carousel
 						swipeable={true}
 						draggable={true}
 						showDots={false}
@@ -100,7 +84,7 @@ const Clients = () => {
 					>
 
 						{clients}
-					</Carousel>
+					</Carousel> */}
 				</ClientsCarouselContainer>
 
 			</ClientsContainer>

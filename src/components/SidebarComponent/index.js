@@ -57,10 +57,10 @@ const Sidebar = ({open,toggle}) => {
                     scroll={el => scrollWithOffset(el)}
                     onClick={toggle}
                     >About</SidebarLink>
-                    <SidebarLink to="/services#top" 
+                    <SidebarLink to="/#pricing" 
                     // scroll={el => scrollWithOffset(el)}
                     onClick={toggle}
-                    >Services</SidebarLink>
+                    >Pricing</SidebarLink>
                     <SidebarLink to="/#clients" 
                     scroll={el => scrollWithOffset(el)}
                     onClick={toggle}
