@@ -1,3 +1,4 @@
+import { HashLink } from 'react-router-hash-link';
 import styled from 'styled-components';
 
 export const PrimaryButton = styled.button`
@@ -37,3 +38,6 @@ export const GreenHr = styled.hr`
     width:${({width}) => (width ? width : '60%')};
 `;
 
+export const Link = styled(HashLink)`
+    text-decoration: none;
+`;

@@ -2,7 +2,7 @@ import { Col, Container, Row } from "reactstrap";
 import { CardCost, CardFeature, CardFeaturesContainer, CardHeading, PriceCardWrapper, PricingComponentContainer, PricingHeading } from "./PricingElements";
 import { useSelector } from "react-redux";
 import { Loading } from "../Loading/LoadingComponent";
-import { GreenHr, PrimaryButton } from "../../common/CommonElements";
+import { GreenHr, Link, PrimaryButton } from "../../common/CommonElements";
 
 
 const PricingComponent = () => {
@@ -33,7 +33,9 @@ const PricingComponent = () => {
                     <CardFeaturesContainer>
                         {featureList}
                     </CardFeaturesContainer>
-                    <PrimaryButton to={"/contact"}>Know More</PrimaryButton>
+                    <Link to={"/contact"}>
+                    <PrimaryButton>Know More</PrimaryButton>
+                    </Link>
                 </PriceCardWrapper>
             </Col>
         );
