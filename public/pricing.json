@@ -22,10 +22,7 @@
                 "feature_info": "72-Hour Turnaround"
             },
             {
-                "feature_info": "Dedicated Editor Working on your Show"
-            },
-            {
-                "feature_info": "Unlimited Email Support"
+                "feature_info": "Unlimited Email"
             }
         ]
     },
@@ -46,10 +43,10 @@
                 "feature_info": "Noise Reduction and Cleaning"
             },
             {
-                "feature_info": "SEO friendly Show notes upto 300 Words"
+                "feature_info": "SEO friendly Show Notes"
             },
             {
-                "feature_info": "2 Video Reels per Episode for Social Media"
+                "feature_info": "2 Video Reels per Episode"
             },
             {
                 "feature_info": "Episode Graphic"
@@ -64,16 +61,13 @@
                 "feature_info": "72-Hour Turnaround"
             },
             {
-                "feature_info": "Dedicated Editor Working on your Show"
-            },
-            {
-                "feature_info": "Same Day Email Support During Work Hours"
+                "feature_info": "Unlimited Email"
             }
         ]
     },
     {
         "title": "Not Satisfied?",
-        "sub_title": "Custom Package",
+        "sub_title": "Custom For Your Needs",
         "features": [
             {
                 "feature_info": "Start a New Podcast"
@@ -82,10 +76,10 @@
                 "feature_info": "Video Editing Requirements"
             },
             {
-                "feature_info": "1 Episode or more than 2 Episodes a Month"
+                "feature_info": "More or Less Episodes a Month"
             },
             {
-                "feature_info": "Episodes Less Than 20 mins and More Than 45 mins"
+                "feature_info": "15 Min or 60 Min Episodes?"
             },
             {
                 "feature_info": "More Reels per Episode"
@@ -104,6 +98,9 @@
             },
             {
                 "feature_info": "Website Support"
+            },
+            {
+                "feature_info": "Shorter Turnaround Time"
             }
         ]
     }
