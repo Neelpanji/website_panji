@@ -11,9 +11,9 @@ import { useEffect, useLayoutEffect } from 'react';
 import ReactGA from 'react-ga';
 
 import GA4React from "ga-4-react";
-const TRACKING_ID = "UA-213422662-1"; // YOUR_OWN_TRACKING_ID
+const TRACKING_ID = "UA-213430949-1"; // YOUR_OWN_TRACKING_ID
 
-const ga4react = new GA4React("G-TYRJ50MG7K");
+const ga4react = new GA4React("G-GHB0BF8M82");
 
 
 const ParallaxCache = () => {

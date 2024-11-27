@@ -3,4 +3,4 @@
 
 
 // for live 
-export const baseUrl = "https://website-panji.vercel.app/";
+export const baseUrl = "https://neel-panji.netlify.app/";
