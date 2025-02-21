@@ -1,13 +1,16 @@
 [
     {
         "title": "Audio Editing",
-        "sub_title": "$300",
+        "sub_title": "$500",
         "features": [
             {
                 "feature_info": "2 Episodes Per Month"
             },
             {
-                "feature_info": "Episodes Up to 45 mins"
+                "feature_info": "Episodes Up to 60 mins"
+            },
+            {
+                "feature_info": "2 Dynamic reels Per episode"
             },
             {
                 "feature_info": "Adding Intro's, Outros, and Ads"
@@ -27,14 +30,14 @@
         ]
     },
     {
-        "title": "Time Saver Package",
-        "sub_title": "$500",
+        "title": "Video Package",
+        "sub_title": "$800",
         "features": [
             {
                 "feature_info": "2 Episodes Per Month"
             },
             {
-                "feature_info": "Episodes Up to 45 mins"
+                "feature_info": "Episodes Up to 60 mins"
             },
             {
                 "feature_info": "Adding Intro's, Outros, and Ads"
